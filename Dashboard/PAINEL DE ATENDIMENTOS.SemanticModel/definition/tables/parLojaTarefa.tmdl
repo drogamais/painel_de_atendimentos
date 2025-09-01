@@ -1,0 +1,48 @@
+table parLojaTarefa
+	lineageTag: 7fc35993-7df8-42b7-ab28-3dca306d6c30
+
+	column Parâmetro
+		lineageTag: a1fb5bed-ce30-4021-b639-e2869b2ae4b5
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parâmetro Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'Parâmetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Campos'
+		isHidden
+		lineageTag: de89a22f-0cf0-4d7f-bac1-79634f25ce98
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parâmetro Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: 0b83c362-a0fd-4c93-a708-c004ed1e4cf7
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition parLojaTarefa = calculated
+		mode: import
+		source =
+				{
+				    ("LOJAS", NAMEOF('Atendimentos'[Fantasia]), 0),
+				    ("TAREFAS", NAMEOF('Atendimentos'[Tarefa_Detalhada]), 1)
+				}
+
+	annotation PBI_Id = 0cc6f1d2b3d2434691f5b6d59dd7ae29
+

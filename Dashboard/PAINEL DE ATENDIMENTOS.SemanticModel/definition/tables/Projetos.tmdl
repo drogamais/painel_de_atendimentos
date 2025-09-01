@@ -1,0 +1,156 @@
+table Projetos
+	lineageTag: 097203db-32f9-489c-be7c-decdeaf71a3b
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 9e5e3c05-6538-4244-bd09-845c122c6e81
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome
+		dataType: string
+		lineageTag: aec81d01-ce5d-49e9-a5bf-018e0f15f882
+		summarizeBy: none
+		sourceColumn: nome
+		sortByColumn: 'loja.numero'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column ativo
+		dataType: int64
+		formatString: 0
+		lineageTag: bef61116-3cfc-477f-9432-6dfeb9b13155
+		summarizeBy: sum
+		sourceColumn: ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column pausado
+		dataType: int64
+		formatString: 0
+		lineageTag: 307b9b3d-c47d-4064-b3a7-f2d2150f6cd1
+		summarizeBy: sum
+		sourceColumn: pausado
+
+		annotation SummarizationSetBy = Automatic
+
+	column concluido
+		dataType: int64
+		formatString: 0
+		lineageTag: 325a0e8a-1206-428f-881e-1a0ebd3e5a28
+		summarizeBy: sum
+		sourceColumn: concluido
+
+		annotation SummarizationSetBy = Automatic
+
+	column dtCriacao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b29cad22-d507-4ca4-8d1c-39a68fc0033c
+		summarizeBy: none
+		sourceColumn: dtCriacao
+
+		variation Variation
+			isDefault
+			relationship: fdcede64-73df-466f-bb55-7de68f88a15a
+			defaultHierarchy: LocalDateTable_a600ce91-6eeb-4407-85ba-8a435f0dd198.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column dtInicio
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 72867e33-b8b0-419b-ba1d-8568e357e375
+		summarizeBy: none
+		sourceColumn: dtInicio
+
+		variation Variation
+			isDefault
+			relationship: f5f138ef-f091-4954-b77a-11a14ecbbabd
+			defaultHierarchy: LocalDateTable_37a7106b-ebca-4614-ae02-20fa8df523a9.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column dtFim
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 26a77993-21e3-4c30-9c69-9865ca8997e5
+		summarizeBy: none
+		sourceColumn: dtFim
+
+		variation Variation
+			isDefault
+			relationship: 7fa89dcb-3404-407a-a311-0072ae27db8b
+			defaultHierarchy: LocalDateTable_b8d6d0c3-656d-46e0-9cb7-839727656a5a.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modelo_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 95fa6d44-5834-4ae4-b208-a2de6f667dc2
+		summarizeBy: sum
+		sourceColumn: modelo_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column modelo_nome
+		dataType: string
+		lineageTag: 52a07694-1e3f-40b6-b30f-7ddbc1efe617
+		summarizeBy: none
+		sourceColumn: modelo_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsavel_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 44858cc4-febc-40d3-bb5b-e305bb8101be
+		summarizeBy: sum
+		sourceColumn: responsavel_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsavel_nome
+		dataType: string
+		lineageTag: 419c274e-254a-4c27-9ac8-b38385dd9caf
+		summarizeBy: none
+		sourceColumn: responsavel_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'loja.numero'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c6daf68-1988-47b5-8430-5f2856a9a566
+		summarizeBy: none
+		sourceColumn: loja.numero
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Projetos = m
+		mode: import
+		source =
+				let
+				    Fonte = Odbc.DataSource("dsn=dbSults", [HierarchicalNavigation=true]),
+				    dbSults_Database = Fonte{[Name="dbSults",Kind="Database"]}[Data],
+				    tb_projetos_Table = dbSults_Database{[Name="tb_projetos",Kind="Table"]}[Data],
+				    #"Linhas Filtradas" = Table.SelectRows(tb_projetos_Table, each ([modelo_nome] = "LOJA MODELO")),
+				    #"Coluna Duplicada" = Table.DuplicateColumn(#"Linhas Filtradas", "nome", "nome - Copiar"),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Coluna Duplicada","LOJA ","",Replacer.ReplaceText,{"nome - Copiar"}),
+				    #"Valor Substituído1" = Table.ReplaceValue(#"Valor Substituído","Loja ","",Replacer.ReplaceText,{"nome - Copiar"}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Valor Substituído1",{{"nome - Copiar", "loja.numero"}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Renomeadas",{{"loja.numero", Int64.Type}}),
+				    #"Linhas Classificadas" = Table.Sort(#"Tipo Alterado",{{"loja.numero", Order.Ascending}})
+				in
+				    #"Linhas Classificadas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

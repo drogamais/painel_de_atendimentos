@@ -1,0 +1,48 @@
+table parDiaMesAno
+	lineageTag: 55dc3b5b-40a1-454b-8ebe-92fb0e3bf40b
+
+	column Parâmetro
+		lineageTag: 227a24e2-c130-49ad-9ef4-8b3fe89be979
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parâmetro Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'Parâmetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Campos'
+		isHidden
+		lineageTag: 27a6ba77-1179-4da3-b0e0-134f2a28f354
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parâmetro Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: 2122a449-07b0-42d4-9d35-0e2d1c3da634
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition parDiaMesAno = calculated
+		mode: import
+		source =
+				{
+				    ("MÊS/ANO", NAMEOF('dCalendario SULTS'[Mês/Ano]), 0),
+				    ("DIA/MÊS", NAMEOF('dCalendario SULTS'[Dia/Mês]), 1)
+				}
+
+	annotation PBI_Id = 00780c54fc814c23bbac907696ae1db8
+

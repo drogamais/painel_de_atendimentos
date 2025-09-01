@@ -1,0 +1,55 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Tarefa","Lojas","Projetos","Atendimentos","Navegação","Atualização","Cidades"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.146.1254.0 (25.08)+791a7518fadc83da883d79322a2658aff57c8db3
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_ca5ccb83-8277-4563-b48f-c3c570769973
+ref table 'dCalendario SULTS'
+ref table Medidas
+ref table Tarefa
+ref table Lojas
+ref table LocalDateTable_2cd44d75-83fe-4c8f-8549-9009c5b7dcee
+ref table LocalDateTable_653d5d10-1ee8-4337-ae95-151445100a34
+ref table LocalDateTable_7dcf61f7-362f-4db2-959c-ca333df0ca62
+ref table LocalDateTable_070de2d6-3945-4e56-a121-cbbdc0a78536
+ref table LocalDateTable_e111d10b-2f71-4b91-b410-a083b7277f1c
+ref table LocalDateTable_3a24079e-cf51-4abe-871c-da18c492693c
+ref table LocalDateTable_da9a49da-73d2-4aef-a58e-8a4b84c41372
+ref table LocalDateTable_a207ac23-1daa-4eae-b91d-00eb95fe9be4
+ref table LocalDateTable_7a0c35a9-5eb8-4738-9866-028547c1ce98
+ref table LocalDateTable_ccd4e660-e2cd-47a3-903d-0ccb190480d5
+ref table LocalDateTable_48a9116b-3ede-49d9-b1ce-81f991dd8885
+ref table Projetos
+ref table LocalDateTable_a600ce91-6eeb-4407-85ba-8a435f0dd198
+ref table LocalDateTable_37a7106b-ebca-4614-ae02-20fa8df523a9
+ref table LocalDateTable_b8d6d0c3-656d-46e0-9cb7-839727656a5a
+ref table LocalDateTable_206007f7-ae84-4577-a7ac-d66e9b9a7e28
+ref table LocalDateTable_043ba5ef-d2bb-4574-9f7e-69dbdd82ebbb
+ref table Atendimentos
+ref table LocalDateTable_5fef58be-12ea-46da-a360-f0e63f93e0c4
+ref table LocalDateTable_05ad3b83-2ec6-4d53-bd92-4321457f6305
+ref table Navegação
+ref table Atualização
+ref table LocalDateTable_88a8d2c4-0559-4718-88fd-1348b80b9a2b
+ref table Cidades
+ref table parResTaf
+ref table parDiaMesAno
+ref table Parâmetro
+ref table parLojaTarefa
+
+ref role ADMINISTRATIVO
+ref role MARKETING
+
+ref cultureInfo pt-BR
+

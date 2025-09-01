@@ -1,0 +1,326 @@
+table Tarefa
+	lineageTag: 26f7cce8-7bbd-4fb9-bc58-9d31c36f45cf
+
+	measure TesteConclusao = ```
+			ISEMPTY('Tarefa')
+			
+			```
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e9ea002f-7626-45d2-b1fd-a6a4a0cad06b
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: b17e1953-8232-442c-b944-e64844b7befa
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome
+		dataType: string
+		lineageTag: 14f22bac-732f-46b8-93c0-91d10ee7b586
+		summarizeBy: none
+		sourceColumn: nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column dtCriacao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e9b3d386-5312-4d2a-8cc4-ad8c51ed64d6
+		summarizeBy: none
+		sourceColumn: dtCriacao
+
+		variation Variation
+			isDefault
+			relationship: 28c19508-1d7a-4785-8973-47295b066e86
+			defaultHierarchy: LocalDateTable_a207ac23-1daa-4eae-b91d-00eb95fe9be4.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column dtInicio
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6d00cca4-3479-48f8-8924-7807b333a0ac
+		summarizeBy: none
+		sourceColumn: dtInicio
+
+		variation Variation
+			isDefault
+			relationship: c75d0bca-7a0b-42a4-b021-47dd25293b23
+			defaultHierarchy: LocalDateTable_7a0c35a9-5eb8-4738-9866-028547c1ce98.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column dtFim
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 449c4b00-099e-49aa-aa6f-839ffb9b25ce
+		summarizeBy: none
+		sourceColumn: dtFim
+
+		variation Variation
+			isDefault
+			relationship: 70c9fdd3-21ae-4316-8851-74ce64fc8100
+			defaultHierarchy: LocalDateTable_ccd4e660-e2cd-47a3-903d-0ccb190480d5.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column dtConclusao
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 5ce204b1-785b-4bba-930c-a4f9ebfbdb11
+		summarizeBy: none
+		sourceColumn: dtConclusao
+
+		variation Variation
+			isDefault
+			relationship: e1204f43-1256-4d3f-8476-017e549b66ac
+			defaultHierarchy: LocalDateTable_48a9116b-3ede-49d9-b1ce-81f991dd8885.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date = DATE(YEAR('Tarefa'[dtConclusao]), MONTH('Tarefa'[dtConclusao]), DAY('Tarefa'[dtConclusao]))
+		formatString: Short Date
+		lineageTag: 50155c85-04cd-4644-9342-9d24426490ae
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column status = ```
+			SWITCH(
+			    TRUE(),
+			    Tarefa[fase_nome] = "OUTROS", "CONCLUÍDO",
+			    Tarefa[nome] = "TENTATIVA", "TENTATIVA",
+			    Tarefa[fase_nome] = "BÚSSOLA" && 
+			        Tarefa[nome] <> "CADUCIDADE" && 
+			        Tarefa[Dias desde a última] > 90, "REALIZAR SERVIÇO",
+			    Tarefa[fase_nome] = "RAIO-X" && 
+			        Tarefa[nome] <> "CADUCIDADE" && 
+			        Tarefa[Dias desde a última] > 30, "REALIZAR SERVIÇO",
+			    Tarefa[fase_nome] = "PEC" && 
+			        Tarefa[nome] <> "CADUCIDADE" && 
+			        Tarefa[Dias desde a última] > 90, "REALIZAR SERVIÇO",
+			    Tarefa[nome] = "CADUCIDADE", "CADUCIDADE",
+			    "EM DIA"
+			)
+			
+			```
+		lineageTag: 8318995b-cbc0-4745-bd69-433a861468d2
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column projeto_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7b0c1a84-7be4-4146-8c49-b26b27ecec3a
+		summarizeBy: none
+		sourceColumn: projeto_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column fase_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ab7aca6-5a45-449e-8c5f-08216c7f634b
+		summarizeBy: sum
+		sourceColumn: fase_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column fase_nome
+		dataType: string
+		lineageTag: 3489bf9d-c1c3-4979-830b-dbcdeaf0fcca
+		summarizeBy: none
+		sourceColumn: fase_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsavel_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c2182d35-3c83-416f-aa17-a1d350bb678d
+		summarizeBy: sum
+		sourceColumn: responsavel_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsavel_nome
+		dataType: string
+		lineageTag: 70365dd7-d568-44ed-a923-a46077564cf8
+		summarizeBy: none
+		sourceColumn: responsavel_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dias desde a última' = ```
+			
+			VAR LOJA = Tarefa[projeto_id]
+			VAR SERVICO = Tarefa[fase_nome]
+			VAR TAREFAS= Tarefa[nome]
+			
+			VAR DATA_TAREFA =
+			    CALCULATE(
+			        MAX(Tarefa[dtConclusao]),
+			        FILTER(
+			            ALL(Tarefa),
+			            Tarefa[projeto_id] = LOJA &&
+			            Tarefa[fase_nome] = SERVICO &&
+			            Tarefa[nome] = TAREFAS
+			        )
+			    )
+			
+			VAR DATA_TENTATIVA =
+			    CALCULATE(
+			        MAX(Tarefa[dtConclusao]),
+			        FILTER(
+			            ALL(Tarefa),
+			            Tarefa[projeto_Id] = LOJA &&
+			            Tarefa[fase_nome] = SERVICO &&
+			            Tarefa[nome] = "TENTATIVA"
+			        )
+			    )
+			
+			VAR DIAS_DA_TENTATIVA = DATEDIFF(DATA_TENTATIVA, TODAY(), DAY)
+			
+			VAR DIAS = DATEDIFF(DATA_TAREFA, TODAY(), DAY)
+			
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        Tarefa[Entrou em Caducidade] = "SIM", 0,
+			        Tarefa[possui_tentativas] = "SIM" && Tarefa[nome] <> "TENTATIVA", DIAS_DA_TENTATIVA + 15,
+			        DIAS
+			    )
+			
+			```
+		formatString: 0
+		lineageTag: a3be8d98-4af9-4b3b-b4e2-8c7688a92334
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Entrou em Caducidade' = ```
+			
+			VAR FaseAtual = Tarefa[fase_nome]
+			VAR LojaAtual = Tarefa[LOJA]
+			
+			VAR ExisteCaducidade = 
+			    CALCULATE(
+			        COUNTROWS(Tarefa),
+			        ALLEXCEPT(Tarefa, Tarefa[LOJA], Tarefa[fase_nome]),
+			        Tarefa[nome] = "CADUCIDADE"
+			    )
+			
+			RETURN IF(ExisteCaducidade > 0 && Tarefa[fase_nome] = FaseAtual && Tarefa[LOJA] = LojaAtual, "SIM", "NÃO")
+			```
+		lineageTag: f07988cc-855b-48b4-9aad-6b55f1da6cf1
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOJA = LOOKUPVALUE(Projetos[nome], Projetos[id], Tarefa[projeto_id])
+		lineageTag: a47d1826-8123-468c-a077-090a0973796c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column possui_tentativas =
+			
+			
+			VAR LOJA = Tarefa[LOJA]
+			VAR FASE = Tarefa[fase_nome]
+			
+			VAR qtd_tentativas = CALCULATE(
+			                        COUNT(Tarefa[id]),
+			                        FILTER(
+			                            ALL(Tarefa),
+			                            Tarefa[LOJA] = LOJA &&
+			                            Tarefa[fase_nome] = FASE &&
+			                            Tarefa[nome] = "TENTATIVA"
+			                        )
+			                    )
+			RETURN IF(qtd_tentativas>0, "SIM", "NAO")
+		lineageTag: 0d71079a-2515-4990-bcec-c1d52f2d2b43
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fantasia = Tarefa[Loja_Numero] & " - "& LOOKUPVALUE(Lojas[FANTASIA], Lojas[LOJA_NUMERO], Tarefa[Loja_Numero])
+		lineageTag: 4353d872-ddbd-4859-92f9-b46a496e02ee
+		summarizeBy: none
+		sortByColumn: Loja_Numero
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Loja_Numero = ```
+			INT(SUBSTITUTE(Tarefa[LOJA], "LOJA ", "")) 
+			```
+		formatString: 0
+		lineageTag: 64453c56-a9f8-42b2-a175-fbaa6b496eed
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column descricao
+		dataType: string
+		lineageTag: d60898c5-f05a-412b-a38f-f641a0e81173
+		summarizeBy: none
+		sourceColumn: descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mês/Ano =
+			Tarefa[dtConclusao].[Mês] &
+			          "/" &
+			          Tarefa[dtConclusao].[Ano]
+		lineageTag: f6244810-e620-452a-95f1-02ae85a7589f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primeiro Nome' =
+			
+			
+			VAR Espaco = SEARCH(" ", Tarefa[responsavel_nome], 1,0)
+			RETURN LEFT(Tarefa[responsavel_nome], Espaco-1)
+		lineageTag: 10d413c0-bef1-4d3c-8a36-22b4ccae8cb1
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Função =
+			
+			
+			SWITCH(
+			    TRUE(),
+			    Tarefa[Primeiro Nome] = "Luiz", "Auditor",
+			    Tarefa[Primeiro Nome] = "Fabio", "Auditor",
+			    Tarefa[Primeiro Nome] = "Gabriel", "Auditor",
+			    Tarefa[Primeiro Nome] = "Diego", "Auditor",
+			    Tarefa[Primeiro Nome] = "Natália", "Focal",
+			    Tarefa[Primeiro Nome] = "Livia", "Focal",
+			    "Nenhum"
+			)
+		lineageTag: 9cd82fc9-f155-4c7d-a2c8-d532f4f50556
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Tarefa = m
+		mode: import
+		source =
+				let
+				    Fonte = Odbc.Query("dsn=dbSults", "SELECT t.*#(lf)FROM dbSults.tb_tarefas t#(lf)JOIN dbSults.tb_projetos p ON t.projeto_id = p.id#(lf)WHERE p.modelo_id = 19;#(lf)"),
+				    #"Valor Substituído" = Table.ReplaceValue(Fonte,"BÚSSOLA - ANÁLISE DE MERCADO","BÚSSOLA",Replacer.ReplaceText,{"fase_nome"})
+				in
+				    #"Valor Substituído"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

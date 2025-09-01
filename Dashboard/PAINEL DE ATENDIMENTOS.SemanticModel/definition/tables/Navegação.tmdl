@@ -1,0 +1,32 @@
+table Navegação
+	lineageTag: 431472ee-8295-4967-b379-5fe57725b881
+
+	column Páginas
+		dataType: string
+		lineageTag: 17cc68cb-44f2-46c7-969d-b11557c9b154
+		summarizeBy: none
+		sourceColumn: Páginas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Setor
+		dataType: string
+		lineageTag: f4d62a59-84b4-4a09-94ec-56ff956fd4a1
+		summarizeBy: none
+		sourceColumn: Setor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Navegação = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("dYuxCsAgDAX/JbM/IZ07dRQHqaE8ignE1O+vW5e6HdxdShSfClfjToFibRB0t+IYSjlM7SwVjcX1PzjYBk5d7JvKYMHi3Yvd7JBr6o9zfgE=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Páginas = _t, Setor = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Páginas", type text}, {"Setor", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

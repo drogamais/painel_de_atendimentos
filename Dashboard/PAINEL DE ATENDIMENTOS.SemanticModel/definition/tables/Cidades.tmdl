@@ -1,0 +1,87 @@
+table Cidades
+	lineageTag: 536db529-f1bd-4026-b720-a5f9cf8b83c9
+
+	column ID_City
+		dataType: int64
+		formatString: 0
+		lineageTag: 6a084b2e-618b-42b3-a299-3b3d96550711
+		summarizeBy: none
+		sourceColumn: ID_City
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: 28c24c96-ab73-4c6e-a59a-f85cce30e020
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column IBGE_ID
+		dataType: string
+		lineageTag: 66055555-452f-45f4-a875-d632e9bec901
+		summarizeBy: none
+		sourceColumn: IBGE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodeArea
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a7feef5-adf6-4c2c-851b-e13cdefa742e
+		summarizeBy: none
+		sourceColumn: CodeArea
+
+		annotation SummarizationSetBy = Automatic
+
+	column UF
+		dataType: string
+		lineageTag: 971e40e1-961e-4322-82dc-76b5b07224d7
+		summarizeBy: none
+		sourceColumn: UF
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_Plugpharma
+		dataType: int64
+		formatString: 0
+		lineageTag: 3f33e6ec-e451-4d9d-bcad-46a9e8d4b177
+		summarizeBy: none
+		sourceColumn: ID_Plugpharma
+
+		annotation SummarizationSetBy = Automatic
+
+	column Population
+		dataType: int64
+		formatString: 0
+		lineageTag: a92c5fb2-969d-4fa1-9c1d-3ae1cd03ef07
+		summarizeBy: none
+		sourceColumn: Population
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 04a7202c-b131-4971-8a56-d728f4720d84
+		summarizeBy: none
+		sourceColumn: Region_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Cidades = m
+		mode: import
+		source =
+				let
+				    Fonte = Odbc.DataSource("dsn=drogamais", [HierarchicalNavigation=true]),
+				    drogamais_Database = Fonte{[Name="drogamais",Kind="Database"]}[Data],
+				    tb_city_Table = drogamais_Database{[Name="tb_city",Kind="Table"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(tb_city_Table,{{"CodeArea", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

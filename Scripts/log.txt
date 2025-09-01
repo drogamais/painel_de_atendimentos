@@ -1,0 +1,799 @@
+
+--- Execução iniciada: 2025-08-25 17:56:06.259527 ---
+Buscando arquivos na pasta: T:\APF\Inteligência de Mercado\Gian\Planilhas Projeto
+✅ Encontrados 7 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+  -> ⚠️  Aviso: O arquivo Focal_1.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Focal_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Focal_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_1.xlsx...
+
+Lendo a planilha: Auditor_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+✅ Sucesso! Total de 1 linhas lidas de 1 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 115 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 0 para INSERIR, 0 para ATUALIZAR.
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-25 17:56:07.197774 ---
+
+--- Execução iniciada: 2025-08-26 08:23:32.210608 ---
+Buscando arquivos na pasta: T:\APF\Inteligência de Mercado\Gian\Planilhas Projeto
+✅ Encontrados 7 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+  -> ⚠️  Aviso: O arquivo Focal_1.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Focal_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Focal_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_1.xlsx...
+
+Lendo a planilha: Auditor_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+✅ Sucesso! Total de 1 linhas lidas de 1 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 115 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 0 para INSERIR, 0 para ATUALIZAR.
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-26 08:23:32.994058 ---
+
+--- Execução iniciada: 2025-08-26 14:33:51.437586 ---
+Buscando arquivos na pasta: T:\APF\Inteligência de Mercado\Gian\Planilhas Projeto
+✅ Encontrados 7 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+
+Lendo a planilha: Focal_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Focal_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_1.xlsx...
+
+Lendo a planilha: Auditor_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+✅ Sucesso! Total de 2 linhas lidas de 2 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 115 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 1 para INSERIR, 0 para ATUALIZAR.
+
+Inserindo 1 novos registros...
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-26 14:33:52.215779 ---
+
+--- Execução iniciada: 2025-08-26 14:36:17.885928 ---
+Buscando arquivos na pasta: T:\APF\Inteligência de Mercado\Gian\Planilhas Projeto
+✅ Encontrados 7 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+
+Lendo a planilha: Focal_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Focal_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_1.xlsx...
+
+Lendo a planilha: Auditor_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+✅ Sucesso! Total de 2 linhas lidas de 2 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 116 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 0 para INSERIR, 1 para ATUALIZAR.
+
+Atualizando 1 registros existentes...
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-26 14:36:18.669881 ---
+
+--- Execução iniciada: 2025-08-26 15:31:46.977127 ---
+Buscando arquivos na pasta: T:\APF\Inteligência de Mercado\Gian\Planilhas Projeto
+✅ Encontrados 7 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+
+Lendo a planilha: Focal_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Focal_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_1.xlsx...
+
+Lendo a planilha: Auditor_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+✅ Sucesso! Total de 2 linhas lidas de 2 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 116 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 0 para INSERIR, 0 para ATUALIZAR.
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-26 15:31:47.908802 ---
+
+--- Execução iniciada: 2025-08-26 15:33:13.790513 ---
+Buscando arquivos na pasta: T:\APF\Inteligência de Mercado\Gian\Planilhas Projeto
+✅ Encontrados 7 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+
+Lendo a planilha: Focal_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Focal_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_1.xlsx...
+
+Lendo a planilha: Auditor_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+✅ Sucesso! Total de 3 linhas lidas de 2 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 116 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 1 para INSERIR, 0 para ATUALIZAR.
+
+Inserindo 1 novos registros...
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-26 15:33:14.329648 ---
+
+--- Execução iniciada: 2025-08-26 15:35:24.897976 ---
+Buscando arquivos na pasta: T:\APF\Inteligência de Mercado\Gian\Planilhas Projeto
+✅ Encontrados 7 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+
+Lendo a planilha: Focal_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Focal_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_1.xlsx...
+
+Lendo a planilha: Auditor_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+✅ Sucesso! Total de 4 linhas lidas de 2 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 117 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 0 para INSERIR, 1 para ATUALIZAR.
+
+Atualizando 1 registros existentes...
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-26 15:35:25.647277 ---
+
+--- Execução iniciada: 2025-08-26 17:36:42.700287 ---
+Buscando arquivos na pasta: T:\APF\Inteligência de Mercado\Gian\Planilhas Projeto
+✅ Encontrados 9 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Convenio.xlsx
+  - Coordenador.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+
+Lendo a planilha: Focal_2.xlsx...
+
+Lendo a planilha: Auditor_1.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_1.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_2.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Coordenador.xlsx...
+
+Lendo a planilha: Convenio.xlsx...
+  -> ⚠️  Aviso: O arquivo Convenio.xlsx está vazio e será ignorado.
+
+✅ Sucesso! Total de 235 linhas lidas de 3 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 0 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 235 para INSERIR, 0 para ATUALIZAR.
+
+Inserindo 235 novos registros...
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-26 17:36:43.959181 ---
+
+--- Execução iniciada: 2025-08-27 12:42:02.078527 ---
+Buscando arquivos na pasta: T:\APF\Atendimento ao Associado\LANÇAMENTO DE ATENDIMENTO DIARIOS
+✅ Encontrados 8 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Coordenador.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Focal_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Auditor_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_1.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Coordenador.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+✅ Sucesso! Total de 235 linhas lidas de 3 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 235 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 144 para INSERIR, 4 para ATUALIZAR.
+
+Inserindo 144 novos registros...
+
+Atualizando 4 registros existentes...
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-27 12:42:03.587736 ---
+
+--- Execução iniciada: 2025-08-27 12:42:24.478116 ---
+Buscando arquivos na pasta: T:\APF\Atendimento ao Associado\LANÇAMENTO DE ATENDIMENTO DIARIOS
+✅ Encontrados 8 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Coordenador.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Focal_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Auditor_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_1.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Coordenador.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+✅ Sucesso! Total de 235 linhas lidas de 3 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 379 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 0 para INSERIR, 0 para ATUALIZAR.
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-27 12:42:25.227148 ---
+
+--- Execução iniciada: 2025-08-27 12:42:52.864925 ---
+Buscando arquivos na pasta: T:\APF\Atendimento ao Associado\LANÇAMENTO DE ATENDIMENTO DIARIOS
+✅ Encontrados 8 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Coordenador.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Focal_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Auditor_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_1.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Coordenador.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+✅ Sucesso! Total de 235 linhas lidas de 3 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 379 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 0 para INSERIR, 0 para ATUALIZAR.
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-27 12:42:53.628093 ---
+
+--- Execução iniciada: 2025-08-27 12:45:17.648721 ---
+Buscando arquivos na pasta: T:\APF\Atendimento ao Associado\LANÇAMENTO DE ATENDIMENTO DIARIOS
+✅ Encontrados 8 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Coordenador.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Focal_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Auditor_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_1.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Coordenador.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+✅ Sucesso! Total de 235 linhas lidas de 3 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 0 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 235 para INSERIR, 0 para ATUALIZAR.
+
+Inserindo 235 novos registros...
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-27 12:45:18.624387 ---
+
+--- Execução iniciada: 2025-08-27 17:40:25.910732 ---
+Buscando arquivos na pasta: T:\APF\Inteligência de Mercado\Códigos Python\Projeto Tarefas Focais\Planilhas Projeto
+✅ Encontrados 8 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Coordenador.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Focal_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Auditor_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_1.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Coordenador.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+✅ Sucesso! Total de 370 linhas lidas de 3 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 0 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 370 para INSERIR, 0 para ATUALIZAR.
+
+Inserindo 370 novos registros...
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-27 17:40:27.411782 ---
+
+--- Execução iniciada: 2025-08-27 17:46:19.504156 ---
+Buscando arquivos na pasta: T:\APF\Inteligência de Mercado\Códigos Python\Projeto Tarefas Focais\Planilhas Projeto
+✅ Encontrados 8 arquivos:
+  - Adm.xlsx
+  - Auditor_1.xlsx
+  - Auditor_2.xlsx
+  - Auditor_3.xlsx
+  - Auditor_4.xlsx
+  - Coordenador.xlsx
+  - Focal_1.xlsx
+  - Focal_2.xlsx
+
+Lendo a planilha: Focal_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Focal_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+Lendo a planilha: Auditor_1.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_1.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_2.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_2.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_3.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_3.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Auditor_4.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Auditor_4.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Adm.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  -> ⚠️  Aviso: O arquivo Adm.xlsx está vazio e será ignorado.
+
+Lendo a planilha: Coordenador.xlsx...
+C:\Users\altaneiro.analista01\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+
+✅ Sucesso! Total de 370 linhas lidas de 3 arquivos válidos.
+✅ DataFrame combinado foi limpo e padronizado.
+
+Criando chaves de negócio e hashes de conteúdo...
+Buscando registros existentes no banco de dados...
+✅ Encontrados 370 registros no banco.
+Comparando dados e preparando lotes...
+🔎 Verificação concluída: 0 para INSERIR, 0 para ATUALIZAR.
+
+✅ Sincronização de dados concluída com sucesso!
+
+Nenhuma ação de limpeza necessária hoje.
+
+Conexão com o banco de dados fechada.
+
+--- Execução finalizada com sucesso: 2025-08-27 17:46:20.305541 ---

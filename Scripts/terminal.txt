@@ -1,0 +1,22 @@
+Bashs para usar o ambiente venv
+
+Libera acesso para ativar o ambiente venv
+>> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+Ativa o ambiente venv
+>> .\venv\Scripts\Activate.ps1
+
+Atualiza as dependencias do ambiente venv 
+>> pip freeze > requirements.txt
+
+Instalar dependencias do projeto
+>> pip install -r requirements.txt
+
+
+db_config = {
+        "user": "drogamais",
+        "password": "dB$MYSql@2119",
+        "host": "10.48.12.20",
+        "port": "3306",
+        "database": "dbSults"
+    }

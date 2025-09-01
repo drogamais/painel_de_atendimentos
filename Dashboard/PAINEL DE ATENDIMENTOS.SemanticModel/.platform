@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "PAINEL DE ATENDIMENTOS"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0c37a55e-579a-466d-89b6-c16c930118d8"
+  }
+}

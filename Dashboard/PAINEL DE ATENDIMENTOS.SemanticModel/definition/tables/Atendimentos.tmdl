@@ -1,0 +1,173 @@
+table Atendimentos
+	lineageTag: fb695763-28d5-4dd2-9e3c-529bc0a4eaa4
+
+	column chave_id
+		dataType: string
+		lineageTag: 337d6f2a-c2d7-479b-b31e-1c8b01bf9d26
+		summarizeBy: none
+		sourceColumn: chave_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_planilha
+		dataType: int64
+		formatString: 0
+		lineageTag: 6edbfa72-f708-44cc-9d19-e77758659a99
+		summarizeBy: sum
+		sourceColumn: id_planilha
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d47ac622-cf07-4cb7-a111-b346a5fe2e92
+		summarizeBy: none
+		sourceColumn: data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column tarefa
+		dataType: string
+		lineageTag: 2b545b4c-98ed-4bd3-b4f7-18bdbb0ddf10
+		summarizeBy: none
+		sourceColumn: tarefa
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsavel
+		dataType: string
+		lineageTag: df066c62-950e-44f4-9da8-bfb88a3aca21
+		summarizeBy: none
+		sourceColumn: responsavel
+
+		annotation SummarizationSetBy = Automatic
+
+	column loja
+		dataType: int64
+		formatString: 0
+		lineageTag: 9356240f-894b-4b84-8c4f-751cc6a8669c
+		summarizeBy: sum
+		sourceColumn: loja
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo
+		dataType: string
+		lineageTag: 298e7ac2-bea9-47d9-b061-e14d06ed6256
+		summarizeBy: none
+		sourceColumn: tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column acao
+		dataType: string
+		lineageTag: 28f0cb08-42a3-4f99-8498-24054211aa01
+		summarizeBy: none
+		sourceColumn: acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column assunto
+		dataType: string
+		lineageTag: 6206ec6e-8710-4ee0-be3b-2588e227a72f
+		summarizeBy: none
+		sourceColumn: assunto
+
+		annotation SummarizationSetBy = Automatic
+
+	column conteudo_hash
+		dataType: string
+		lineageTag: 853b8382-ca14-49e0-9621-08ba99c0639e
+		summarizeBy: none
+		sourceColumn: conteudo_hash
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_insercao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c3642240-7b3e-432a-9283-8fdbf2506259
+		summarizeBy: none
+		sourceColumn: data_insercao
+
+		variation Variation
+			isDefault
+			relationship: 421cc4d9-b658-433d-b251-602bbd0c965e
+			defaultHierarchy: LocalDateTable_5fef58be-12ea-46da-a360-f0e63f93e0c4.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_atualizacao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1c825b80-2f8e-4208-ad88-45c6a0b745b6
+		summarizeBy: none
+		sourceColumn: data_atualizacao
+
+		variation Variation
+			isDefault
+			relationship: 28701244-7e93-48f2-ae96-b9672be1ad21
+			defaultHierarchy: LocalDateTable_05ad3b83-2ec6-4d53-bd92-4321457f6305.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fantasia =
+			
+			VAR LojaNumero = Atendimentos[loja]
+			
+			RETURN LojaNumero & " - " & LOOKUPVALUE(Lojas[FANTASIA], Lojas[LOJA_NUMERO], LojaNumero)
+		lineageTag: 80bd4808-64b9-4b38-a17a-a0e8326d5805
+		summarizeBy: none
+		sortByColumn: loja
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column funcao
+		dataType: string
+		lineageTag: 4d8f02a8-13b8-4ce4-970d-f524ef02340e
+		summarizeBy: none
+		sourceColumn: funcao
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tarefa_Detalhada = ```
+			
+			VAR TarefaAtual = Atendimentos[tarefa]
+			VAR ResponsavelAtual = Atendimentos[responsavel]
+			
+			RETURN
+			TarefaAtual & " " & 
+			-- Cria um índice (1, 2, 3...) para tarefas repetidas do mesmo responsável
+			RANKX(
+			    FILTER(
+			        Atendimentos,
+			        Atendimentos[tarefa] = TarefaAtual &&
+			        Atendimentos[responsavel] = ResponsavelAtual
+			    ),
+			    Atendimentos[chave_id],,ASC
+			)
+			```
+		lineageTag: 311a3290-2b79-4b3d-ad4f-73e9bee03020
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Atendimentos = m
+		mode: import
+		source =
+				let
+				    Fonte = Odbc.DataSource("dsn=dbSults", [HierarchicalNavigation=true]),
+				    dbSults_Database = Fonte{[Name="dbSults",Kind="Database"]}[Data],
+				    tb_atendimentos_Table = dbSults_Database{[Name="tb_atendimentos",Kind="Table"]}[Data]
+				in
+				    tb_atendimentos_Table
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

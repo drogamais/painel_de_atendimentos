@@ -1,0 +1,49 @@
+table parResTaf
+	lineageTag: 56f77a28-5472-43e8-b049-af330d1bc42d
+
+	column Parâmetro
+		lineageTag: 3e5ba8f0-0392-4d0e-b40c-f7dd0f06b563
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parâmetro Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'Parâmetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Campos'
+		isHidden
+		lineageTag: 3548e3f3-513e-41f6-a59f-464bc583f910
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parâmetro Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: 60d0e55e-e165-493b-a179-3625f0010862
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition parResTaf = calculated
+		mode: import
+		source =
+				{
+				    ("RESP.", NAMEOF('Atendimentos'[responsavel]), 0),
+				    ("TAREFA", NAMEOF('Atendimentos'[tarefa]), 1),
+				    ("TIPO", NAMEOF('Atendimentos'[tipo]), 2)
+				}
+
+	annotation PBI_Id = 03062a60c90e4287a071865d73ee97f4
+

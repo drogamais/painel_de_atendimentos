@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PAINEL DE ATENDIMENTOS"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "67ca8cec-9f5d-49b4-8635-3b35de5449c8"
+  }
+}

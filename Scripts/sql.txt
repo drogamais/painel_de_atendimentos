@@ -1,0 +1,28 @@
+USE dbSults;
+
+--cria a tabela
+CREATE TABLE IF NOT EXISTS tb_atendimentos (
+    `chave_id` VARCHAR(25) PRIMARY KEY, -- Chave legível: 'AAAA-MM-DD-ID'
+    `id_planilha` INT,
+    `funcao` VARCHAR(100) NOT NULL,
+    `data` DATE NOT NULL,
+    `tarefa` VARCHAR(255),
+    `responsavel` VARCHAR(255),
+    `loja` INT,
+    `tipo` VARCHAR(100),
+    `acao` VARCHAR(100),
+    `assunto` VARCHAR(255),
+    `conteudo_hash` CHAR(64) NOT NULL, -- Hash para detectar mudanças no conteúdo
+    `data_insercao` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `data_atualizacao` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--pesquisa tudo
+SELECT * FROM dbSults;
+
+--pesquisa ordenada
+SELECT * FROM tb_atendimentos 
+ORDER BY data, id_planilha;
+
+--zerar a tabela
+DELETE FROM tb_atendimentos;
