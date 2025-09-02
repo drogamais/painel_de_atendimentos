@@ -1,7 +1,7 @@
-table Atualização
+table Atualizacao
 	lineageTag: f4484955-0c68-40a5-82c2-82dfe7e4b596
 
-	measure 'Texto Última Att' = "|  ATUALIZADO EM: " & SELECTEDVALUE('Atualização'[Última Atualização])
+	measure 'Texto Última Att' = "|  ATUALIZADO EM: " & SELECTEDVALUE('Atualizacao'[Última Atualização])
 		lineageTag: 8336bbd3-9473-476f-9406-1f04dab44555
 
 	column 'Última Atualização'
@@ -18,7 +18,7 @@ table Atualização
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Atualização = m
+	partition Atualizacao = m
 		mode: import
 		source =
 				let
@@ -28,6 +28,8 @@ table Atualização
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Renomeadas",{{"Última Atualização", type datetimezone}})
 				in
 				    #"Tipo Alterado"
+
+	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navegação
 

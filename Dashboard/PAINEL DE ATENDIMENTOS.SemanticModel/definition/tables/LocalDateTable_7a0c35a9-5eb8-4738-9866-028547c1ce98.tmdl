@@ -105,7 +105,7 @@ table LocalDateTable_7a0c35a9-5eb8-4738-9866-028547c1ce98
 
 	partition LocalDateTable_7a0c35a9-5eb8-4738-9866-028547c1ce98 = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('Tarefa'[dtInicio])), 1, 1), Date(Year(MAX('Tarefa'[dtInicio])), 12, 31))
+		source = Calendar(Date(Year(MIN('fatTarefa'[dtInicio])), 1, 1), Date(Year(MAX('fatTarefa'[dtInicio])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 

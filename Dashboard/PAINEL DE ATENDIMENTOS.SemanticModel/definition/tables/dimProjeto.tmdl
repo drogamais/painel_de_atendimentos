@@ -1,4 +1,4 @@
-table Projetos
+table dimProjeto
 	lineageTag: 097203db-32f9-489c-be7c-decdeaf71a3b
 
 	column id
@@ -133,7 +133,7 @@ table Projetos
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Projetos = m
+	partition dimProjeto = m
 		mode: import
 		source =
 				let
@@ -149,6 +149,8 @@ table Projetos
 				    #"Linhas Classificadas" = Table.Sort(#"Tipo Alterado",{{"loja.numero", Order.Ascending}})
 				in
 				    #"Linhas Classificadas"
+
+	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navegação
 

@@ -1,118 +1,118 @@
 relationship 0846fa9a-8505-44b3-b66e-1fc810a51f69
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Lojas.DATA_CADASTRO
+	fromColumn: dimLoja.DATA_CADASTRO
 	toColumn: LocalDateTable_2cd44d75-83fe-4c8f-8549-9009c5b7dcee.Date
 
 relationship 35308cf9-a115-4a89-8053-585bf4ce1110
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Lojas.DATA_INAUGURACAO
+	fromColumn: dimLoja.DATA_INAUGURACAO
 	toColumn: LocalDateTable_653d5d10-1ee8-4337-ae95-151445100a34.Date
 
 relationship fbfdb335-26bb-4057-9ae1-cf8333a8aab1
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Lojas.DATA_DESASSOCIACAO
+	fromColumn: dimLoja.DATA_DESASSOCIACAO
 	toColumn: LocalDateTable_7dcf61f7-362f-4db2-959c-ca333df0ca62.Date
 
 relationship c55263ac-a15e-4a1d-8226-50db1b5d3edf
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Lojas.PEC_ULTIMO_ESTUDO
+	fromColumn: dimLoja.PEC_ULTIMO_ESTUDO
 	toColumn: LocalDateTable_070de2d6-3945-4e56-a121-cbbdc0a78536.Date
 
 relationship 3fb39057-5e2b-405d-a947-be490cf69dfa
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Lojas.CERTIFICADO_VENCIMENTO
+	fromColumn: dimLoja.CERTIFICADO_VENCIMENTO
 	toColumn: LocalDateTable_e111d10b-2f71-4b91-b410-a083b7277f1c.Date
 
 relationship 011663d3-1a72-41c2-bb2a-ad8ea007fef5
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Lojas.UltimaAtualizacao
+	fromColumn: dimLoja.UltimaAtualizacao
 	toColumn: LocalDateTable_3a24079e-cf51-4abe-871c-da18c492693c.Date
 
 relationship 22c3fb69-ebf2-430e-bbbb-344713cba44b
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Lojas.DATA_ASSOCIACAO
+	fromColumn: dimLoja.DATA_ASSOCIACAO
 	toColumn: LocalDateTable_da9a49da-73d2-4aef-a58e-8a4b84c41372.Date
 
 relationship 28c19508-1d7a-4785-8973-47295b066e86
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Tarefa.dtCriacao
+	fromColumn: fatTarefa.dtCriacao
 	toColumn: LocalDateTable_a207ac23-1daa-4eae-b91d-00eb95fe9be4.Date
 
 relationship c75d0bca-7a0b-42a4-b021-47dd25293b23
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Tarefa.dtInicio
+	fromColumn: fatTarefa.dtInicio
 	toColumn: LocalDateTable_7a0c35a9-5eb8-4738-9866-028547c1ce98.Date
 
 relationship 70c9fdd3-21ae-4316-8851-74ce64fc8100
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Tarefa.dtFim
+	fromColumn: fatTarefa.dtFim
 	toColumn: LocalDateTable_ccd4e660-e2cd-47a3-903d-0ccb190480d5.Date
 
 relationship e1204f43-1256-4d3f-8476-017e549b66ac
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Tarefa.dtConclusao
+	fromColumn: fatTarefa.dtConclusao
 	toColumn: LocalDateTable_48a9116b-3ede-49d9-b1ce-81f991dd8885.Date
 
 relationship fdcede64-73df-466f-bb55-7de68f88a15a
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Projetos.dtCriacao
+	fromColumn: dimProjeto.dtCriacao
 	toColumn: LocalDateTable_a600ce91-6eeb-4407-85ba-8a435f0dd198.Date
 
 relationship f5f138ef-f091-4954-b77a-11a14ecbbabd
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Projetos.dtInicio
+	fromColumn: dimProjeto.dtInicio
 	toColumn: LocalDateTable_37a7106b-ebca-4614-ae02-20fa8df523a9.Date
 
 relationship 7fa89dcb-3404-407a-a311-0072ae27db8b
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Projetos.dtFim
+	fromColumn: dimProjeto.dtFim
 	toColumn: LocalDateTable_b8d6d0c3-656d-46e0-9cb7-839727656a5a.Date
 
 relationship a4f3329e-0d4c-7d0c-5a68-6efeb4af4480
-	fromColumn: Tarefa.projeto_id
-	toColumn: Projetos.id
+	fromColumn: fatTarefa.projeto_id
+	toColumn: dimProjeto.id
 
 relationship 0231de53-92e6-1661-a80f-a0f73e18cf69
 	crossFilteringBehavior: bothDirections
 	fromCardinality: one
-	fromColumn: Lojas.LOJA_NUMERO
-	toColumn: Projetos.'loja.numero'
+	fromColumn: dimLoja.LOJA_NUMERO
+	toColumn: dimProjeto.'loja.numero'
 
 relationship 2b7d20cd-2d75-42d4-bed2-88921354ec90
 	joinOnDateBehavior: datePartOnly
-	fromColumn: 'dCalendario SULTS'.Date
+	fromColumn: 'dimCalendario SULTS'.Date
 	toColumn: LocalDateTable_206007f7-ae84-4577-a7ac-d66e9b9a7e28.Date
 
 relationship 3c35b3e1-285e-11f3-728d-f7baeac61320
-	fromColumn: Tarefa.Date
-	toColumn: 'dCalendario SULTS'.Date
+	fromColumn: fatTarefa.Date
+	toColumn: 'dimCalendario SULTS'.Date
 
 relationship 3f2ba614-6bcb-40df-9e43-73b64c2c2dda
 	joinOnDateBehavior: datePartOnly
-	fromColumn: 'dCalendario SULTS'.'Início da semana'
+	fromColumn: 'dimCalendario SULTS'.'Início da semana'
 	toColumn: LocalDateTable_043ba5ef-d2bb-4574-9f7e-69dbdd82ebbb.Date
 
 relationship 421cc4d9-b658-433d-b251-602bbd0c965e
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Atendimentos.data_insercao
+	fromColumn: fatAtendimentos.data_insercao
 	toColumn: LocalDateTable_5fef58be-12ea-46da-a360-f0e63f93e0c4.Date
 
 relationship 28701244-7e93-48f2-ae96-b9672be1ad21
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Atendimentos.data_atualizacao
+	fromColumn: fatAtendimentos.data_atualizacao
 	toColumn: LocalDateTable_05ad3b83-2ec6-4d53-bd92-4321457f6305.Date
 
 relationship e9674c75-4435-ede5-2429-5493c47ddc2a
-	fromColumn: Atendimentos.data
-	toColumn: 'dCalendario SULTS'.Date
+	fromColumn: fatAtendimentos.data
+	toColumn: 'dimCalendario SULTS'.Date
 
 relationship 3168bdbb-540e-4247-83f1-29211a3f49fe
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Atualização.'Última Atualização'
+	fromColumn: Atualizacao.'Última Atualização'
 	toColumn: LocalDateTable_88a8d2c4-0559-4718-88fd-1348b80b9a2b.Date
 
 relationship AutoDetected_573848b7-20fb-48e1-9950-5491fefc0caa
 	crossFilteringBehavior: bothDirections
-	fromColumn: Lojas.ID_City
-	toColumn: Cidades.ID_City
+	fromColumn: dimLoja.ID_City
+	toColumn: dimCidades.ID_City
 

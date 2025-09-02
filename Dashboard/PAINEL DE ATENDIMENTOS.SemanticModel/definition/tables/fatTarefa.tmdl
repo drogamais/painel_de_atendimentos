@@ -1,8 +1,8 @@
-table Tarefa
+table fatTarefa
 	lineageTag: 26f7cce8-7bbd-4fb9-bc58-9d31c36f45cf
 
 	measure TesteConclusao = ```
-			ISEMPTY('Tarefa')
+			ISEMPTY('fatTarefa')
 			
 			```
 		formatString: """TRUE"";""TRUE"";""FALSE"""
@@ -81,7 +81,7 @@ table Tarefa
 
 		annotation SummarizationSetBy = Automatic
 
-	column Date = DATE(YEAR('Tarefa'[dtConclusao]), MONTH('Tarefa'[dtConclusao]), DAY('Tarefa'[dtConclusao]))
+	column Date = DATE(YEAR('fatTarefa'[dtConclusao]), MONTH('fatTarefa'[dtConclusao]), DAY('fatTarefa'[dtConclusao]))
 		formatString: Short Date
 		lineageTag: 50155c85-04cd-4644-9342-9d24426490ae
 		summarizeBy: none
@@ -91,18 +91,18 @@ table Tarefa
 	column status = ```
 			SWITCH(
 			    TRUE(),
-			    Tarefa[fase_nome] = "OUTROS", "CONCLUÍDO",
-			    Tarefa[nome] = "TENTATIVA", "TENTATIVA",
-			    Tarefa[fase_nome] = "BÚSSOLA" && 
-			        Tarefa[nome] <> "CADUCIDADE" && 
-			        Tarefa[Dias desde a última] > 90, "REALIZAR SERVIÇO",
-			    Tarefa[fase_nome] = "RAIO-X" && 
-			        Tarefa[nome] <> "CADUCIDADE" && 
-			        Tarefa[Dias desde a última] > 30, "REALIZAR SERVIÇO",
-			    Tarefa[fase_nome] = "PEC" && 
-			        Tarefa[nome] <> "CADUCIDADE" && 
-			        Tarefa[Dias desde a última] > 90, "REALIZAR SERVIÇO",
-			    Tarefa[nome] = "CADUCIDADE", "CADUCIDADE",
+			    fatTarefa[fase_nome] = "OUTROS", "CONCLUÍDO",
+			    fatTarefa[nome] = "TENTATIVA", "TENTATIVA",
+			    fatTarefa[fase_nome] = "BÚSSOLA" && 
+			        fatTarefa[nome] <> "CADUCIDADE" && 
+			        fatTarefa[Dias desde a última] > 90, "REALIZAR SERVIÇO",
+			    fatTarefa[fase_nome] = "RAIO-X" && 
+			        fatTarefa[nome] <> "CADUCIDADE" && 
+			        fatTarefa[Dias desde a última] > 30, "REALIZAR SERVIÇO",
+			    fatTarefa[fase_nome] = "PEC" && 
+			        fatTarefa[nome] <> "CADUCIDADE" && 
+			        fatTarefa[Dias desde a última] > 90, "REALIZAR SERVIÇO",
+			    fatTarefa[nome] = "CADUCIDADE", "CADUCIDADE",
 			    "EM DIA"
 			)
 			
@@ -157,29 +157,29 @@ table Tarefa
 
 	column 'Dias desde a última' = ```
 			
-			VAR LOJA = Tarefa[projeto_id]
-			VAR SERVICO = Tarefa[fase_nome]
-			VAR TAREFAS= Tarefa[nome]
+			VAR LOJA = fatTarefa[projeto_id]
+			VAR SERVICO = fatTarefa[fase_nome]
+			VAR TAREFAS= fatTarefa[nome]
 			
 			VAR DATA_TAREFA =
 			    CALCULATE(
-			        MAX(Tarefa[dtConclusao]),
+			        MAX(fatTarefa[dtConclusao]),
 			        FILTER(
-			            ALL(Tarefa),
-			            Tarefa[projeto_id] = LOJA &&
-			            Tarefa[fase_nome] = SERVICO &&
-			            Tarefa[nome] = TAREFAS
+			            ALL(fatTarefa),
+			            fatTarefa[projeto_id] = LOJA &&
+			            fatTarefa[fase_nome] = SERVICO &&
+			            fatTarefa[nome] = TAREFAS
 			        )
 			    )
 			
 			VAR DATA_TENTATIVA =
 			    CALCULATE(
-			        MAX(Tarefa[dtConclusao]),
+			        MAX(fatTarefa[dtConclusao]),
 			        FILTER(
-			            ALL(Tarefa),
-			            Tarefa[projeto_Id] = LOJA &&
-			            Tarefa[fase_nome] = SERVICO &&
-			            Tarefa[nome] = "TENTATIVA"
+			            ALL(fatTarefa),
+			            fatTarefa[projeto_Id] = LOJA &&
+			            fatTarefa[fase_nome] = SERVICO &&
+			            fatTarefa[nome] = "TENTATIVA"
 			        )
 			    )
 			
@@ -190,8 +190,8 @@ table Tarefa
 			RETURN
 			    SWITCH(
 			        TRUE(),
-			        Tarefa[Entrou em Caducidade] = "SIM", 0,
-			        Tarefa[possui_tentativas] = "SIM" && Tarefa[nome] <> "TENTATIVA", DIAS_DA_TENTATIVA + 15,
+			        fatTarefa[Entrou em Caducidade] = "SIM", 0,
+			        fatTarefa[possui_tentativas] = "SIM" && fatTarefa[nome] <> "TENTATIVA", DIAS_DA_TENTATIVA + 15,
 			        DIAS
 			    )
 			
@@ -204,24 +204,24 @@ table Tarefa
 
 	column 'Entrou em Caducidade' = ```
 			
-			VAR FaseAtual = Tarefa[fase_nome]
-			VAR LojaAtual = Tarefa[LOJA]
+			VAR FaseAtual = fatTarefa[fase_nome]
+			VAR LojaAtual = fatTarefa[LOJA]
 			
 			VAR ExisteCaducidade = 
 			    CALCULATE(
-			        COUNTROWS(Tarefa),
-			        ALLEXCEPT(Tarefa, Tarefa[LOJA], Tarefa[fase_nome]),
-			        Tarefa[nome] = "CADUCIDADE"
+			        COUNTROWS(fatTarefa),
+			        ALLEXCEPT(fatTarefa, fatTarefa[LOJA], fatTarefa[fase_nome]),
+			        fatTarefa[nome] = "CADUCIDADE"
 			    )
 			
-			RETURN IF(ExisteCaducidade > 0 && Tarefa[fase_nome] = FaseAtual && Tarefa[LOJA] = LojaAtual, "SIM", "NÃO")
+			RETURN IF(ExisteCaducidade > 0 && fatTarefa[fase_nome] = FaseAtual && fatTarefa[LOJA] = LojaAtual, "SIM", "NÃO")
 			```
 		lineageTag: f07988cc-855b-48b4-9aad-6b55f1da6cf1
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 
-	column LOJA = LOOKUPVALUE(Projetos[nome], Projetos[id], Tarefa[projeto_id])
+	column LOJA = LOOKUPVALUE(dimProjeto[nome], dimProjeto[id], fatTarefa[projeto_id])
 		lineageTag: a47d1826-8123-468c-a077-090a0973796c
 		summarizeBy: none
 
@@ -230,16 +230,16 @@ table Tarefa
 	column possui_tentativas =
 			
 			
-			VAR LOJA = Tarefa[LOJA]
-			VAR FASE = Tarefa[fase_nome]
+			VAR LOJA = fatTarefa[LOJA]
+			VAR FASE = fatTarefa[fase_nome]
 			
 			VAR qtd_tentativas = CALCULATE(
-			                        COUNT(Tarefa[id]),
+			                        COUNT(fatTarefa[id]),
 			                        FILTER(
-			                            ALL(Tarefa),
-			                            Tarefa[LOJA] = LOJA &&
-			                            Tarefa[fase_nome] = FASE &&
-			                            Tarefa[nome] = "TENTATIVA"
+			                            ALL(fatTarefa),
+			                            fatTarefa[LOJA] = LOJA &&
+			                            fatTarefa[fase_nome] = FASE &&
+			                            fatTarefa[nome] = "TENTATIVA"
 			                        )
 			                    )
 			RETURN IF(qtd_tentativas>0, "SIM", "NAO")
@@ -248,7 +248,7 @@ table Tarefa
 
 		annotation SummarizationSetBy = Automatic
 
-	column Fantasia = Tarefa[Loja_Numero] & " - "& LOOKUPVALUE(Lojas[FANTASIA], Lojas[LOJA_NUMERO], Tarefa[Loja_Numero])
+	column Fantasia = fatTarefa[Loja_Numero] & " - "& LOOKUPVALUE(dimLoja[FANTASIA], dimLoja[LOJA_NUMERO], fatTarefa[Loja_Numero])
 		lineageTag: 4353d872-ddbd-4859-92f9-b46a496e02ee
 		summarizeBy: none
 		sortByColumn: Loja_Numero
@@ -258,7 +258,7 @@ table Tarefa
 		annotation SummarizationSetBy = Automatic
 
 	column Loja_Numero = ```
-			INT(SUBSTITUTE(Tarefa[LOJA], "LOJA ", "")) 
+			INT(SUBSTITUTE(fatTarefa[LOJA], "LOJA ", "")) 
 			```
 		formatString: 0
 		lineageTag: 64453c56-a9f8-42b2-a175-fbaa6b496eed
@@ -275,9 +275,9 @@ table Tarefa
 		annotation SummarizationSetBy = Automatic
 
 	column Mês/Ano =
-			Tarefa[dtConclusao].[Mês] &
+			fatTarefa[dtConclusao].[Mês] &
 			          "/" &
-			          Tarefa[dtConclusao].[Ano]
+			          fatTarefa[dtConclusao].[Ano]
 		lineageTag: f6244810-e620-452a-95f1-02ae85a7589f
 		summarizeBy: none
 
@@ -286,8 +286,8 @@ table Tarefa
 	column 'Primeiro Nome' =
 			
 			
-			VAR Espaco = SEARCH(" ", Tarefa[responsavel_nome], 1,0)
-			RETURN LEFT(Tarefa[responsavel_nome], Espaco-1)
+			VAR Espaco = SEARCH(" ", fatTarefa[responsavel_nome], 1,0)
+			RETURN LEFT(fatTarefa[responsavel_nome], Espaco-1)
 		lineageTag: 10d413c0-bef1-4d3c-8a36-22b4ccae8cb1
 		summarizeBy: none
 
@@ -298,12 +298,12 @@ table Tarefa
 			
 			SWITCH(
 			    TRUE(),
-			    Tarefa[Primeiro Nome] = "Luiz", "Auditor",
-			    Tarefa[Primeiro Nome] = "Fabio", "Auditor",
-			    Tarefa[Primeiro Nome] = "Gabriel", "Auditor",
-			    Tarefa[Primeiro Nome] = "Diego", "Auditor",
-			    Tarefa[Primeiro Nome] = "Natália", "Focal",
-			    Tarefa[Primeiro Nome] = "Livia", "Focal",
+			    fatTarefa[Primeiro Nome] = "Luiz", "Auditor",
+			    fatTarefa[Primeiro Nome] = "Fabio", "Auditor",
+			    fatTarefa[Primeiro Nome] = "Gabriel", "Auditor",
+			    fatTarefa[Primeiro Nome] = "Diego", "Auditor",
+			    fatTarefa[Primeiro Nome] = "Natália", "Focal",
+			    fatTarefa[Primeiro Nome] = "Livia", "Focal",
 			    "Nenhum"
 			)
 		lineageTag: 9cd82fc9-f155-4c7d-a2c8-d532f4f50556
@@ -311,7 +311,7 @@ table Tarefa
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Tarefa = m
+	partition fatTarefa = m
 		mode: import
 		source =
 				let
@@ -319,6 +319,8 @@ table Tarefa
 				    #"Valor Substituído" = Table.ReplaceValue(Fonte,"BÚSSOLA - ANÁLISE DE MERCADO","BÚSSOLA",Replacer.ReplaceText,{"fase_nome"})
 				in
 				    #"Valor Substituído"
+
+	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navegação
 

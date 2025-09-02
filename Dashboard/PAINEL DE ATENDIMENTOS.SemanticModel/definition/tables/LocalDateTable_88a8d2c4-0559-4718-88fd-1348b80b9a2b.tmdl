@@ -105,7 +105,7 @@ table LocalDateTable_88a8d2c4-0559-4718-88fd-1348b80b9a2b
 
 	partition LocalDateTable_88a8d2c4-0559-4718-88fd-1348b80b9a2b = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('Atualização'[Última Atualização])), 1, 1), Date(Year(MAX('Atualização'[Última Atualização])), 12, 31))
+		source = Calendar(Date(Year(MIN('Atualizacao'[Última Atualização])), 1, 1), Date(Year(MAX('Atualizacao'[Última Atualização])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 

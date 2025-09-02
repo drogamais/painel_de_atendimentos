@@ -105,7 +105,7 @@ table LocalDateTable_37a7106b-ebca-4614-ae02-20fa8df523a9
 
 	partition LocalDateTable_37a7106b-ebca-4614-ae02-20fa8df523a9 = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('Projetos'[dtInicio])), 1, 1), Date(Year(MAX('Projetos'[dtInicio])), 12, 31))
+		source = Calendar(Date(Year(MIN('dimProjeto'[dtInicio])), 1, 1), Date(Year(MAX('dimProjeto'[dtInicio])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 

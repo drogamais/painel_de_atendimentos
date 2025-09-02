@@ -1,4 +1,4 @@
-table Lojas
+table dimLoja
 	lineageTag: fc902e95-c0e7-4661-ba0a-5408db02c89b
 
 	column ID_LOJA
@@ -422,7 +422,7 @@ table Lojas
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column LOJA = Lojas[LOJA_NUMERO] &" - "& Lojas[FANTASIA]
+	column LOJA = dimLoja[LOJA_NUMERO] &" - "& dimLoja[FANTASIA]
 		lineageTag: cc3f6aab-a122-4575-8ba0-377f28232bdd
 		summarizeBy: none
 		sortByColumn: LOJA_NUMERO
@@ -434,7 +434,7 @@ table Lojas
 	column FILIAL =
 			
 			
-			VAR AntDig = RIGHT(Lojas[CNPJ_S],3)
+			VAR AntDig = RIGHT(dimLoja[CNPJ_S],3)
 			VAR Digito = INT(LEFT(AntDig,1))
 			
 			RETURN IF(Digito <> 1, "S", "N")
@@ -445,7 +445,7 @@ table Lojas
 
 	column Maturidade = ```
 			
-			VAR DataInauguracao = Lojas[DATA_INAUGURACAO]
+			VAR DataInauguracao = dimLoja[DATA_INAUGURACAO]
 			VAR DataAtual = TODAY()
 			VAR QtdMeses = 
 			    IF(
@@ -472,7 +472,7 @@ table Lojas
 
 		annotation SummarizationSetBy = Automatic
 
-	column CIDADE = LOOKUPVALUE(Cidades[Name],Cidades[ID_City], Lojas[ID_City])
+	column CIDADE = LOOKUPVALUE(dimCidades[Name],dimCidades[ID_City], dimLoja[ID_City])
 		lineageTag: 3c90303d-651d-4edb-95b3-0d2046e284b4
 		summarizeBy: none
 
@@ -495,7 +495,7 @@ table Lojas
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Lojas = m
+	partition dimLoja = m
 		mode: import
 		source =
 				let
@@ -512,6 +512,8 @@ table Lojas
 				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado1", each ([FANTASIA] <> "Drogamais") and ([LOJA_NUMERO] <> 10016 and [LOJA_NUMERO] <> 10046 and [LOJA_NUMERO] <> 10052 and [LOJA_NUMERO] <> 10065 and [LOJA_NUMERO] <> 10111 and [LOJA_NUMERO] <> 10125 and [LOJA_NUMERO] <> 20046) and ([ATIVO] = true))
 				in
 				    #"Linhas Filtradas"
+
+	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navegação
 

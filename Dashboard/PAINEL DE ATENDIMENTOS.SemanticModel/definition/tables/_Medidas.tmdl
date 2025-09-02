@@ -1,26 +1,26 @@
-table Medidas
+table _Medidas
 	lineageTag: 4e7aa8a2-de6b-454d-9dba-65b44934c06d
 
-	measure 'Total de Lojas Ativas' = CALCULATE(DISTINCTCOUNT(Lojas[LOJA]), Lojas[ATIVO])
+	measure 'Total de Lojas Ativas' = CALCULATE(DISTINCTCOUNT(dimLoja[LOJA]), dimLoja[ATIVO])
 		formatString: 0
 		displayFolder: Geral
 		lineageTag: bb575c41-2a1b-47a5-952d-376ccfacd87f
 
-	measure 'Data do último serviço' = COALESCE(CALCULATE(MAX('Tarefa'[dtConclusao]), 'Tarefa'[Date]<>BLANK()),"-")
+	measure 'Data do último serviço' = COALESCE(CALCULATE(MAX('fatTarefa'[dtConclusao]), 'fatTarefa'[Date]<>BLANK()),"-")
 		formatString: Short Date
 		displayFolder: Serviços
 		lineageTag: 625a96cd-3252-459b-825f-826c7d33da45
 
 		annotation PBI_FormatHint = {"isCustom":true}
 
-	measure 'Último Serviço' = COALESCE(CALCULATE(MAX('Tarefa'[fase_nome]), FILTER('Tarefa', 'Tarefa'[dtConclusao] = [Data do último serviço])),"-")
+	measure 'Último Serviço' = COALESCE(CALCULATE(MAX('fatTarefa'[fase_nome]), FILTER('fatTarefa', 'fatTarefa'[dtConclusao] = [Data do último serviço])),"-")
 		displayFolder: Serviços
 		lineageTag: bad3107a-246d-4ee6-a263-b46f6743582d
 
 	measure 'Qtd. Atendimentos TXT' =
 			
 			
-			VAR Qtd_Tarefas = CALCULATE(COUNT('Tarefa'[id]), 'Tarefa'[dtConclusao] <> BLANK())
+			VAR Qtd_Tarefas = CALCULATE(COUNT('fatTarefa'[id]), 'fatTarefa'[dtConclusao] <> BLANK())
 			
 			RETURN IF(ISBLANK(Qtd_Tarefas), "-", Qtd_Tarefas)
 		formatString: 0
@@ -30,13 +30,13 @@ table Medidas
 	measure Associado =
 			
 			
-			VAR NLojas = COUNT(Lojas[LOJA])
+			VAR NLojas = COUNT(dimLoja[LOJA])
 			
-			RETURN IF(NLojas>1, "-", MIN(Lojas[RESPONSAVEL]))
+			RETURN IF(NLojas>1, "-", MIN(dimLoja[RESPONSAVEL]))
 		displayFolder: Sobre a Loja
 		lineageTag: 34bd90d2-0013-4c11-a5f4-5ed5197ae3d2
 
-	measure 'Qtd. Cidades' = DISTINCTCOUNT(Cidades[Name])
+	measure 'Qtd. Cidades' = DISTINCTCOUNT(dimCidades[Name])
 		formatString: 0
 		displayFolder: Geral
 		lineageTag: 930dbc8c-fc1b-47bc-87a8-8da748b71d33
@@ -44,11 +44,11 @@ table Medidas
 	measure 'Lojas Ativas' = ```
 			
 			CALCULATE (
-			    COUNTROWS (Lojas),
+			    COUNTROWS (dimLoja),
 			    FILTER (
-			        Lojas,
-			        Lojas[DATA_ASSOCIACAO] <= MAX('dCalendario SULTS'[Date]) &&
-			        (ISBLANK(Lojas[DATA_DESASSOCIACAO]) || Lojas[DATA_DESASSOCIACAO] >= MIN('dCalendario SULTS'[Date]))
+			        dimLoja,
+			        dimLoja[DATA_ASSOCIACAO] <= MAX('dimCalendario SULTS'[Date]) &&
+			        (ISBLANK(dimLoja[DATA_DESASSOCIACAO]) || dimLoja[DATA_DESASSOCIACAO] >= MIN('dimCalendario SULTS'[Date]))
 			    )
 			)
 			
@@ -60,13 +60,13 @@ table Medidas
 	measure 'Realizam algum serviço' =
 			
 			
-			VAR QtdTarefas = COUNT(Tarefa[id])
+			VAR QtdTarefas = COUNT(fatTarefa[id])
 			
 			RETURN COALESCE(
 			    CALCULATE(
-			        DISTINCTCOUNT(Tarefa[projeto_id]),
+			        DISTINCTCOUNT(fatTarefa[projeto_id]),
 			        FILTER(
-			            Tarefa,
+			            fatTarefa,
 			            QtdTarefas>=1
 			        )
 			    ),"-")
@@ -74,7 +74,7 @@ table Medidas
 		displayFolder: Geral
 		lineageTag: afceda12-6258-4f22-bb35-6a7d494421ad
 
-	measure 'Qtd Filiais' = CALCULATE(COUNT(Lojas[FILIAL]), Lojas[FILIAL] = "S")
+	measure 'Qtd Filiais' = CALCULATE(COUNT(dimLoja[FILIAL]), dimLoja[FILIAL] = "S")
 		formatString: 0
 		displayFolder: Geral
 		lineageTag: fda23c57-19be-422c-acd7-f4c8a6efe665
@@ -83,9 +83,9 @@ table Medidas
 			
 			        COALESCE(
 			            CALCULATE(
-			                DISTINCTCOUNT(Tarefa[id]), 
-			                Tarefa[nome] <> "CADUCIDADE", 
-			                Tarefa[nome] <> "TENTATIVA"),
+			                DISTINCTCOUNT(fatTarefa[id]), 
+			                fatTarefa[nome] <> "CADUCIDADE", 
+			                fatTarefa[nome] <> "TENTATIVA"),
 			            0
 			        )
 			```
@@ -93,7 +93,7 @@ table Medidas
 		displayFolder: Serviços
 		lineageTag: 97f5de5f-1a8f-4988-b5ca-2aa5f299a0e7
 
-	measure 'Qtd. Lojas' = DISTINCTCOUNT(Tarefa[LOJA])
+	measure 'Qtd. Lojas' = DISTINCTCOUNT(fatTarefa[LOJA])
 		formatString: 0
 		displayFolder: Serviços
 		lineageTag: a1bedb0e-ca5a-4886-9e83-50d1e6dd2959
@@ -116,8 +116,8 @@ table Medidas
 	measure 'Atendido BALCONISTA' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[fase_nome] = "BALCONISTA"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[fase_nome] = "BALCONISTA"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -127,8 +127,8 @@ table Medidas
 	measure 'Atendido BÚSSOLA' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[fase_nome] = "BÚSSOLA"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[fase_nome] = "BÚSSOLA"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -138,8 +138,8 @@ table Medidas
 	measure 'Atendido COMPRAS' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[fase_nome] = "COMPRAS"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[fase_nome] = "COMPRAS"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -149,8 +149,8 @@ table Medidas
 	measure 'Atendido FIDELIZA+' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[fase_nome] = "FIDELIZA+"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[fase_nome] = "FIDELIZA+"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -160,8 +160,8 @@ table Medidas
 	measure 'Atendido PAI' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[fase_nome] = "PAI"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[fase_nome] = "PAI"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -171,8 +171,8 @@ table Medidas
 	measure 'Atendido PBM' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[fase_nome] = "PBM"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[fase_nome] = "PBM"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -182,8 +182,8 @@ table Medidas
 	measure 'Atendido PEC' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[fase_nome] = "PEC"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[fase_nome] = "PEC"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -193,8 +193,8 @@ table Medidas
 	measure 'Atendido RAIO-X' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[fase_nome] = "RAIO-X"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[fase_nome] = "RAIO-X"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -204,8 +204,8 @@ table Medidas
 	measure 'Atendido TRADE' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[fase_nome] = "TRADE"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[fase_nome] = "TRADE"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -215,8 +215,8 @@ table Medidas
 	measure 'Atendido Comp. Preço' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[nome] = "COMPARADOR DE PREÇOS"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[nome] = "COMPARADOR DE PREÇOS"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -226,8 +226,8 @@ table Medidas
 	measure 'Atendido E-Delivery' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[nome] = "E-DELIVERY"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[nome] = "E-DELIVERY"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -237,8 +237,8 @@ table Medidas
 	measure 'Atendido GC' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[nome] = "GC"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[nome] = "GC"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -248,8 +248,8 @@ table Medidas
 	measure 'Atendido Minha Saúde' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[nome] = "MINHA SAÚDE"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[nome] = "MINHA SAÚDE"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -259,8 +259,8 @@ table Medidas
 	measure 'Atendido Orion' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[nome] = "ORION"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[nome] = "ORION"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -270,8 +270,8 @@ table Medidas
 	measure 'Atendido Scantech' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[nome] = "SCANTECH"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[nome] = "SCANTECH"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -281,36 +281,36 @@ table Medidas
 	measure 'Razão Social' =
 			
 			
-			VAR Loja = DISTINCTCOUNT(Lojas[LOJA])
+			VAR Loja = DISTINCTCOUNT(dimLoja[LOJA])
 			
-			RETURN IF(Loja>1, "-", SELECTEDVALUE(Lojas[RAZAOSOCIAL]))
+			RETURN IF(Loja>1, "-", SELECTEDVALUE(dimLoja[RAZAOSOCIAL]))
 		displayFolder: Sobre a Loja
 		lineageTag: eeba55d6-0e08-4298-ba44-6ad65581e40f
 
 	measure 'Nome Fantasia' =
 			
 			
-			VAR Loja = DISTINCTCOUNT(Lojas[LOJA])
+			VAR Loja = DISTINCTCOUNT(dimLoja[LOJA])
 			
-			RETURN IF(Loja>1, "-", SELECTEDVALUE(Lojas[FANTASIA]))
+			RETURN IF(Loja>1, "-", SELECTEDVALUE(dimLoja[FANTASIA]))
 		displayFolder: Sobre a Loja
 		lineageTag: 93893650-76d4-448c-bfd7-5093746354c4
 
 	measure Telefone =
 			
 			
-			VAR Loja = DISTINCTCOUNT(Lojas[LOJA])
+			VAR Loja = DISTINCTCOUNT(dimLoja[LOJA])
 			
-			RETURN IF(Loja>1, "-", SELECTEDVALUE(Lojas[TELEFONE_MOVEL]))
+			RETURN IF(Loja>1, "-", SELECTEDVALUE(dimLoja[TELEFONE_MOVEL]))
 		displayFolder: Sobre a Loja
 		lineageTag: fcef4bf6-4fb0-4cbb-a0f5-986b866680b0
 
 	measure 'D+ Desde' =
 			
 			
-			VAR Loja = DISTINCTCOUNT(Lojas[LOJA])
+			VAR Loja = DISTINCTCOUNT(dimLoja[LOJA])
 			
-			RETURN IF(Loja>1, "-", SELECTEDVALUE(Lojas[DATA_ASSOCIACAO]))
+			RETURN IF(Loja>1, "-", SELECTEDVALUE(dimLoja[DATA_ASSOCIACAO]))
 		formatString: Short Date
 		displayFolder: Sobre a Loja
 		lineageTag: 2e484263-5b21-4ead-b9e5-a1ce87f097da
@@ -320,26 +320,26 @@ table Medidas
 	measure Cidade =
 			
 			
-			VAR Loja = DISTINCTCOUNT(Lojas[LOJA])
+			VAR Loja = DISTINCTCOUNT(dimLoja[LOJA])
 			
-			RETURN IF(Loja>1, "-", SELECTEDVALUE(Cidades[Name]))
+			RETURN IF(Loja>1, "-", SELECTEDVALUE(dimCidades[Name]))
 		displayFolder: Sobre a Loja
 		lineageTag: b85ef8f0-ca59-441c-918a-aa3c3a30ba96
 
 	measure Clusters = ```
 			
 			
-			VAR Lojas = DISTINCTCOUNT(Lojas[LOJA_NUMERO])
+			VAR Lojas = DISTINCTCOUNT(dimLoja[LOJA_NUMERO])
 			
 			RETURN
 			    IF(Lojas = 1,
 			        SWITCH(
 			            True,
-			            MAX(Lojas[CLUSTER]) = 1, "https://i.ibb.co/j9Yx0C83/numero-1.png", 
-			            MAX(Lojas[CLUSTER]) = 2, "https://i.ibb.co/jkZ3nZvw/numero-2.png",
-			            MAX(Lojas[CLUSTER]) = 3, "https://i.ibb.co/8DJgCR38/numero-3.png",
-			            MAX(Lojas[CLUSTER]) = 4, "https://i.ibb.co/FbPvtHKc/numero-4.png",
-			            MAX(Lojas[CLUSTER]) = 5, "https://i.ibb.co/27c4pf85/numero-5.png",
+			            MAX(dimLoja[CLUSTER]) = 1, "https://i.ibb.co/j9Yx0C83/numero-1.png", 
+			            MAX(dimLoja[CLUSTER]) = 2, "https://i.ibb.co/jkZ3nZvw/numero-2.png",
+			            MAX(dimLoja[CLUSTER]) = 3, "https://i.ibb.co/8DJgCR38/numero-3.png",
+			            MAX(dimLoja[CLUSTER]) = 4, "https://i.ibb.co/FbPvtHKc/numero-4.png",
+			            MAX(dimLoja[CLUSTER]) = 5, "https://i.ibb.co/27c4pf85/numero-5.png",
 			            "https://i.ibb.co/chcFX5qF/zero.png"        
 			        ),
 			    "https://i.ibb.co/chcFX5qF/zero.png")
@@ -351,8 +351,8 @@ table Medidas
 	measure 'Atendido CESTAO' =
 			
 			
-			VAR X = COALESCE(CALCULATE(COUNT(Tarefa[id]), Tarefa[fase_nome] = "CESTÃO"),0)
-			VAR Loja = DISTINCTCOUNT(Tarefa[LOJA])
+			VAR X = COALESCE(CALCULATE(COUNT(fatTarefa[id]), fatTarefa[fase_nome] = "CESTÃO"),0)
+			VAR Loja = DISTINCTCOUNT(fatTarefa[LOJA])
 			
 			RETURN  IF(Loja>1, "https://i.ibb.co/wF985sZ7/excluir.png",
 			            IF(X>0, "https://i.ibb.co/8DTr3BKj/verificar.png", "https://i.ibb.co/k6SzvzBQ/botao-x.png"))
@@ -362,10 +362,10 @@ table Medidas
 	measure 'Qtd. Serviços recorrentes exitentes' = ```
 			
 			    CALCULATE(
-			        DISTINCTCOUNT(Tarefa[fase_nome]),
+			        DISTINCTCOUNT(fatTarefa[fase_nome]),
 			        FILTER(
-			            ALL(Tarefa),
-			            Tarefa[fase_nome] <> "NOVO LAYOUT"
+			            ALL(fatTarefa),
+			            fatTarefa[fase_nome] <> "NOVO LAYOUT"
 			    )
 			    )
 			```
@@ -376,16 +376,16 @@ table Medidas
 	measure 'Qtd. serviços recorrentes realizados' = ```
 			
 			
-			VAR Loja = SELECTEDVALUE(Tarefa[Loja_Numero])
+			VAR Loja = SELECTEDVALUE(fatTarefa[Loja_Numero])
 			
 			RETURN    
 			    COALESCE(
 			        CALCULATE(
-			            DISTINCTCOUNT(Tarefa[fase_nome]),
+			            DISTINCTCOUNT(fatTarefa[fase_nome]),
 			            FILTER(
-			                ALL(Tarefa),
-			                Tarefa[Loja_Numero] = Loja &&
-			                Tarefa[fase_nome] <> "NOVO LAYOUT"
+			                ALL(fatTarefa),
+			                fatTarefa[Loja_Numero] = Loja &&
+			                fatTarefa[fase_nome] <> "NOVO LAYOUT"
 			            )
 			        ),
 			    0)
@@ -395,12 +395,12 @@ table Medidas
 		displayFolder: Serviços
 		lineageTag: 608f6df3-4a74-4e70-b170-f13593491467
 
-	measure 'Total de Lojas Inauguradas' = CALCULATE(DISTINCTCOUNT(Lojas[LOJA]), Lojas[INAUGURADA])
+	measure 'Total de Lojas Inauguradas' = CALCULATE(DISTINCTCOUNT(dimLoja[LOJA]), dimLoja[INAUGURADA])
 		formatString: 0
 		displayFolder: Geral
 		lineageTag: 9e72661f-e18a-4b16-aece-69661b26c581
 
-	measure 'Qtd. Totas Tarefas' = DISTINCTCOUNT(Tarefa[id])
+	measure 'Qtd. Totas Tarefas' = DISTINCTCOUNT(fatTarefa[id])
 		formatString: 0
 		displayFolder: Serviços
 		lineageTag: a42a9f0b-b297-4201-bee5-a139c2d3c69f
@@ -409,8 +409,8 @@ table Medidas
 			
 			COALESCE(
 			    CALCULATE(
-			        DISTINCTCOUNT(Tarefa[id]),
-			        Tarefa[nome] IN { "CADUCIDADE", "TENTATIVA" }
+			        DISTINCTCOUNT(fatTarefa[id]),
+			        fatTarefa[nome] IN { "CADUCIDADE", "TENTATIVA" }
 			    ),
 			    0
 			)
@@ -420,12 +420,12 @@ table Medidas
 		displayFolder: Serviços
 		lineageTag: 71e6fe07-c6e5-4954-8fc3-47e50152abd6
 
-	measure 'Qtd. Dias' = COALESCE(CALCULATE(DISTINCTCOUNT('dCalendario SULTS'[Date]), 'dCalendario SULTS'[Dia da semana] <> "dom", 'dCalendario SULTS'[Dia da semana] <> "sáb"),0)
+	measure 'Qtd. Dias' = COALESCE(CALCULATE(DISTINCTCOUNT('dimCalendario SULTS'[Date]), 'dimCalendario SULTS'[Dia da semana] <> "dom", 'dimCalendario SULTS'[Dia da semana] <> "sáb"),0)
 		formatString: 0
 		displayFolder: Serviços
 		lineageTag: f1afc8ee-4019-4489-b5a1-b97da19d390b
 
-	measure 'Qtd. Responsaveis' = COALESCE(DISTINCTCOUNT(Tarefa[responsavel_nome]),0)
+	measure 'Qtd. Responsaveis' = COALESCE(DISTINCTCOUNT(fatTarefa[responsavel_nome]),0)
 		formatString: 0
 		displayFolder: Serviços
 		lineageTag: 4d96fcc6-6103-46e9-90cd-12689680a8fa
@@ -435,27 +435,27 @@ table Medidas
 		displayFolder: Serviços
 		lineageTag: 30718a4c-8e6f-4411-b7a9-b6c16abf44a3
 
-	measure 'Qtd atendimentos' = DISTINCTCOUNT(Atendimentos[chave_id])
+	measure 'Qtd atendimentos' = DISTINCTCOUNT(fatAtendimentos[chave_id])
 		formatString: 0
 		displayFolder: Focal
 		lineageTag: 612e03af-11d9-4570-9107-54fa6dd90c45
 
-	measure 'Qtd responsável' = DISTINCTCOUNT(Atendimentos[responsavel])
+	measure 'Qtd responsável' = DISTINCTCOUNT(fatAtendimentos[responsavel])
 		formatString: 0
 		displayFolder: Focal
 		lineageTag: 4d519972-d296-4d62-a687-a7e64e01573f
 
-	measure 'Qtd lojas' = DISTINCTCOUNT(Atendimentos[loja])
+	measure 'Qtd lojas' = DISTINCTCOUNT(fatAtendimentos[loja])
 		formatString: 0
 		displayFolder: Focal
 		lineageTag: 9513f485-a9f4-4c89-9eb1-98d2cce16210
 
-	measure 'Qtd tarefas' = DISTINCTCOUNT(Atendimentos[tarefa])
+	measure 'Qtd tarefas' = DISTINCTCOUNT(fatAtendimentos[tarefa])
 		formatString: 0
 		displayFolder: Focal
 		lineageTag: 2032edb1-93f0-475b-a4e3-561f6e0ee326
 
-	measure 'Qtd dias' = COALESCE(CALCULATE(DISTINCTCOUNT('dCalendario SULTS'[Date]), 'dCalendario SULTS'[Dia da semana] <> "dom", 'dCalendario SULTS'[Dia da semana] <> "sáb"),0)
+	measure 'Qtd dias' = COALESCE(CALCULATE(DISTINCTCOUNT('dimCalendario SULTS'[Date]), 'dimCalendario SULTS'[Dia da semana] <> "dom", 'dimCalendario SULTS'[Dia da semana] <> "sáb"),0)
 		formatString: 0
 		displayFolder: Focal
 		lineageTag: ffc7d8f5-1870-403e-b4e4-090e5b3904f6
@@ -487,14 +487,14 @@ table Medidas
 	measure Auditor =
 			
 			
-			VAR NLojas = COUNT(Lojas[LOJA_NUMERO])
-			VAR Responsavel = SELECTEDVALUE(Projetos[responsavel_nome])
+			VAR NLojas = COUNT(dimLoja[LOJA_NUMERO])
+			VAR Responsavel = SELECTEDVALUE(dimProjeto[responsavel_nome])
 			RETURN IF(NLojas>1, "-", IF(ISBLANK(Responsavel), "Não Encontrado", Responsavel))
 		lineageTag: b9fab78d-daed-45bf-a2c6-fe0d18ea11e7
 
 	measure 'Assunto Cartão' = ```
 			
-			VAR AssuntoSelecionado = SELECTEDVALUE(Atendimentos[assunto])
+			VAR AssuntoSelecionado = SELECTEDVALUE(fatAtendimentos[assunto])
 			RETURN
 			IF(
 			    ISBLANK(AssuntoSelecionado), 
@@ -515,7 +515,7 @@ table Medidas
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Medidas = calculated
+	partition _Medidas = calculated
 		mode: import
 		source = Row("Column", BLANK())
 

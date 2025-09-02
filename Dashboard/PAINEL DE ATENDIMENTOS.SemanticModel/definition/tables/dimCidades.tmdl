@@ -1,4 +1,4 @@
-table Cidades
+table dimCidades
 	lineageTag: 536db529-f1bd-4026-b720-a5f9cf8b83c9
 
 	column ID_City
@@ -70,7 +70,7 @@ table Cidades
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Cidades = m
+	partition dimCidades = m
 		mode: import
 		source =
 				let
@@ -80,6 +80,8 @@ table Cidades
 				    #"Tipo Alterado" = Table.TransformColumnTypes(tb_city_Table,{{"CodeArea", Int64.Type}})
 				in
 				    #"Tipo Alterado"
+
+	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navegação
 

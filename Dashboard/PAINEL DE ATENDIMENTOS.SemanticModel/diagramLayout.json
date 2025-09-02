@@ -10,122 +10,6 @@
       "nodes": [
         {
           "location": {
-            "x": 890.16416684514707,
-            "y": 27776.492430878636
-          },
-          "nodeIndex": "Lojas",
-          "nodeLineageTag": "fc902e95-c0e7-4661-ba0a-5408db02c89b",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 8
-        },
-        {
-          "location": {
-            "x": 1980.3316568074683,
-            "y": 27528.242588070258
-          },
-          "nodeIndex": "Medidas",
-          "nodeLineageTag": "4e7aa8a2-de6b-454d-9dba-65b44934c06d",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 4
-        },
-        {
-          "location": {
-            "x": 1237.6651133617563,
-            "y": 27399.469202772285
-          },
-          "nodeIndex": "Projetos",
-          "nodeLineageTag": "097203db-32f9-489c-be7c-decdeaf71a3b",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 5
-        },
-        {
-          "location": {
-            "x": 1662.8632083189702,
-            "y": 27379.24058061176
-          },
-          "nodeIndex": "dCalendario SULTS",
-          "nodeLineageTag": "f555a508-d5cb-46bd-8665-3c79d2de1fe9",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 6
-        },
-        {
-          "location": {
-            "x": 1473.4654317073869,
-            "y": 27696.050798322583
-          },
-          "nodeIndex": "Tarefa",
-          "nodeLineageTag": "26f7cce8-7bbd-4fb9-bc58-9d31c36f45cf",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 7
-        },
-        {
-          "location": {
-            "x": 1473.5966874444998,
-            "y": 26969.415969313566
-          },
-          "nodeIndex": "Atendimentos",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 3
-        },
-        {
-          "location": {
-            "x": 423.49495972496743,
-            "y": 27112.535073232575
-          },
-          "nodeIndex": "Navegação",
-          "nodeLineageTag": "431472ee-8295-4967-b379-5fe57725b881",
-          "size": {
-            "height": 128,
-            "width": 234
-          },
-          "zIndex": 9
-        },
-        {
-          "location": {
-            "x": 909.88555659059045,
-            "y": 27118.180921505569
-          },
-          "nodeIndex": "Atualização",
-          "nodeLineageTag": "f4484955-0c68-40a5-82c2-82dfe7e4b596",
-          "size": {
-            "height": 104,
-            "width": 234
-          },
-          "zIndex": 2
-        },
-        {
-          "location": {
-            "x": 338.74508299838192,
-            "y": 27585.047398119386
-          },
-          "nodeIndex": "Cidades",
-          "nodeLineageTag": "536db529-f1bd-4026-b720-a5f9cf8b83c9",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 1
-        },
-        {
-          "location": {
             "x": 1055.9791430493362,
             "y": 26859.647659075614
           },
@@ -171,6 +55,114 @@
           "nodeIndex": "parLojaTarefa",
           "size": {
             "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1473.5966874444998,
+            "y": 26969.415969313566
+          },
+          "nodeIndex": "fatAtendimentos",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1473.4654317073869,
+            "y": 27696.050798322583
+          },
+          "nodeIndex": "fatTarefa",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 338.74508299838192,
+            "y": 27585.047398119386
+          },
+          "nodeIndex": "dimCidades",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1662.8632083189702,
+            "y": 27379.24058061176
+          },
+          "nodeIndex": "dimCalendario SULTS",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 890.16416684514707,
+            "y": 27776.492430878636
+          },
+          "nodeIndex": "dimLoja",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1237.6651133617563,
+            "y": 27399.469202772285
+          },
+          "nodeIndex": "dimProjeto",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1980.3316568074683,
+            "y": 27528.242588070258
+          },
+          "nodeIndex": "_Medidas",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 909.88555659059045,
+            "y": 27118.180921505569
+          },
+          "nodeIndex": "Atualizacao",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 423.49495972496743,
+            "y": 27112.535073232575
+          },
+          "nodeIndex": "Navegacao",
+          "size": {
+            "height": 128,
             "width": 234
           },
           "zIndex": 0

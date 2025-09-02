@@ -105,7 +105,7 @@ table LocalDateTable_a207ac23-1daa-4eae-b91d-00eb95fe9be4
 
 	partition LocalDateTable_a207ac23-1daa-4eae-b91d-00eb95fe9be4 = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('Tarefa'[dtCriacao])), 1, 1), Date(Year(MAX('Tarefa'[dtCriacao])), 12, 31))
+		source = Calendar(Date(Year(MIN('fatTarefa'[dtCriacao])), 1, 1), Date(Year(MAX('fatTarefa'[dtCriacao])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 

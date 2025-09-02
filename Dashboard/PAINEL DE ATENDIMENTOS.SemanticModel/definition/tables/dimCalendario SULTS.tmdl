@@ -1,4 +1,4 @@
-table 'dCalendario SULTS'
+table 'dimCalendario SULTS'
 	lineageTag: f555a508-d5cb-46bd-8665-3c79d2de1fe9
 
 	column Date
@@ -156,12 +156,12 @@ table 'dCalendario SULTS'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'dCalendario SULTS' = calculated
+	partition 'dimCalendario SULTS' = calculated
 		mode: import
 		source = ```
 				
-				VAR datamax = MAX(Tarefa[dtConclusao])
-				VAR datamin = MIN(Tarefa[dtConclusao])
+				VAR datamax = MAX(fatTarefa[dtConclusao])
+				VAR datamin = MIN(fatTarefa[dtConclusao])
 				
 				RETURN 
 				        ADDCOLUMNS(

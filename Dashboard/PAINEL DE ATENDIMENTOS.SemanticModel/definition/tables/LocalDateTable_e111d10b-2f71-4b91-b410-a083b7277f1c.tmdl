@@ -105,7 +105,7 @@ table LocalDateTable_e111d10b-2f71-4b91-b410-a083b7277f1c
 
 	partition LocalDateTable_e111d10b-2f71-4b91-b410-a083b7277f1c = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('Lojas'[CERTIFICADO_VENCIMENTO])), 1, 1), Date(Year(MAX('Lojas'[CERTIFICADO_VENCIMENTO])), 12, 31))
+		source = Calendar(Date(Year(MIN('dimLoja'[CERTIFICADO_VENCIMENTO])), 1, 1), Date(Year(MAX('dimLoja'[CERTIFICADO_VENCIMENTO])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 

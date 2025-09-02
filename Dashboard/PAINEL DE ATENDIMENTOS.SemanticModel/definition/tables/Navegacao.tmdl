@@ -1,4 +1,4 @@
-table Navegação
+table Navegacao
 	lineageTag: 431472ee-8295-4967-b379-5fe57725b881
 
 	column Páginas
@@ -17,7 +17,7 @@ table Navegação
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Navegação = m
+	partition Navegacao = m
 		mode: import
 		source =
 				let
@@ -25,6 +25,8 @@ table Navegação
 				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Páginas", type text}, {"Setor", type text}})
 				in
 				    #"Tipo Alterado"
+
+	changedProperty = Name
 
 	annotation PBI_ResultType = Table
 

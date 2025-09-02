@@ -1,4 +1,4 @@
-table Atendimentos
+table fatAtendimentos
 	lineageTag: fb695763-28d5-4dd2-9e3c-529bc0a4eaa4
 
 	column chave_id
@@ -116,9 +116,9 @@ table Atendimentos
 
 	column Fantasia =
 			
-			VAR LojaNumero = Atendimentos[loja]
+			VAR LojaNumero = fatAtendimentos[loja]
 			
-			RETURN LojaNumero & " - " & LOOKUPVALUE(Lojas[FANTASIA], Lojas[LOJA_NUMERO], LojaNumero)
+			RETURN LojaNumero & " - " & LOOKUPVALUE(dimLoja[FANTASIA], dimLoja[LOJA_NUMERO], LojaNumero)
 		lineageTag: 80bd4808-64b9-4b38-a17a-a0e8326d5805
 		summarizeBy: none
 		sortByColumn: loja
@@ -137,19 +137,19 @@ table Atendimentos
 
 	column Tarefa_Detalhada = ```
 			
-			VAR TarefaAtual = Atendimentos[tarefa]
-			VAR ResponsavelAtual = Atendimentos[responsavel]
+			VAR TarefaAtual = fatAtendimentos[tarefa]
+			VAR ResponsavelAtual = fatAtendimentos[responsavel]
 			
 			RETURN
 			TarefaAtual & " " & 
 			-- Cria um índice (1, 2, 3...) para tarefas repetidas do mesmo responsável
 			RANKX(
 			    FILTER(
-			        Atendimentos,
-			        Atendimentos[tarefa] = TarefaAtual &&
-			        Atendimentos[responsavel] = ResponsavelAtual
+			        fatAtendimentos,
+			        fatAtendimentos[tarefa] = TarefaAtual &&
+			        fatAtendimentos[responsavel] = ResponsavelAtual
 			    ),
-			    Atendimentos[chave_id],,ASC
+			    fatAtendimentos[chave_id],,ASC
 			)
 			```
 		lineageTag: 311a3290-2b79-4b3d-ad4f-73e9bee03020
@@ -157,7 +157,7 @@ table Atendimentos
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Atendimentos = m
+	partition fatAtendimentos = m
 		mode: import
 		source =
 				let
@@ -166,6 +166,8 @@ table Atendimentos
 				    tb_atendimentos_Table = dbSults_Database{[Name="tb_atendimentos",Kind="Table"]}[Data]
 				in
 				    tb_atendimentos_Table
+
+	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navegação
 

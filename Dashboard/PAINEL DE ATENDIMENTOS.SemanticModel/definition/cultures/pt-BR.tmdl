@@ -8,7 +8,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS"
+			          "ConceptualEntity": "dimCalendario SULTS"
 			        }
 			      },
 			      "State": "Generated",
@@ -23,7 +23,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Date"
 			        }
 			      },
@@ -70,7 +70,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.date.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -158,7 +158,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.date.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -202,7 +202,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.date.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -246,7 +246,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.date.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -290,7 +290,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.date.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -334,7 +334,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Ano"
 			        }
 			      },
@@ -350,7 +350,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Mês"
 			        }
 			      },
@@ -366,7 +366,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.mês_mmm": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Mês mmm"
 			        }
 			      },
@@ -389,7 +389,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.mês_t": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Mês (t)"
 			        }
 			      },
@@ -418,7 +418,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.semana": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Semana"
 			        }
 			      },
@@ -434,7 +434,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.início_da_semana": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Início da semana"
 			        }
 			      },
@@ -451,7 +451,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.início_da_semana.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "VariationSource": "Início da semana",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -539,7 +539,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.início_da_semana.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "VariationSource": "Início da semana",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -563,7 +563,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.início_da_semana.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "VariationSource": "Início da semana",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -587,7 +587,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.início_da_semana.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "VariationSource": "Início da semana",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -611,7 +611,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.início_da_semana.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "VariationSource": "Início da semana",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -635,7 +635,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.semana_do_mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Semana do Mês"
 			        }
 			      },
@@ -651,7 +651,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.anomes_ordem": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Ano-Mes ordem"
 			        }
 			      },
@@ -687,7 +687,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.mês_ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Mês/Ano"
 			        }
 			      },
@@ -736,7 +736,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.quarter": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Quarter"
 			        }
 			      },
@@ -762,7 +762,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Dia"
 			        }
 			      },
@@ -778,7 +778,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.dia_da_semana": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Dia da semana"
 			        }
 			      },
@@ -794,7 +794,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.dia_mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Dia/Mês"
 			        }
 			      },
@@ -816,7 +816,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.date_as_integer": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "DateAsInteger"
 			        }
 			      },
@@ -941,7 +941,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.dia_do_ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Dia do Ano"
 			        }
 			      },
@@ -957,7 +957,7 @@ cultureInfo pt-BR
 			    "dCalendario_SULT.anomes_ordem_invertido": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dCalendario SULTS",
+			          "ConceptualEntity": "dimCalendario SULTS",
 			          "ConceptualProperty": "Ano-Mes ordem invertido"
 			        }
 			      },
@@ -993,7 +993,7 @@ cultureInfo pt-BR
 			    "medida": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas"
+			          "ConceptualEntity": "_Medidas"
 			        }
 			      },
 			      "State": "Generated",
@@ -1008,7 +1008,7 @@ cultureInfo pt-BR
 			    "medida.column": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Column"
 			        }
 			      },
@@ -1127,7 +1127,7 @@ cultureInfo pt-BR
 			    "medida.total_de_lojas_ativas": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Total de Lojas Ativas"
 			        }
 			      },
@@ -1163,7 +1163,7 @@ cultureInfo pt-BR
 			    "medida.data_do_último_serviço": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Data do último serviço"
 			        }
 			      },
@@ -1249,7 +1249,7 @@ cultureInfo pt-BR
 			    "medida.último_serviço": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Último Serviço"
 			        }
 			      },
@@ -1265,7 +1265,7 @@ cultureInfo pt-BR
 			    "tarefa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa"
+			          "ConceptualEntity": "fatTarefa"
 			        }
 			      },
 			      "State": "Generated",
@@ -1280,7 +1280,7 @@ cultureInfo pt-BR
 			    "tarefa.id": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "id"
 			        }
 			      },
@@ -1327,7 +1327,7 @@ cultureInfo pt-BR
 			    "tarefa.nome": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "nome"
 			        }
 			      },
@@ -1353,7 +1353,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_criacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "dtCriacao"
 			        }
 			      },
@@ -1377,7 +1377,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_criacao.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtCriacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -1465,7 +1465,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_criacao.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtCriacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1489,7 +1489,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_criacao.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtCriacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1513,7 +1513,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_criacao.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtCriacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1537,7 +1537,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_criacao.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtCriacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1561,7 +1561,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_inicio": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "dtInicio"
 			        }
 			      },
@@ -1585,7 +1585,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_inicio.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtInicio",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -1673,7 +1673,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_inicio.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtInicio",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1697,7 +1697,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_inicio.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtInicio",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1721,7 +1721,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_inicio.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtInicio",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1745,7 +1745,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_inicio.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtInicio",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1769,7 +1769,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_fim": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "dtFim"
 			        }
 			      },
@@ -1793,7 +1793,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_fim.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtFim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -1881,7 +1881,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_fim.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtFim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1905,7 +1905,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_fim.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtFim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1929,7 +1929,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_fim.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtFim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1953,7 +1953,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_fim.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtFim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1977,7 +1977,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_conclusao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "dtConclusao"
 			        }
 			      },
@@ -2001,7 +2001,7 @@ cultureInfo pt-BR
 			    "medida.associado": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Associado"
 			        }
 			      },
@@ -2017,7 +2017,7 @@ cultureInfo pt-BR
 			    "tarefa.date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "Date"
 			        }
 			      },
@@ -2054,7 +2054,7 @@ cultureInfo pt-BR
 			    "medida.qtd__atendimentos_TXT": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd. Atendimentos TXT"
 			        }
 			      },
@@ -2070,7 +2070,7 @@ cultureInfo pt-BR
 			    "medida.qtd__cidades": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd. Cidades"
 			        }
 			      },
@@ -2086,7 +2086,7 @@ cultureInfo pt-BR
 			    "tarefa.status": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "status"
 			        }
 			      },
@@ -2192,7 +2192,7 @@ cultureInfo pt-BR
 			    "tarefa.teste_conclusao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "TesteConclusao"
 			        }
 			      },
@@ -2215,7 +2215,7 @@ cultureInfo pt-BR
 			    "tarefa.fase_nome": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "fase_nome"
 			        }
 			      },
@@ -2248,7 +2248,7 @@ cultureInfo pt-BR
 			    "tarefa.fase_id": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "fase_id"
 			        }
 			      },
@@ -2311,7 +2311,7 @@ cultureInfo pt-BR
 			    "tarefa.projeto_id": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "projeto_id"
 			        }
 			      },
@@ -2377,7 +2377,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_conclusao.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtConclusao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -2401,7 +2401,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_conclusao.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtConclusao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -2425,7 +2425,7 @@ cultureInfo pt-BR
 			    "loja": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas"
+			          "ConceptualEntity": "dimLoja"
 			        }
 			      },
 			      "State": "Generated",
@@ -2440,7 +2440,7 @@ cultureInfo pt-BR
 			    "loja.id_loja": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "ID_LOJA"
 			        }
 			      },
@@ -2503,7 +2503,7 @@ cultureInfo pt-BR
 			    "loja.loja_numero": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "LOJA_NUMERO"
 			        }
 			      },
@@ -2526,7 +2526,7 @@ cultureInfo pt-BR
 			    "loja.fantasia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "FANTASIA"
 			        }
 			      },
@@ -2542,7 +2542,7 @@ cultureInfo pt-BR
 			    "loja.razaosocial": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "RAZAOSOCIAL"
 			        }
 			      },
@@ -2558,7 +2558,7 @@ cultureInfo pt-BR
 			    "loja.cnpj": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "CNPJ"
 			        }
 			      },
@@ -2574,7 +2574,7 @@ cultureInfo pt-BR
 			    "loja.inscricaoestadual": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "INSCRICAOESTADUAL"
 			        }
 			      },
@@ -2590,7 +2590,7 @@ cultureInfo pt-BR
 			    "loja.end_logradouro": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "END_LOGRADOURO"
 			        }
 			      },
@@ -2703,7 +2703,7 @@ cultureInfo pt-BR
 			    "loja.end_numero": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "END_NUMERO"
 			        }
 			      },
@@ -2816,7 +2816,7 @@ cultureInfo pt-BR
 			    "loja.end_complemento": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "END_COMPLEMENTO"
 			        }
 			      },
@@ -2929,7 +2929,7 @@ cultureInfo pt-BR
 			    "loja.end_bairro": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "END_BAIRRO"
 			        }
 			      },
@@ -3042,7 +3042,7 @@ cultureInfo pt-BR
 			    "loja.end_cep": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "END_CEP"
 			        }
 			      },
@@ -3155,7 +3155,7 @@ cultureInfo pt-BR
 			    "loja.end_fone": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "END_FONE"
 			        }
 			      },
@@ -3268,7 +3268,7 @@ cultureInfo pt-BR
 			    "loja.end_telefonefixo_2": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "END_TELEFONEFIXO_2"
 			        }
 			      },
@@ -3381,7 +3381,7 @@ cultureInfo pt-BR
 			    "loja.telefone_movel": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "TELEFONE_MOVEL"
 			        }
 			      },
@@ -3404,7 +3404,7 @@ cultureInfo pt-BR
 			    "loja.end_fax": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "END_FAX"
 			        }
 			      },
@@ -3533,7 +3533,7 @@ cultureInfo pt-BR
 			    "loja.end_email": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "END_EMAIL"
 			        }
 			      },
@@ -3662,7 +3662,7 @@ cultureInfo pt-BR
 			    "loja.email_2": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "EMAIL_2"
 			        }
 			      },
@@ -3685,7 +3685,7 @@ cultureInfo pt-BR
 			    "loja.ativo": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "ATIVO"
 			        }
 			      },
@@ -3701,7 +3701,7 @@ cultureInfo pt-BR
 			    "loja.inaugurada": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "INAUGURADA"
 			        }
 			      },
@@ -3717,7 +3717,7 @@ cultureInfo pt-BR
 			    "loja.responsavel": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "RESPONSAVEL"
 			        }
 			      },
@@ -3733,7 +3733,7 @@ cultureInfo pt-BR
 			    "loja.ID_city": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "ID_City"
 			        }
 			      },
@@ -3865,7 +3865,7 @@ cultureInfo pt-BR
 			    "loja.sistema": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "SISTEMA"
 			        }
 			      },
@@ -3881,7 +3881,7 @@ cultureInfo pt-BR
 			    "loja.data_cadastro": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "DATA_CADASTRO"
 			        }
 			      },
@@ -3981,7 +3981,7 @@ cultureInfo pt-BR
 			    "loja.data_cadastro.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_CADASTRO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -4069,7 +4069,7 @@ cultureInfo pt-BR
 			    "loja.data_cadastro.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_CADASTRO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -4163,7 +4163,7 @@ cultureInfo pt-BR
 			    "loja.data_cadastro.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_CADASTRO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -4257,7 +4257,7 @@ cultureInfo pt-BR
 			    "loja.data_cadastro.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_CADASTRO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -4351,7 +4351,7 @@ cultureInfo pt-BR
 			    "loja.data_cadastro.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_CADASTRO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -4445,7 +4445,7 @@ cultureInfo pt-BR
 			    "loja.data_inauguracao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "DATA_INAUGURACAO"
 			        }
 			      },
@@ -4545,7 +4545,7 @@ cultureInfo pt-BR
 			    "loja.data_inauguracao.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_INAUGURACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -4633,7 +4633,7 @@ cultureInfo pt-BR
 			    "loja.data_inauguracao.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_INAUGURACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -4727,7 +4727,7 @@ cultureInfo pt-BR
 			    "loja.data_inauguracao.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_INAUGURACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -4821,7 +4821,7 @@ cultureInfo pt-BR
 			    "loja.data_inauguracao.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_INAUGURACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -4915,7 +4915,7 @@ cultureInfo pt-BR
 			    "loja.data_inauguracao.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_INAUGURACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5009,7 +5009,7 @@ cultureInfo pt-BR
 			    "loja.data_desassociacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "DATA_DESASSOCIACAO"
 			        }
 			      },
@@ -5109,7 +5109,7 @@ cultureInfo pt-BR
 			    "loja.data_desassociacao.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_DESASSOCIACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -5197,7 +5197,7 @@ cultureInfo pt-BR
 			    "loja.data_desassociacao.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_DESASSOCIACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5291,7 +5291,7 @@ cultureInfo pt-BR
 			    "loja.data_desassociacao.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_DESASSOCIACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5385,7 +5385,7 @@ cultureInfo pt-BR
 			    "loja.data_desassociacao.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_DESASSOCIACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5479,7 +5479,7 @@ cultureInfo pt-BR
 			    "loja.data_desassociacao.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_DESASSOCIACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5573,7 +5573,7 @@ cultureInfo pt-BR
 			    "loja.pec_ultimo_estudo": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "PEC_ULTIMO_ESTUDO"
 			        }
 			      },
@@ -5603,7 +5603,7 @@ cultureInfo pt-BR
 			    "loja.pec_ultimo_estudo.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "PEC_ULTIMO_ESTUDO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -5691,7 +5691,7 @@ cultureInfo pt-BR
 			    "loja.pec_ultimo_estudo.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "PEC_ULTIMO_ESTUDO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5715,7 +5715,7 @@ cultureInfo pt-BR
 			    "loja.pec_ultimo_estudo.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "PEC_ULTIMO_ESTUDO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5739,7 +5739,7 @@ cultureInfo pt-BR
 			    "loja.pec_ultimo_estudo.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "PEC_ULTIMO_ESTUDO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5763,7 +5763,7 @@ cultureInfo pt-BR
 			    "loja.pec_ultimo_estudo.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "PEC_ULTIMO_ESTUDO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5787,7 +5787,7 @@ cultureInfo pt-BR
 			    "loja.plugpharma": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "PLUGPHARMA"
 			        }
 			      },
@@ -5803,7 +5803,7 @@ cultureInfo pt-BR
 			    "loja.certificado_vencimento": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "CERTIFICADO_VENCIMENTO"
 			        }
 			      },
@@ -5833,7 +5833,7 @@ cultureInfo pt-BR
 			    "loja.certificado_vencimento.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "CERTIFICADO_VENCIMENTO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -5921,7 +5921,7 @@ cultureInfo pt-BR
 			    "loja.certificado_vencimento.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "CERTIFICADO_VENCIMENTO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5945,7 +5945,7 @@ cultureInfo pt-BR
 			    "loja.certificado_vencimento.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "CERTIFICADO_VENCIMENTO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5969,7 +5969,7 @@ cultureInfo pt-BR
 			    "loja.certificado_vencimento.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "CERTIFICADO_VENCIMENTO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -5993,7 +5993,7 @@ cultureInfo pt-BR
 			    "loja.certificado_vencimento.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "CERTIFICADO_VENCIMENTO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -6017,7 +6017,7 @@ cultureInfo pt-BR
 			    "loja.pec_id_convenio": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "PEC_ID_CONVENIO"
 			        }
 			      },
@@ -6080,7 +6080,7 @@ cultureInfo pt-BR
 			    "loja.pec_cdg_acesso": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "PEC_CDG_ACESSO"
 			        }
 			      },
@@ -6103,7 +6103,7 @@ cultureInfo pt-BR
 			    "loja.id_grupo_empresarial": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "ID_GRUPO_EMPRESARIAL"
 			        }
 			      },
@@ -6166,7 +6166,7 @@ cultureInfo pt-BR
 			    "loja.farmacia_popular": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "FARMACIA_POPULAR"
 			        }
 			      },
@@ -6189,7 +6189,7 @@ cultureInfo pt-BR
 			    "loja.faturamento_inicial": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "FATURAMENTO_INICIAL"
 			        }
 			      },
@@ -6212,7 +6212,7 @@ cultureInfo pt-BR
 			    "loja.cluster": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "CLUSTER"
 			        }
 			      },
@@ -6318,7 +6318,7 @@ cultureInfo pt-BR
 			    "loja.anjo": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "ANJO"
 			        }
 			      },
@@ -6334,7 +6334,7 @@ cultureInfo pt-BR
 			    "loja.codigo_movidesk": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "CODIGO_MOVIDESK"
 			        }
 			      },
@@ -6357,7 +6357,7 @@ cultureInfo pt-BR
 			    "loja.observacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "OBSERVACAO"
 			        }
 			      },
@@ -6373,7 +6373,7 @@ cultureInfo pt-BR
 			    "loja.latitude": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "LATITUDE"
 			        }
 			      },
@@ -6489,7 +6489,7 @@ cultureInfo pt-BR
 			    "loja.longitude": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "LONGITUDE"
 			        }
 			      },
@@ -6505,7 +6505,7 @@ cultureInfo pt-BR
 			    "loja.situacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "Situacao"
 			        }
 			      },
@@ -6521,7 +6521,7 @@ cultureInfo pt-BR
 			    "loja.pec_app": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "PEC_APP"
 			        }
 			      },
@@ -6550,7 +6550,7 @@ cultureInfo pt-BR
 			    "loja.ultima_atualizacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "UltimaAtualizacao"
 			        }
 			      },
@@ -6580,7 +6580,7 @@ cultureInfo pt-BR
 			    "loja.ultima_atualizacao.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "UltimaAtualizacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -6668,7 +6668,7 @@ cultureInfo pt-BR
 			    "loja.ultima_atualizacao.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "UltimaAtualizacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -6692,7 +6692,7 @@ cultureInfo pt-BR
 			    "loja.ultima_atualizacao.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "UltimaAtualizacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -6716,7 +6716,7 @@ cultureInfo pt-BR
 			    "loja.ultima_atualizacao.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "UltimaAtualizacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -6740,7 +6740,7 @@ cultureInfo pt-BR
 			    "loja.ultima_atualizacao.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "UltimaAtualizacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -6764,7 +6764,7 @@ cultureInfo pt-BR
 			    "loja.cnpj_s": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "CNPJ_S"
 			        }
 			      },
@@ -6787,7 +6787,7 @@ cultureInfo pt-BR
 			    "loja.data_associacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "DATA_ASSOCIACAO"
 			        }
 			      },
@@ -6887,7 +6887,7 @@ cultureInfo pt-BR
 			    "loja.data_associacao.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_ASSOCIACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -6975,7 +6975,7 @@ cultureInfo pt-BR
 			    "loja.data_associacao.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_ASSOCIACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -7069,7 +7069,7 @@ cultureInfo pt-BR
 			    "loja.data_associacao.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_ASSOCIACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -7163,7 +7163,7 @@ cultureInfo pt-BR
 			    "loja.data_associacao.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_ASSOCIACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -7257,7 +7257,7 @@ cultureInfo pt-BR
 			    "loja.data_associacao.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "VariationSource": "DATA_ASSOCIACAO",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -7351,7 +7351,7 @@ cultureInfo pt-BR
 			    "loja.loja": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "LOJA"
 			        }
 			      },
@@ -7373,7 +7373,7 @@ cultureInfo pt-BR
 			    "loja.filial": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "FILIAL"
 			        }
 			      },
@@ -7389,7 +7389,7 @@ cultureInfo pt-BR
 			    "loja.maturidade": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "Maturidade"
 			        }
 			      },
@@ -7405,7 +7405,7 @@ cultureInfo pt-BR
 			    "medida.lojas_ativas": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Lojas Ativas"
 			        }
 			      },
@@ -7421,7 +7421,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_conclusao.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtConclusao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -7445,7 +7445,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_conclusao.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtConclusao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -7469,7 +7469,7 @@ cultureInfo pt-BR
 			    "tarefa.dt_conclusao.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "VariationSource": "dtConclusao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -7557,7 +7557,7 @@ cultureInfo pt-BR
 			    "medida.qtd__atendimentos": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd. Atendimentos"
 			        }
 			      },
@@ -7583,7 +7583,7 @@ cultureInfo pt-BR
 			    "medida.realizam_algum_serviço": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Realizam algum serviço"
 			        }
 			      },
@@ -7599,7 +7599,7 @@ cultureInfo pt-BR
 			    "medida.qtd_filiais": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd Filiais"
 			        }
 			      },
@@ -7615,7 +7615,7 @@ cultureInfo pt-BR
 			    "tarefa.responsavel_id": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "responsavel_id"
 			        }
 			      },
@@ -7678,7 +7678,7 @@ cultureInfo pt-BR
 			    "tarefa.responsavel_nome": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "responsavel_nome"
 			        }
 			      },
@@ -7701,7 +7701,7 @@ cultureInfo pt-BR
 			    "tarefa.dias_desde_a_última": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "Dias desde a última"
 			        }
 			      },
@@ -7717,7 +7717,7 @@ cultureInfo pt-BR
 			    "tarefa.entrou_em_caducidade": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "Entrou em Caducidade"
 			        }
 			      },
@@ -7733,7 +7733,7 @@ cultureInfo pt-BR
 			    "tarefa.loja": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "LOJA"
 			        }
 			      },
@@ -7749,7 +7749,7 @@ cultureInfo pt-BR
 			    "tarefa.possui_tentativa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "possui_tentativas"
 			        }
 			      },
@@ -7772,7 +7772,7 @@ cultureInfo pt-BR
 			    "tarefa.fantasia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "Fantasia"
 			        }
 			      },
@@ -7808,7 +7808,7 @@ cultureInfo pt-BR
 			    "medida.qtd__lojas": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd. Lojas"
 			        }
 			      },
@@ -7834,7 +7834,7 @@ cultureInfo pt-BR
 			    "medida.média_de_atendimentos_por_loja": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Média de Atendimentos por Loja"
 			        }
 			      },
@@ -7850,7 +7850,7 @@ cultureInfo pt-BR
 			    "medida.média_de_atendimentos": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Média de atendimentos"
 			        }
 			      },
@@ -7866,7 +7866,7 @@ cultureInfo pt-BR
 			    "medida.média_de_atendimentos_por_responsável": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Média de Atendimentos por Responsável"
 			        }
 			      },
@@ -7882,7 +7882,7 @@ cultureInfo pt-BR
 			    "projeto": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos"
+			          "ConceptualEntity": "dimProjeto"
 			        }
 			      },
 			      "State": "Generated",
@@ -7897,7 +7897,7 @@ cultureInfo pt-BR
 			    "projeto.id": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "id"
 			        }
 			      },
@@ -7944,7 +7944,7 @@ cultureInfo pt-BR
 			    "projeto.nome": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "nome"
 			        }
 			      },
@@ -7960,7 +7960,7 @@ cultureInfo pt-BR
 			    "projeto.ativo": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "ativo"
 			        }
 			      },
@@ -7976,7 +7976,7 @@ cultureInfo pt-BR
 			    "projeto.pausado": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "pausado"
 			        }
 			      },
@@ -7992,7 +7992,7 @@ cultureInfo pt-BR
 			    "projeto.concluido": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "concluido"
 			        }
 			      },
@@ -8008,7 +8008,7 @@ cultureInfo pt-BR
 			    "projeto.dt_criacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "dtCriacao"
 			        }
 			      },
@@ -8038,7 +8038,7 @@ cultureInfo pt-BR
 			    "projeto.dt_criacao.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtCriacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -8126,7 +8126,7 @@ cultureInfo pt-BR
 			    "projeto.dt_criacao.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtCriacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8150,7 +8150,7 @@ cultureInfo pt-BR
 			    "projeto.dt_criacao.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtCriacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8174,7 +8174,7 @@ cultureInfo pt-BR
 			    "projeto.dt_criacao.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtCriacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8198,7 +8198,7 @@ cultureInfo pt-BR
 			    "projeto.dt_criacao.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtCriacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8222,7 +8222,7 @@ cultureInfo pt-BR
 			    "projeto.dt_inicio": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "dtInicio"
 			        }
 			      },
@@ -8252,7 +8252,7 @@ cultureInfo pt-BR
 			    "projeto.dt_inicio.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtInicio",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -8340,7 +8340,7 @@ cultureInfo pt-BR
 			    "projeto.dt_inicio.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtInicio",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8364,7 +8364,7 @@ cultureInfo pt-BR
 			    "projeto.dt_inicio.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtInicio",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8388,7 +8388,7 @@ cultureInfo pt-BR
 			    "projeto.dt_inicio.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtInicio",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8412,7 +8412,7 @@ cultureInfo pt-BR
 			    "projeto.dt_inicio.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtInicio",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8436,7 +8436,7 @@ cultureInfo pt-BR
 			    "projeto.dt_fim": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "dtFim"
 			        }
 			      },
@@ -8466,7 +8466,7 @@ cultureInfo pt-BR
 			    "projeto.dt_fim.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtFim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -8554,7 +8554,7 @@ cultureInfo pt-BR
 			    "projeto.dt_fim.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtFim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8578,7 +8578,7 @@ cultureInfo pt-BR
 			    "projeto.dt_fim.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtFim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8602,7 +8602,7 @@ cultureInfo pt-BR
 			    "projeto.dt_fim.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtFim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8626,7 +8626,7 @@ cultureInfo pt-BR
 			    "projeto.dt_fim.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "VariationSource": "dtFim",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -8650,7 +8650,7 @@ cultureInfo pt-BR
 			    "projeto.modelo_id": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "modelo_id"
 			        }
 			      },
@@ -8713,7 +8713,7 @@ cultureInfo pt-BR
 			    "projeto.modelo_nome": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "modelo_nome"
 			        }
 			      },
@@ -8736,7 +8736,7 @@ cultureInfo pt-BR
 			    "projeto.responsavel_id": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "responsavel_id"
 			        }
 			      },
@@ -8799,7 +8799,7 @@ cultureInfo pt-BR
 			    "projeto.responsavel_nome": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "responsavel_nome"
 			        }
 			      },
@@ -8822,7 +8822,7 @@ cultureInfo pt-BR
 			    "projeto.loja_numero": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Projetos",
+			          "ConceptualEntity": "dimProjeto",
 			          "ConceptualProperty": "loja.numero"
 			        }
 			      },
@@ -8838,7 +8838,7 @@ cultureInfo pt-BR
 			    "medida.atendido_BALCONISTA": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido BALCONISTA"
 			        }
 			      },
@@ -8854,7 +8854,7 @@ cultureInfo pt-BR
 			    "medida.atendido_BÚSSOLA": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido BÚSSOLA"
 			        }
 			      },
@@ -8870,7 +8870,7 @@ cultureInfo pt-BR
 			    "medida.atendido_COMPRAS": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido COMPRAS"
 			        }
 			      },
@@ -8886,7 +8886,7 @@ cultureInfo pt-BR
 			    "medida.atendido_FIDELIZA": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido FIDELIZA+"
 			        }
 			      },
@@ -8902,7 +8902,7 @@ cultureInfo pt-BR
 			    "medida.atendido_PAI": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido PAI"
 			        }
 			      },
@@ -8918,7 +8918,7 @@ cultureInfo pt-BR
 			    "medida.atendido_PBM": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido PBM"
 			        }
 			      },
@@ -8934,7 +8934,7 @@ cultureInfo pt-BR
 			    "medida.atendido_PEC": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido PEC"
 			        }
 			      },
@@ -8950,7 +8950,7 @@ cultureInfo pt-BR
 			    "medida.atendido_RAIOx": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido RAIO-X"
 			        }
 			      },
@@ -8972,7 +8972,7 @@ cultureInfo pt-BR
 			    "medida.atendido_TRADE": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido TRADE"
 			        }
 			      },
@@ -9088,7 +9088,7 @@ cultureInfo pt-BR
 			    "medida.atendido_comp__preço": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido Comp. Preço"
 			        }
 			      },
@@ -9104,7 +9104,7 @@ cultureInfo pt-BR
 			    "medida.atendido_edelivery": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido E-Delivery"
 			        }
 			      },
@@ -9226,7 +9226,7 @@ cultureInfo pt-BR
 			    "medida.atendido_GC": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido GC"
 			        }
 			      },
@@ -9242,7 +9242,7 @@ cultureInfo pt-BR
 			    "medida.atendido_minha_saúde": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido Minha Saúde"
 			        }
 			      },
@@ -9258,7 +9258,7 @@ cultureInfo pt-BR
 			    "medida.atendido_orion": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido Orion"
 			        }
 			      },
@@ -9274,7 +9274,7 @@ cultureInfo pt-BR
 			    "medida.atendido_scantech": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido Scantech"
 			        }
 			      },
@@ -9290,7 +9290,7 @@ cultureInfo pt-BR
 			    "medida.razão_social": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Razão Social"
 			        }
 			      },
@@ -9336,7 +9336,7 @@ cultureInfo pt-BR
 			    "medida.nome_fantasia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Nome Fantasia"
 			        }
 			      },
@@ -9352,7 +9352,7 @@ cultureInfo pt-BR
 			    "medida.telefone": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Telefone"
 			        }
 			      },
@@ -9368,7 +9368,7 @@ cultureInfo pt-BR
 			    "medida.d_desde": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "D+ Desde"
 			        }
 			      },
@@ -9394,7 +9394,7 @@ cultureInfo pt-BR
 			    "medida.cidade": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Cidade"
 			        }
 			      },
@@ -9410,7 +9410,7 @@ cultureInfo pt-BR
 			    "tarefa.loja_numero": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "Loja_Numero"
 			        }
 			      },
@@ -9433,7 +9433,7 @@ cultureInfo pt-BR
 			    "tarefa.descricao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "descricao"
 			        }
 			      },
@@ -9449,7 +9449,7 @@ cultureInfo pt-BR
 			    "tarefa.mês_ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "Mês/Ano"
 			        }
 			      },
@@ -9498,7 +9498,7 @@ cultureInfo pt-BR
 			    "medida.clusters": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Clusters"
 			        }
 			      },
@@ -9604,7 +9604,7 @@ cultureInfo pt-BR
 			    "medida.atendido_CESTAO": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Atendido CESTAO"
 			        }
 			      },
@@ -9620,7 +9620,7 @@ cultureInfo pt-BR
 			    "medida.qtd__serviços_recorrentes_exitentes": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd. Serviços recorrentes exitentes"
 			        }
 			      },
@@ -9636,7 +9636,7 @@ cultureInfo pt-BR
 			    "medida.qtd__serviços_recorrentes_realizados": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd. serviços recorrentes realizados"
 			        }
 			      },
@@ -9652,7 +9652,7 @@ cultureInfo pt-BR
 			    "loja.cidade": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "CIDADE"
 			        }
 			      },
@@ -9668,7 +9668,7 @@ cultureInfo pt-BR
 			    "medida.total_de_lojas_inauguradas": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Total de Lojas Inauguradas"
 			        }
 			      },
@@ -9704,7 +9704,7 @@ cultureInfo pt-BR
 			    "loja.polo": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "POLO"
 			        }
 			      },
@@ -9720,7 +9720,7 @@ cultureInfo pt-BR
 			    "medida.qtd__totas_tarefas": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd. Totas Tarefas"
 			        }
 			      },
@@ -9746,7 +9746,7 @@ cultureInfo pt-BR
 			    "tarefa.primeiro_nome": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "Primeiro Nome"
 			        }
 			      },
@@ -9772,7 +9772,7 @@ cultureInfo pt-BR
 			    "tarefa.função": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Tarefa",
+			          "ConceptualEntity": "fatTarefa",
 			          "ConceptualProperty": "Função"
 			        }
 			      },
@@ -9788,7 +9788,7 @@ cultureInfo pt-BR
 			    "medida.qtd__tarefas_CT": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd. Tarefas CT"
 			        }
 			      },
@@ -9814,7 +9814,7 @@ cultureInfo pt-BR
 			    "medida.qtd__dias": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd. Dias"
 			        }
 			      },
@@ -9840,7 +9840,7 @@ cultureInfo pt-BR
 			    "medida.qtd__responsaveis": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd. Responsaveis"
 			        }
 			      },
@@ -9866,7 +9866,7 @@ cultureInfo pt-BR
 			    "medida.média_de_atendimento_por_dia_e_resp_": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Média de Atendimento por Dia e Resp."
 			        }
 			      },
@@ -9882,7 +9882,7 @@ cultureInfo pt-BR
 			    "loja.cat": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lojas",
+			          "ConceptualEntity": "dimLoja",
 			          "ConceptualProperty": "CAT"
 			        }
 			      },
@@ -9998,7 +9998,7 @@ cultureInfo pt-BR
 			    "medida.qtd_atendimentos": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd atendimentos"
 			        }
 			      },
@@ -10034,7 +10034,7 @@ cultureInfo pt-BR
 			    "atendimento": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos"
+			          "ConceptualEntity": "fatAtendimentos"
 			        }
 			      },
 			      "State": "Generated",
@@ -10049,7 +10049,7 @@ cultureInfo pt-BR
 			    "atendimento.chave_id": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "chave_id"
 			        }
 			      },
@@ -10112,7 +10112,7 @@ cultureInfo pt-BR
 			    "atendimento.id_planilha": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "id_planilha"
 			        }
 			      },
@@ -10175,7 +10175,7 @@ cultureInfo pt-BR
 			    "atendimento.data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "data"
 			        }
 			      },
@@ -10268,7 +10268,7 @@ cultureInfo pt-BR
 			    "atendimento.tarefa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "tarefa"
 			        }
 			      },
@@ -10284,7 +10284,7 @@ cultureInfo pt-BR
 			    "atendimento.responsavel": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "responsavel"
 			        }
 			      },
@@ -10310,7 +10310,7 @@ cultureInfo pt-BR
 			    "atendimento.loja": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "loja"
 			        }
 			      },
@@ -10326,7 +10326,7 @@ cultureInfo pt-BR
 			    "atendimento.tipo": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "tipo"
 			        }
 			      },
@@ -10342,7 +10342,7 @@ cultureInfo pt-BR
 			    "atendimento.acao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "acao"
 			        }
 			      },
@@ -10368,7 +10368,7 @@ cultureInfo pt-BR
 			    "atendimento.assunto": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "assunto"
 			        }
 			      },
@@ -10384,7 +10384,7 @@ cultureInfo pt-BR
 			    "atendimento.conteudo_hash": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "conteudo_hash"
 			        }
 			      },
@@ -10487,7 +10487,7 @@ cultureInfo pt-BR
 			    "atendimento.data_insercao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "data_insercao"
 			        }
 			      },
@@ -10587,7 +10587,7 @@ cultureInfo pt-BR
 			    "atendimento.data_insercao.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "VariationSource": "data_insercao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -10675,7 +10675,7 @@ cultureInfo pt-BR
 			    "atendimento.data_insercao.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "VariationSource": "data_insercao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -10769,7 +10769,7 @@ cultureInfo pt-BR
 			    "atendimento.data_insercao.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "VariationSource": "data_insercao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -10863,7 +10863,7 @@ cultureInfo pt-BR
 			    "atendimento.data_insercao.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "VariationSource": "data_insercao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -10957,7 +10957,7 @@ cultureInfo pt-BR
 			    "atendimento.data_insercao.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "VariationSource": "data_insercao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -11051,7 +11051,7 @@ cultureInfo pt-BR
 			    "atendimento.data_atualizacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "data_atualizacao"
 			        }
 			      },
@@ -11151,7 +11151,7 @@ cultureInfo pt-BR
 			    "atendimento.data_atualizacao.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "VariationSource": "data_atualizacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -11239,7 +11239,7 @@ cultureInfo pt-BR
 			    "atendimento.data_atualizacao.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "VariationSource": "data_atualizacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -11333,7 +11333,7 @@ cultureInfo pt-BR
 			    "atendimento.data_atualizacao.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "VariationSource": "data_atualizacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -11427,7 +11427,7 @@ cultureInfo pt-BR
 			    "atendimento.data_atualizacao.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "VariationSource": "data_atualizacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -11521,7 +11521,7 @@ cultureInfo pt-BR
 			    "atendimento.data_atualizacao.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "VariationSource": "data_atualizacao",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -11615,7 +11615,7 @@ cultureInfo pt-BR
 			    "medida.qtd_responsável": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd responsável"
 			        }
 			      },
@@ -11641,7 +11641,7 @@ cultureInfo pt-BR
 			    "medida.qtd_lojas": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd lojas"
 			        }
 			      },
@@ -11667,7 +11667,7 @@ cultureInfo pt-BR
 			    "medida.qtd_tarefas": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd tarefas"
 			        }
 			      },
@@ -11693,7 +11693,7 @@ cultureInfo pt-BR
 			    "medida.qtd_dias": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Qtd dias"
 			        }
 			      },
@@ -11719,7 +11719,7 @@ cultureInfo pt-BR
 			    "medida.media_de_atendimentos_por_loja": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Media de Atendimentos por Loja"
 			        }
 			      },
@@ -11735,7 +11735,7 @@ cultureInfo pt-BR
 			    "medida.media_de_atendimentos_por_responsável": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Media de Atendimentos por Responsável"
 			        }
 			      },
@@ -11751,7 +11751,7 @@ cultureInfo pt-BR
 			    "medida.media_de_atendimentos_por_dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Media de Atendimentos por dia"
 			        }
 			      },
@@ -11767,7 +11767,7 @@ cultureInfo pt-BR
 			    "medida.media_de_atendimento_por_dia_e_resp_": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Media de Atendimento por Dia e Resp."
 			        }
 			      },
@@ -11783,7 +11783,7 @@ cultureInfo pt-BR
 			    "atendimento.fantasia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "Fantasia"
 			        }
 			      },
@@ -11819,7 +11819,7 @@ cultureInfo pt-BR
 			    "medida.auditor": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Auditor"
 			        }
 			      },
@@ -11915,7 +11915,7 @@ cultureInfo pt-BR
 			    "atendimento.funcao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "funcao"
 			        }
 			      },
@@ -11931,7 +11931,7 @@ cultureInfo pt-BR
 			    "navegação": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Navegação"
+			          "ConceptualEntity": "Navegacao"
 			        }
 			      },
 			      "State": "Generated",
@@ -11946,7 +11946,7 @@ cultureInfo pt-BR
 			    "navegação.página": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Navegação",
+			          "ConceptualEntity": "Navegacao",
 			          "ConceptualProperty": "Páginas"
 			        }
 			      },
@@ -11962,7 +11962,7 @@ cultureInfo pt-BR
 			    "navegação.setor": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Navegação",
+			          "ConceptualEntity": "Navegacao",
 			          "ConceptualProperty": "Setor"
 			        }
 			      },
@@ -11978,7 +11978,7 @@ cultureInfo pt-BR
 			    "atualização": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atualização"
+			          "ConceptualEntity": "Atualizacao"
 			        }
 			      },
 			      "State": "Generated",
@@ -11993,7 +11993,7 @@ cultureInfo pt-BR
 			    "atualização.última_atualização": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atualização",
+			          "ConceptualEntity": "Atualizacao",
 			          "ConceptualProperty": "Última Atualização"
 			        }
 			      },
@@ -12016,7 +12016,7 @@ cultureInfo pt-BR
 			    "atualização.última_atualização.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atualização",
+			          "ConceptualEntity": "Atualizacao",
 			          "VariationSource": "Última Atualização",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -12104,7 +12104,7 @@ cultureInfo pt-BR
 			    "atualização.última_atualização.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atualização",
+			          "ConceptualEntity": "Atualizacao",
 			          "VariationSource": "Última Atualização",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -12128,7 +12128,7 @@ cultureInfo pt-BR
 			    "atualização.última_atualização.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atualização",
+			          "ConceptualEntity": "Atualizacao",
 			          "VariationSource": "Última Atualização",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -12152,7 +12152,7 @@ cultureInfo pt-BR
 			    "atualização.última_atualização.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atualização",
+			          "ConceptualEntity": "Atualizacao",
 			          "VariationSource": "Última Atualização",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -12176,7 +12176,7 @@ cultureInfo pt-BR
 			    "atualização.última_atualização.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atualização",
+			          "ConceptualEntity": "Atualizacao",
 			          "VariationSource": "Última Atualização",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -12200,7 +12200,7 @@ cultureInfo pt-BR
 			    "atualização.texto_última_att": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atualização",
+			          "ConceptualEntity": "Atualizacao",
 			          "ConceptualProperty": "Texto Última Att"
 			        }
 			      },
@@ -12216,7 +12216,7 @@ cultureInfo pt-BR
 			    "cidade": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Cidades"
+			          "ConceptualEntity": "dimCidades"
 			        }
 			      },
 			      "State": "Generated",
@@ -12231,7 +12231,7 @@ cultureInfo pt-BR
 			    "cidade.ID_city": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Cidades",
+			          "ConceptualEntity": "dimCidades",
 			          "ConceptualProperty": "ID_City"
 			        }
 			      },
@@ -12360,7 +12360,7 @@ cultureInfo pt-BR
 			    "cidade.name": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Cidades",
+			          "ConceptualEntity": "dimCidades",
 			          "ConceptualProperty": "Name"
 			        }
 			      },
@@ -12407,7 +12407,7 @@ cultureInfo pt-BR
 			    "cidade.ibge_id": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Cidades",
+			          "ConceptualEntity": "dimCidades",
 			          "ConceptualProperty": "IBGE_ID"
 			        }
 			      },
@@ -12470,7 +12470,7 @@ cultureInfo pt-BR
 			    "cidade.code_area": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Cidades",
+			          "ConceptualEntity": "dimCidades",
 			          "ConceptualProperty": "CodeArea"
 			        }
 			      },
@@ -12599,7 +12599,7 @@ cultureInfo pt-BR
 			    "cidade.uf": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Cidades",
+			          "ConceptualEntity": "dimCidades",
 			          "ConceptualProperty": "UF"
 			        }
 			      },
@@ -12615,7 +12615,7 @@ cultureInfo pt-BR
 			    "cidade.ID_plugpharma": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Cidades",
+			          "ConceptualEntity": "dimCidades",
 			          "ConceptualProperty": "ID_Plugpharma"
 			        }
 			      },
@@ -12678,7 +12678,7 @@ cultureInfo pt-BR
 			    "cidade.population": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Cidades",
+			          "ConceptualEntity": "dimCidades",
 			          "ConceptualProperty": "Population"
 			        }
 			      },
@@ -12714,7 +12714,7 @@ cultureInfo pt-BR
 			    "cidade.region_ID": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Cidades",
+			          "ConceptualEntity": "dimCidades",
 			          "ConceptualProperty": "Region_ID"
 			        }
 			      },
@@ -12919,7 +12919,7 @@ cultureInfo pt-BR
 			    "medida.assunto_cartão": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
+			          "ConceptualEntity": "_Medidas",
 			          "ConceptualProperty": "Assunto Cartão"
 			        }
 			      },
@@ -13015,81 +13015,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "parâmetro": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Parâmetro"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "parâmetro": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "parâmetro.parâmetro": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Parâmetro",
-			          "ConceptualProperty": "Parâmetro"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "parâmetro": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "parâmetro name": {
-			            "State": "Generated"
-			          }
-			        }
-			      ],
-			      "NameType": "Name"
-			    },
-			    "parâmetro.parâmetro_campos": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Parâmetro",
-			          "ConceptualProperty": "Parâmetro Campos"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
-			      "Terms": [
-			        {
-			          "parâmetro campos": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "parâmetro.parâmetro_pedido": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Parâmetro",
-			          "ConceptualProperty": "Parâmetro Pedido"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
-			      "Terms": [
-			        {
-			          "parâmetro pedido": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
 			    "par_loja_tarefa": {
 			      "Definition": {
 			        "Binding": {
@@ -13169,7 +13094,7 @@ cultureInfo pt-BR
 			    "atendimento.tarefa_detalhada": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Atendimentos",
+			          "ConceptualEntity": "fatAtendimentos",
 			          "ConceptualProperty": "Tarefa_Detalhada"
 			        }
 			      },
@@ -13193,7 +13118,7 @@ cultureInfo pt-BR
 			  "Relationships": {
 			    "atendimento_data_atualizacao_hierarquia_de_data_has_atendimento_data_atualizacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13226,7 +13151,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_atualizacao_hierarquia_de_data_has_atendimento_data_atualizacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13259,7 +13184,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_atualizacao_hierarquia_de_data_has_atendimento_data_atualizacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13292,7 +13217,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_atualizacao_hierarquia_de_data_has_atendimento_data_atualizacao_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13325,7 +13250,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_atualizacao_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13358,7 +13283,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_insercao_mê_has_atendimento_data_insercao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13424,7 +13349,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_insercao_trimestre_has_atendimento_data_insercao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13490,7 +13415,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_insercao_ano_has_atendimento_data_insercao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13556,7 +13481,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_insercao_hierarquia_de_data_has_atendimento_data_insercao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13589,7 +13514,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_insercao_hierarquia_de_data_has_atendimento_data_insercao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13622,7 +13547,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_insercao_hierarquia_de_data_has_atendimento_data_insercao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13655,7 +13580,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_insercao_hierarquia_de_data_has_atendimento_data_insercao_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13688,7 +13613,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_insercao_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13721,7 +13646,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_fim_mê_has_projeto_dt_fim_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13787,7 +13712,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_fim_trimestre_has_projeto_dt_fim_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13853,7 +13778,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_fim_ano_has_projeto_dt_fim_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13919,7 +13844,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_fim_hierarquia_de_data_has_projeto_dt_fim_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13952,7 +13877,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_fim_hierarquia_de_data_has_projeto_dt_fim_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -13985,7 +13910,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_fim_hierarquia_de_data_has_projeto_dt_fim_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14018,7 +13943,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_fim_hierarquia_de_data_has_projeto_dt_fim_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14051,7 +13976,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_fim_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14084,7 +14009,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_inicio_mê_has_projeto_dt_inicio_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14150,7 +14075,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_inicio_trimestre_has_projeto_dt_inicio_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14216,7 +14141,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_inicio_ano_has_projeto_dt_inicio_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14282,7 +14207,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_inicio_hierarquia_de_data_has_projeto_dt_inicio_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14315,7 +14240,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_inicio_hierarquia_de_data_has_projeto_dt_inicio_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14348,7 +14273,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_inicio_hierarquia_de_data_has_projeto_dt_inicio_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14381,7 +14306,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_inicio_hierarquia_de_data_has_projeto_dt_inicio_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14414,7 +14339,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_inicio_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14447,7 +14372,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_criacao_mê_has_projeto_dt_criacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14513,7 +14438,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_criacao_trimestre_has_projeto_dt_criacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14579,7 +14504,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_criacao_ano_has_projeto_dt_criacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14645,7 +14570,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_criacao_hierarquia_de_data_has_projeto_dt_criacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14678,7 +14603,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_criacao_hierarquia_de_data_has_projeto_dt_criacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14711,7 +14636,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_criacao_hierarquia_de_data_has_projeto_dt_criacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14744,7 +14669,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_criacao_hierarquia_de_data_has_projeto_dt_criacao_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14777,7 +14702,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_dt_criacao_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14810,7 +14735,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_conclusao_mê_has_tarefa_dt_conclusao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14876,7 +14801,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_conclusao_trimestre_has_tarefa_dt_conclusao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -14942,7 +14867,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_conclusao_ano_has_tarefa_dt_conclusao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15008,7 +14933,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_conclusao_hierarquia_de_data_has_tarefa_dt_conclusao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15041,7 +14966,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_conclusao_hierarquia_de_data_has_tarefa_dt_conclusao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15074,7 +14999,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_conclusao_hierarquia_de_data_has_tarefa_dt_conclusao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15107,7 +15032,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_conclusao_hierarquia_de_data_has_tarefa_dt_conclusao_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15140,7 +15065,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_conclusao_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15173,7 +15098,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_associacao_mê_has_loja_data_associacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15239,7 +15164,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_associacao_trimestre_has_loja_data_associacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15305,7 +15230,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_associacao_ano_has_loja_data_associacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15371,7 +15296,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_associacao_hierarquia_de_data_has_loja_data_associacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15404,7 +15329,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_associacao_hierarquia_de_data_has_loja_data_associacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15437,7 +15362,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_associacao_hierarquia_de_data_has_loja_data_associacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15470,7 +15395,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_associacao_hierarquia_de_data_has_loja_data_associacao_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15503,7 +15428,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_associacao_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15536,7 +15461,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_ultima_atualizacao_mê_has_loja_ultima_atualizacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15602,7 +15527,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_ultima_atualizacao_trimestre_has_loja_ultima_atualizacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15668,7 +15593,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_ultima_atualizacao_ano_has_loja_ultima_atualizacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15734,7 +15659,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_ultima_atualizacao_hierarquia_de_data_has_loja_ultima_atualizacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15767,7 +15692,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_ultima_atualizacao_hierarquia_de_data_has_loja_ultima_atualizacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15800,7 +15725,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_ultima_atualizacao_hierarquia_de_data_has_loja_ultima_atualizacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15833,7 +15758,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_ultima_atualizacao_hierarquia_de_data_has_loja_ultima_atualizacao_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15866,7 +15791,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_ultima_atualizacao_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15899,7 +15824,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_certificado_vencimento_mê_has_loja_certificado_vencimento_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -15965,7 +15890,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_certificado_vencimento_trimestre_has_loja_certificado_vencimento_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16031,7 +15956,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_certificado_vencimento_ano_has_loja_certificado_vencimento_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16097,7 +16022,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_certificado_vencimento_hierarquia_de_data_has_loja_certificado_vencimento_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16130,7 +16055,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_certificado_vencimento_hierarquia_de_data_has_loja_certificado_vencimento_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16163,7 +16088,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_certificado_vencimento_hierarquia_de_data_has_loja_certificado_vencimento_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16196,7 +16121,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_certificado_vencimento_hierarquia_de_data_has_loja_certificado_vencimento_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16229,7 +16154,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_certificado_vencimento_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16262,7 +16187,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_pec_ultimo_estudo_mê_has_loja_pec_ultimo_estudo_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16328,7 +16253,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_pec_ultimo_estudo_trimestre_has_loja_pec_ultimo_estudo_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16394,7 +16319,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_pec_ultimo_estudo_ano_has_loja_pec_ultimo_estudo_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16460,7 +16385,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_pec_ultimo_estudo_hierarquia_de_data_has_loja_pec_ultimo_estudo_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16493,7 +16418,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_pec_ultimo_estudo_hierarquia_de_data_has_loja_pec_ultimo_estudo_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16526,7 +16451,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_pec_ultimo_estudo_hierarquia_de_data_has_loja_pec_ultimo_estudo_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16559,7 +16484,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_pec_ultimo_estudo_hierarquia_de_data_has_loja_pec_ultimo_estudo_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16592,7 +16517,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_pec_ultimo_estudo_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16625,7 +16550,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_desassociacao_mê_has_loja_data_desassociacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16691,7 +16616,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_desassociacao_trimestre_has_loja_data_desassociacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16757,7 +16682,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_desassociacao_ano_has_loja_data_desassociacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16823,7 +16748,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_desassociacao_hierarquia_de_data_has_loja_data_desassociacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16856,7 +16781,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_desassociacao_hierarquia_de_data_has_loja_data_desassociacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16889,7 +16814,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_desassociacao_hierarquia_de_data_has_loja_data_desassociacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16922,7 +16847,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_desassociacao_hierarquia_de_data_has_loja_data_desassociacao_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16955,7 +16880,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_desassociacao_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -16988,7 +16913,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_inauguracao_mê_has_loja_data_inauguracao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17054,7 +16979,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_inauguracao_trimestre_has_loja_data_inauguracao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17120,7 +17045,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_inauguracao_ano_has_loja_data_inauguracao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17186,7 +17111,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_inauguracao_hierarquia_de_data_has_loja_data_inauguracao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17219,7 +17144,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_inauguracao_hierarquia_de_data_has_loja_data_inauguracao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17252,7 +17177,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_inauguracao_hierarquia_de_data_has_loja_data_inauguracao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17285,7 +17210,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_inauguracao_hierarquia_de_data_has_loja_data_inauguracao_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17318,7 +17243,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_inauguracao_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17351,7 +17276,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_cadastro_mê_has_loja_data_cadastro_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17417,7 +17342,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_cadastro_trimestre_has_loja_data_cadastro_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17483,7 +17408,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_cadastro_ano_has_loja_data_cadastro_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17549,7 +17474,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_cadastro_hierarquia_de_data_has_loja_data_cadastro_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17582,7 +17507,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_cadastro_hierarquia_de_data_has_loja_data_cadastro_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17615,7 +17540,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_cadastro_hierarquia_de_data_has_loja_data_cadastro_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17648,7 +17573,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_cadastro_hierarquia_de_data_has_loja_data_cadastro_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17681,7 +17606,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_data_cadastro_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17714,7 +17639,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_fim_mê_has_tarefa_dt_fim_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17780,7 +17705,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_fim_trimestre_has_tarefa_dt_fim_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17846,7 +17771,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_fim_ano_has_tarefa_dt_fim_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17912,7 +17837,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_fim_hierarquia_de_data_has_tarefa_dt_fim_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17945,7 +17870,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_fim_hierarquia_de_data_has_tarefa_dt_fim_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -17978,7 +17903,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_fim_hierarquia_de_data_has_tarefa_dt_fim_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18011,7 +17936,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_fim_hierarquia_de_data_has_tarefa_dt_fim_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18044,7 +17969,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_fim_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18077,7 +18002,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_inicio_mê_has_tarefa_dt_inicio_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18143,7 +18068,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_inicio_trimestre_has_tarefa_dt_inicio_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18209,7 +18134,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_inicio_ano_has_tarefa_dt_inicio_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18275,7 +18200,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_inicio_hierarquia_de_data_has_tarefa_dt_inicio_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18308,7 +18233,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_inicio_hierarquia_de_data_has_tarefa_dt_inicio_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18341,7 +18266,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_inicio_hierarquia_de_data_has_tarefa_dt_inicio_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18374,7 +18299,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_inicio_hierarquia_de_data_has_tarefa_dt_inicio_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18407,7 +18332,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_inicio_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18440,7 +18365,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_criacao_mê_has_tarefa_dt_criacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18506,7 +18431,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_criacao_trimestre_has_tarefa_dt_criacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18572,7 +18497,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_criacao_ano_has_tarefa_dt_criacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18638,7 +18563,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_criacao_hierarquia_de_data_has_tarefa_dt_criacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18671,7 +18596,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_criacao_hierarquia_de_data_has_tarefa_dt_criacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18704,7 +18629,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_criacao_hierarquia_de_data_has_tarefa_dt_criacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18737,7 +18662,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_criacao_hierarquia_de_data_has_tarefa_dt_criacao_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18770,7 +18695,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_dt_criacao_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18803,7 +18728,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_início_da_semana_mê_has_dCalendario_SULT_início_da_semana_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18869,7 +18794,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_início_da_semana_trimestre_has_dCalendario_SULT_início_da_semana_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18935,7 +18860,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_início_da_semana_ano_has_dCalendario_SULT_início_da_semana_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19001,7 +18926,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_início_da_semana_hierarquia_de_data_has_dCalendario_SULT_início_da_semana_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19034,7 +18959,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_início_da_semana_hierarquia_de_data_has_dCalendario_SULT_início_da_semana_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19067,7 +18992,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_início_da_semana_hierarquia_de_data_has_dCalendario_SULT_início_da_semana_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19100,7 +19025,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_início_da_semana_hierarquia_de_data_has_dCalendario_SULT_início_da_semana_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19133,7 +19058,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_início_da_semana_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19166,7 +19091,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_date_mê_has_dCalendario_SULT_date_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19232,7 +19157,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_date_trimestre_has_dCalendario_SULT_date_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19298,7 +19223,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_date_ano_has_dCalendario_SULT_date_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19364,7 +19289,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_date_hierarquia_de_data_has_dCalendario_SULT_date_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19397,7 +19322,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_date_hierarquia_de_data_has_dCalendario_SULT_date_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19430,7 +19355,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_date_hierarquia_de_data_has_dCalendario_SULT_date_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19463,7 +19388,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_date_hierarquia_de_data_has_dCalendario_SULT_date_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19496,7 +19421,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_date_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19529,7 +19454,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_dCalendario_SULT": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19582,7 +19507,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_loja": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19615,7 +19540,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_cidade1": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19661,7 +19586,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_projeto": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19694,7 +19619,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_dCalendario_SULT": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19740,7 +19665,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_projeto": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19786,7 +19711,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_tarefa_detalhada": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19850,52 +19775,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "parâmetro_has_parâmetro": {
-			      "Binding": {
-			        "ConceptualEntity": "Parâmetro"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "parâmetro": {
-			          "Target": {
-			            "Entity": "parâmetro"
-			          }
-			        },
-			        "parâmetro.parâmetro": {
-			          "Target": {
-			            "Entity": "parâmetro.parâmetro"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "parâmetro"
-			            },
-			            "Object": {
-			              "Role": "parâmetro.parâmetro"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "parâmetros_have_parâmetros"
-			        },
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "parâmetro"
-			            },
-			            "Name": {
-			              "Role": "parâmetro.parâmetro"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "parâmetros_are_names_IDs_of_parâmetros"
-			        }
-			      ]
-			    },
 			    "par_dia_mes_ano_has_parâmetro": {
 			      "Binding": {
 			        "ConceptualEntity": "parDiaMesAno"
@@ -19931,7 +19810,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_medida_assunto_cartão": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19997,7 +19876,7 @@ cultureInfo pt-BR
 			    },
 			    "cidade_has_region_ID": {
 			      "Binding": {
-			        "ConceptualEntity": "Cidades"
+			        "ConceptualEntity": "dimCidades"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20030,7 +19909,7 @@ cultureInfo pt-BR
 			    },
 			    "cidade_has_population": {
 			      "Binding": {
-			        "ConceptualEntity": "Cidades"
+			        "ConceptualEntity": "dimCidades"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20100,7 +19979,7 @@ cultureInfo pt-BR
 			    },
 			    "cidade_has_ID_plugpharma": {
 			      "Binding": {
-			        "ConceptualEntity": "Cidades"
+			        "ConceptualEntity": "dimCidades"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20133,7 +20012,7 @@ cultureInfo pt-BR
 			    },
 			    "cidade_has_uf": {
 			      "Binding": {
-			        "ConceptualEntity": "Cidades"
+			        "ConceptualEntity": "dimCidades"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20166,7 +20045,7 @@ cultureInfo pt-BR
 			    },
 			    "cidade_has_code_area": {
 			      "Binding": {
-			        "ConceptualEntity": "Cidades"
+			        "ConceptualEntity": "dimCidades"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20231,7 +20110,7 @@ cultureInfo pt-BR
 			    },
 			    "cidade_has_ibge_id": {
 			      "Binding": {
-			        "ConceptualEntity": "Cidades"
+			        "ConceptualEntity": "dimCidades"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20264,7 +20143,7 @@ cultureInfo pt-BR
 			    },
 			    "cidade_has_name": {
 			      "Binding": {
-			        "ConceptualEntity": "Cidades"
+			        "ConceptualEntity": "dimCidades"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20310,7 +20189,7 @@ cultureInfo pt-BR
 			    },
 			    "cidade_has_ID_city": {
 			      "Binding": {
-			        "ConceptualEntity": "Cidades"
+			        "ConceptualEntity": "dimCidades"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20343,7 +20222,7 @@ cultureInfo pt-BR
 			    },
 			    "atualização_has_texto_última_att": {
 			      "Binding": {
-			        "ConceptualEntity": "Atualização"
+			        "ConceptualEntity": "Atualizacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20376,7 +20255,7 @@ cultureInfo pt-BR
 			    },
 			    "atualização_has_última_atualização": {
 			      "Binding": {
-			        "ConceptualEntity": "Atualização"
+			        "ConceptualEntity": "Atualizacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20409,7 +20288,7 @@ cultureInfo pt-BR
 			    },
 			    "navegação_has_setor": {
 			      "Binding": {
-			        "ConceptualEntity": "Navegação"
+			        "ConceptualEntity": "Navegacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20442,7 +20321,7 @@ cultureInfo pt-BR
 			    },
 			    "navegação_has_página": {
 			      "Binding": {
-			        "ConceptualEntity": "Navegação"
+			        "ConceptualEntity": "Navegacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20475,7 +20354,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_funcao": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20508,7 +20387,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_medida_auditor": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20574,7 +20453,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_auditor": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20640,7 +20519,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_fantasia": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20673,7 +20552,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_medida_media_de_atendimento_por_dia_e_resp_": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20706,7 +20585,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_medida_media_de_atendimentos_por_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20739,7 +20618,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_medida_media_de_atendimentos_por_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20772,7 +20651,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_medida_media_de_atendimentos_por_responsável": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20805,7 +20684,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_medida_media_de_atendimentos_por_loja": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20838,7 +20717,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_medida_qtd_dias": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20871,7 +20750,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_medida_qtd_tarefas": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20904,7 +20783,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_medida_qtd_lojas": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20937,7 +20816,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_medida_qtd_responsável": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -20970,7 +20849,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_data_atualizacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21003,7 +20882,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_data_insercao": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21036,7 +20915,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_conteudo_hash": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21069,7 +20948,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_assunto": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21102,7 +20981,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_acao": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21135,7 +21014,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_tipo": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21168,7 +21047,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_loja": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21201,7 +21080,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_responsavel": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21234,7 +21113,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_tarefa": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21267,7 +21146,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21300,7 +21179,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_id_planilha": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21333,7 +21212,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_chave_id": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21366,7 +21245,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_has_medida_qtd_atendimentos": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21399,7 +21278,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_cat": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21432,7 +21311,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_medida_média_de_atendimento_por_dia_e_resp_": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21465,7 +21344,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_média_de_atendimento_por_dia_e_resp_": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21498,7 +21377,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_qtd__responsaveis": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21531,7 +21410,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_medida_qtd__dias": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21564,7 +21443,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_qtd__tarefas_CT": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21597,7 +21476,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_função": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21630,7 +21509,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_primeiro_nome": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21663,7 +21542,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_qtd__totas_tarefas": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21696,7 +21575,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_polo": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21729,7 +21608,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_total_de_lojas_inauguradas": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21762,7 +21641,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_cidade": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21795,7 +21674,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_qtd__serviços_recorrentes_realizados": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21828,7 +21707,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_qtd__serviços_recorrentes_exitentes": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21861,7 +21740,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_CESTAO": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21894,7 +21773,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_clusters": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21927,7 +21806,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_mês_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21960,7 +21839,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_descricao": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -21993,7 +21872,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_loja_numero": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22026,7 +21905,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_cidade": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22059,7 +21938,7 @@ cultureInfo pt-BR
 			    },
 			    "cidade_has_medida_cidade": {
 			      "Binding": {
-			        "ConceptualEntity": "Cidades"
+			        "ConceptualEntity": "dimCidades"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22092,7 +21971,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_d_desde": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22125,7 +22004,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_telefone": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22158,7 +22037,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_nome_fantasia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22191,7 +22070,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_razão_social": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22224,7 +22103,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_scantech": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22257,7 +22136,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_orion": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22290,7 +22169,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_minha_saúde": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22323,7 +22202,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_GC": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22356,7 +22235,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_edelivery": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22389,7 +22268,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_comp__preço": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22422,7 +22301,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_TRADE": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22455,7 +22334,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_RAIOx": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22488,7 +22367,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_PEC": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22521,7 +22400,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_PBM": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22554,7 +22433,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_PAI": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22587,7 +22466,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_FIDELIZA": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22620,7 +22499,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_COMPRAS": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22653,7 +22532,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_BÚSSOLA": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22686,7 +22565,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_atendido_BALCONISTA": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22719,7 +22598,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_loja_numero": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22752,7 +22631,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_responsavel_nome": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22785,7 +22664,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_responsavel_id": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22818,7 +22697,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_modelo_nome": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22851,7 +22730,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_modelo_id": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22884,7 +22763,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_dt_fim": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22917,7 +22796,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_dt_inicio": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22950,7 +22829,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_dt_criacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -22983,7 +22862,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_concluido": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23016,7 +22895,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_pausado": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23049,7 +22928,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_ativo": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23082,7 +22961,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_nome": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23115,7 +22994,7 @@ cultureInfo pt-BR
 			    },
 			    "projeto_has_id": {
 			      "Binding": {
-			        "ConceptualEntity": "Projetos"
+			        "ConceptualEntity": "dimProjeto"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23161,7 +23040,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_média_de_atendimentos_por_responsável": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23194,7 +23073,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_medida_média_de_atendimentos": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23227,7 +23106,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_média_de_atendimentos": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23260,7 +23139,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_média_de_atendimentos_por_loja": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23293,7 +23172,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_qtd__lojas": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23326,7 +23205,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_fantasia": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23359,7 +23238,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_possui_tentativa": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23392,7 +23271,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_loja": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23425,7 +23304,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_entrou_em_caducidade": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23458,7 +23337,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_dias_desde_a_última": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23491,7 +23370,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_responsavel_nome": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23524,7 +23403,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_responsavel_id": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23557,7 +23436,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_qtd_filiais": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23590,7 +23469,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_realizam_algum_serviço": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23623,7 +23502,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_qtd__atendimentos": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23656,7 +23535,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_lojas_ativas": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23689,7 +23568,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_maturidade": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23722,7 +23601,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_filial": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23755,7 +23634,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_loja": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23801,7 +23680,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_data_associacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23834,7 +23713,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_cnpj_s": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23867,7 +23746,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_ultima_atualizacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23900,7 +23779,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_pec_app": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23933,7 +23812,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_situacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23966,7 +23845,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_longitude": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -23999,7 +23878,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_latitude": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24032,7 +23911,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_observacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24065,7 +23944,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_codigo_movidesk": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24098,7 +23977,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_anjo": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24131,7 +24010,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_cluster": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24164,7 +24043,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_faturamento_inicial": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24197,7 +24076,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_farmacia_popular": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24230,7 +24109,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_id_grupo_empresarial": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24263,7 +24142,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_pec_cdg_acesso": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24296,7 +24175,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_pec_id_convenio": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24329,7 +24208,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_certificado_vencimento": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24362,7 +24241,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_plugpharma": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24395,7 +24274,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_pec_ultimo_estudo": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24428,7 +24307,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_data_desassociacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24461,7 +24340,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_data_inauguracao": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24494,7 +24373,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_data_cadastro": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24527,7 +24406,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_sistema": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24560,7 +24439,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_responsavel": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24593,7 +24472,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_inaugurada": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24626,7 +24505,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_ativo": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24659,7 +24538,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_email_2": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24692,7 +24571,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_end_email": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24725,7 +24604,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_end_fax": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24758,7 +24637,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_telefone_movel": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24791,7 +24670,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_end_telefonefixo_2": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24824,7 +24703,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_end_fone": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24857,7 +24736,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_end_cep": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24890,7 +24769,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_end_bairro": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24923,7 +24802,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_end_complemento": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24956,7 +24835,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_end_numero": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -24989,7 +24868,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_end_logradouro": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25022,7 +24901,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_inscricaoestadual": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25055,7 +24934,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_cnpj": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25088,7 +24967,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_razaosocial": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25121,7 +25000,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_fantasia": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25154,7 +25033,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_loja_numero": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25187,7 +25066,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_id_loja": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25220,7 +25099,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_fase_id": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25253,7 +25132,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_fase_nome": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25286,7 +25165,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_teste_conclusao": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25319,7 +25198,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_status": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25352,7 +25231,7 @@ cultureInfo pt-BR
 			    },
 			    "cidade_has_medida_qtd__cidades": {
 			      "Binding": {
-			        "ConceptualEntity": "Cidades"
+			        "ConceptualEntity": "dimCidades"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25385,7 +25264,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_qtd__atendimentos_TXT": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25418,7 +25297,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_date": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25451,7 +25330,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_associado": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25484,7 +25363,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_dt_conclusao": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25517,7 +25396,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_dt_fim": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25550,7 +25429,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_dt_inicio": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25583,7 +25462,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_dt_criacao": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25616,7 +25495,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_nome": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25649,7 +25528,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_id": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25695,7 +25574,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_último_serviço": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25728,7 +25607,7 @@ cultureInfo pt-BR
 			    },
 			    "tarefa_has_medida_data_do_último_serviço": {
 			      "Binding": {
-			        "ConceptualEntity": "Tarefa"
+			        "ConceptualEntity": "fatTarefa"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25761,7 +25640,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_has_medida_total_de_lojas_ativas": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25794,7 +25673,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_anomes_ordem_invertido": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25827,7 +25706,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_dia_do_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25860,7 +25739,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_date_as_integer": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25944,7 +25823,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_dia_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -25977,7 +25856,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_dia_da_semana": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26010,7 +25889,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26043,7 +25922,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_quarter": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26076,7 +25955,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_mês_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26109,7 +25988,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_anomes_ordem": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26142,7 +26021,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_semana_do_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26175,7 +26054,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_início_da_semana": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26208,7 +26087,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_semana": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26241,7 +26120,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_mês_t": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26274,7 +26153,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_mês_mmm": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26307,7 +26186,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26340,7 +26219,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26373,7 +26252,7 @@ cultureInfo pt-BR
 			    },
 			    "dCalendario_SULT_has_date": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario SULTS"
+			        "ConceptualEntity": "dimCalendario SULTS"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26406,7 +26285,7 @@ cultureInfo pt-BR
 			    },
 			    "loja_is_farmacia_popular": {
 			      "Binding": {
-			        "ConceptualEntity": "Lojas"
+			        "ConceptualEntity": "dimLoja"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26461,7 +26340,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_atualizacao_ano_has_atendimento_data_atualizacao_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26527,7 +26406,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_atualizacao_trimestre_has_atendimento_data_atualizacao_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26593,7 +26472,7 @@ cultureInfo pt-BR
 			    },
 			    "atendimento_data_atualizacao_mê_has_atendimento_data_atualizacao_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Atendimentos"
+			        "ConceptualEntity": "fatAtendimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26659,7 +26538,7 @@ cultureInfo pt-BR
 			    },
 			    "atualização_última_atualização_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "Atualização"
+			        "ConceptualEntity": "Atualizacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26692,7 +26571,7 @@ cultureInfo pt-BR
 			    },
 			    "atualização_última_atualização_hierarquia_de_data_has_atualização_última_atualização_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "Atualização"
+			        "ConceptualEntity": "Atualizacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26725,7 +26604,7 @@ cultureInfo pt-BR
 			    },
 			    "atualização_última_atualização_hierarquia_de_data_has_atualização_última_atualização_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Atualização"
+			        "ConceptualEntity": "Atualizacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26758,7 +26637,7 @@ cultureInfo pt-BR
 			    },
 			    "atualização_última_atualização_hierarquia_de_data_has_atualização_última_atualização_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Atualização"
+			        "ConceptualEntity": "Atualizacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26791,7 +26670,7 @@ cultureInfo pt-BR
 			    },
 			    "atualização_última_atualização_hierarquia_de_data_has_atualização_última_atualização_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Atualização"
+			        "ConceptualEntity": "Atualizacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26824,7 +26703,7 @@ cultureInfo pt-BR
 			    },
 			    "atualização_última_atualização_ano_has_atualização_última_atualização_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Atualização"
+			        "ConceptualEntity": "Atualizacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26890,7 +26769,7 @@ cultureInfo pt-BR
 			    },
 			    "atualização_última_atualização_trimestre_has_atualização_última_atualização_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "Atualização"
+			        "ConceptualEntity": "Atualizacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -26956,7 +26835,7 @@ cultureInfo pt-BR
 			    },
 			    "atualização_última_atualização_mê_has_atualização_última_atualização_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "Atualização"
+			        "ConceptualEntity": "Atualizacao"
 			      },
 			      "State": "Generated",
 			      "Roles": {

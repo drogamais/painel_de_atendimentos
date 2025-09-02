@@ -40,8 +40,8 @@ table parLojaTarefa
 		mode: import
 		source =
 				{
-				    ("LOJAS", NAMEOF('Atendimentos'[Fantasia]), 0),
-				    ("TAREFAS", NAMEOF('Atendimentos'[Tarefa_Detalhada]), 1)
+				    ("LOJAS", NAMEOF('fatAtendimentos'[Fantasia]), 0),
+				    ("TAREFAS", NAMEOF('fatAtendimentos'[Tarefa_Detalhada]), 1)
 				}
 
 	annotation PBI_Id = 0cc6f1d2b3d2434691f5b6d59dd7ae29

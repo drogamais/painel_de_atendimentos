@@ -105,7 +105,7 @@ table LocalDateTable_043ba5ef-d2bb-4574-9f7e-69dbdd82ebbb
 
 	partition LocalDateTable_043ba5ef-d2bb-4574-9f7e-69dbdd82ebbb = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('dCalendario SULTS'[Início da semana])), 1, 1), Date(Year(MAX('dCalendario SULTS'[Início da semana])), 12, 31))
+		source = Calendar(Date(Year(MIN('dimCalendario SULTS'[Início da semana])), 1, 1), Date(Year(MAX('dimCalendario SULTS'[Início da semana])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 
