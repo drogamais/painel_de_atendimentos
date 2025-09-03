@@ -25,6 +25,8 @@ table fatAtendimentos
 		summarizeBy: none
 		sourceColumn: data
 
+		changedProperty = SortByColumn
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
@@ -139,21 +141,35 @@ table fatAtendimentos
 			
 			VAR TarefaAtual = fatAtendimentos[tarefa]
 			VAR ResponsavelAtual = fatAtendimentos[responsavel]
+			VAR IndiceUnico = 
+			    RANKX(
+			        FILTER(
+			            fatAtendimentos,
+			            fatAtendimentos[tarefa] = TarefaAtual &&
+			            fatAtendimentos[responsavel] = ResponsavelAtual
+			        ),
+			        fatAtendimentos[chave_id],, ASC
+			    )
 			
 			RETURN
-			TarefaAtual & " " & 
-			-- Cria um índice (1, 2, 3...) para tarefas repetidas do mesmo responsável
-			RANKX(
-			    FILTER(
-			        fatAtendimentos,
-			        fatAtendimentos[tarefa] = TarefaAtual &&
-			        fatAtendimentos[responsavel] = ResponsavelAtual
-			    ),
-			    fatAtendimentos[chave_id],,ASC
-			)
+			-- Adiciona um ou mais caracteres invisíveis ao final da tarefa
+			-- A primeira tarefa repetida terá um, a segunda terá dois, e assim por diante.
+			TarefaAtual & REPT(UNICHAR(8203), IndiceUnico)
 			```
 		lineageTag: 311a3290-2b79-4b3d-ad4f-73e9bee03020
 		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tarefa e Data' = ```
+			
+			FORMAT('fatAtendimentos'[data], "dd/mm") & " - " & fatAtendimentos[loja] & " - " & 'fatAtendimentos'[Tarefa_Detalhada] 
+			```
+		lineageTag: f0f334ca-f466-42d0-b103-c09e9a554432
+		summarizeBy: none
+		sortByColumn: data
+
+		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
@@ -163,11 +179,10 @@ table fatAtendimentos
 				let
 				    Fonte = Odbc.DataSource("dsn=dbSults", [HierarchicalNavigation=true]),
 				    dbSults_Database = Fonte{[Name="dbSults",Kind="Database"]}[Data],
-				    tb_atendimentos_Table = dbSults_Database{[Name="tb_atendimentos",Kind="Table"]}[Data]
+				    tb_atendimentos_Table = dbSults_Database{[Name="tb_atendimentos",Kind="Table"]}[Data],
+				    #"Linhas Filtradas" = Table.SelectRows(tb_atendimentos_Table, each true)
 				in
-				    tb_atendimentos_Table
-
-	changedProperty = Name
+				    #"Linhas Filtradas"
 
 	annotation PBI_NavigationStepName = Navegação
 

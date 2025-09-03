@@ -513,8 +513,6 @@ table dimLoja
 				in
 				    #"Linhas Filtradas"
 
-	changedProperty = Name
-
 	annotation PBI_NavigationStepName = Navegação
 
 	annotation PBI_ResultType = Table

@@ -320,8 +320,6 @@ table fatTarefa
 				in
 				    #"Valor Substituído"
 
-	changedProperty = Name
-
 	annotation PBI_NavigationStepName = Navegação
 
 	annotation PBI_ResultType = Table

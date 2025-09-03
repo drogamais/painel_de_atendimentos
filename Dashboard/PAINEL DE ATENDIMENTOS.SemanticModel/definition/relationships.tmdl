@@ -78,20 +78,6 @@ relationship 0231de53-92e6-1661-a80f-a0f73e18cf69
 	fromColumn: dimLoja.LOJA_NUMERO
 	toColumn: dimProjeto.'loja.numero'
 
-relationship 2b7d20cd-2d75-42d4-bed2-88921354ec90
-	joinOnDateBehavior: datePartOnly
-	fromColumn: 'dimCalendario SULTS'.Date
-	toColumn: LocalDateTable_206007f7-ae84-4577-a7ac-d66e9b9a7e28.Date
-
-relationship 3c35b3e1-285e-11f3-728d-f7baeac61320
-	fromColumn: fatTarefa.Date
-	toColumn: 'dimCalendario SULTS'.Date
-
-relationship 3f2ba614-6bcb-40df-9e43-73b64c2c2dda
-	joinOnDateBehavior: datePartOnly
-	fromColumn: 'dimCalendario SULTS'.'Início da semana'
-	toColumn: LocalDateTable_043ba5ef-d2bb-4574-9f7e-69dbdd82ebbb.Date
-
 relationship 421cc4d9-b658-433d-b251-602bbd0c965e
 	joinOnDateBehavior: datePartOnly
 	fromColumn: fatAtendimentos.data_insercao
@@ -102,10 +88,6 @@ relationship 28701244-7e93-48f2-ae96-b9672be1ad21
 	fromColumn: fatAtendimentos.data_atualizacao
 	toColumn: LocalDateTable_05ad3b83-2ec6-4d53-bd92-4321457f6305.Date
 
-relationship e9674c75-4435-ede5-2429-5493c47ddc2a
-	fromColumn: fatAtendimentos.data
-	toColumn: 'dimCalendario SULTS'.Date
-
 relationship 3168bdbb-540e-4247-83f1-29211a3f49fe
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Atualizacao.'Última Atualização'
@@ -115,4 +97,36 @@ relationship AutoDetected_573848b7-20fb-48e1-9950-5491fefc0caa
 	crossFilteringBehavior: bothDirections
 	fromColumn: dimLoja.ID_City
 	toColumn: dimCidades.ID_City
+
+relationship 8c1bb6a1-e0b8-43a7-ad33-1f540df2b0e1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'dimCalendario SULTS'.Date
+	toColumn: LocalDateTable_206007f7-ae84-4577-a7ac-d66e9b9a7e28.Date
+
+relationship 3c35b3e1-285e-11f3-728d-f7baeac61320
+	fromColumn: fatTarefa.Date
+	toColumn: 'dimCalendario SULTS'.Date
+
+relationship e9674c75-4435-ede5-2429-5493c47ddc2a
+	fromColumn: fatAtendimentos.data
+	toColumn: 'dimCalendario SULTS'.Date
+
+relationship e5b17e2a-74fb-4be6-bfb7-a0c0eff9c6fe
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'dimCalendario SULTS'.'Início da semana'
+	toColumn: LocalDateTable_043ba5ef-d2bb-4574-9f7e-69dbdd82ebbb.Date
+
+relationship b9aa7687-e37c-4a15-9f1a-e597f783c213
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dimCalendario.Date
+	toColumn: LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57.Date
+
+relationship 1701f16e-02d3-40ae-a774-303fc69ed1d7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dimCalendario.'Início da semana'
+	toColumn: LocalDateTable_24906c5d-25d4-4276-a871-5a9d6b763e66.Date
+
+relationship 0d4fc1ae-e95e-7153-af38-a51404790893
+	fromColumn: fatAtendimentos.data
+	toColumn: dimCalendario.Date
 

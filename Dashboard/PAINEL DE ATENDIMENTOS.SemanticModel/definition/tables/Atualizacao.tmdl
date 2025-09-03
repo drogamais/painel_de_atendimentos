@@ -29,8 +29,6 @@ table Atualizacao
 				in
 				    #"Tipo Alterado"
 
-	changedProperty = Name
-
 	annotation PBI_NavigationStepName = Navegação
 
 	annotation PBI_ResultType = Table

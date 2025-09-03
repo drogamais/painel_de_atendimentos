@@ -40,8 +40,8 @@ table parDiaMesAno
 		mode: import
 		source =
 				{
-				    ("MÊS/ANO", NAMEOF('dimCalendario SULTS'[Mês/Ano]), 0),
-				    ("DIA/MÊS", NAMEOF('dimCalendario SULTS'[Dia/Mês]), 1)
+				    ("MÊS/ANO", NAMEOF('dimCalendario'[Mês/Ano]), 0),
+				    ("DIA/MÊS", NAMEOF('dimCalendario'[Dia/Mês]), 1)
 				}
 
 	annotation PBI_Id = 00780c54fc814c23bbac907696ae1db8
