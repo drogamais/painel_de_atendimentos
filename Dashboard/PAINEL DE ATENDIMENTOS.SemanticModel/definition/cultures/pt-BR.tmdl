@@ -10318,16 +10318,6 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "RESP.": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "RESPONSÁVEL": {
 			            "State": "Suggested",
 			            "Source": {
@@ -13188,16 +13178,6 @@ cultureInfo pt-BR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "TAREFAS": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
