@@ -51,7 +51,7 @@ table fatAtendimentos
 		dataType: int64
 		formatString: 0
 		lineageTag: 9356240f-894b-4b84-8c4f-751cc6a8669c
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: loja
 
 		annotation SummarizationSetBy = Automatic
@@ -119,8 +119,16 @@ table fatAtendimentos
 	column Fantasia =
 			
 			VAR LojaNumero = fatAtendimentos[loja]
-			
-			RETURN LojaNumero & " - " & LOOKUPVALUE(dimLoja[FANTASIA], dimLoja[LOJA_NUMERO], LojaNumero)
+			VAR NomeFantasiaRelacionado = RELATED ( dimLoja[FANTASIA] )
+			VAR NomeFinal =
+			    SWITCH (
+			        TRUE (),
+			        LojaNumero = 0, "Outro",
+			        ISBLANK ( NomeFantasiaRelacionado ), "Loja Inativa",
+			        NomeFantasiaRelacionado
+			    )
+			RETURN
+			    LojaNumero & " - " & NomeFinal
 		lineageTag: 80bd4808-64b9-4b38-a17a-a0e8326d5805
 		summarizeBy: none
 		sortByColumn: loja

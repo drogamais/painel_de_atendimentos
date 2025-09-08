@@ -130,3 +130,7 @@ relationship 0d4fc1ae-e95e-7153-af38-a51404790893
 	fromColumn: fatAtendimentos.data
 	toColumn: dimCalendario.Date
 
+relationship cde8e960-bd52-7508-a225-ca6d3aa5f3da
+	fromColumn: fatAtendimentos.loja
+	toColumn: dimLoja.LOJA_NUMERO
+
