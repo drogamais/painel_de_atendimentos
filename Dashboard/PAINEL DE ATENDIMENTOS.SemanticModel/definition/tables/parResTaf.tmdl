@@ -40,8 +40,9 @@ table parResTaf
 		mode: import
 		source =
 				{
-				    ("TAREFA", NAMEOF('fatAtendimentos'[tarefa]), 0),
-				    ("TIPO", NAMEOF('fatAtendimentos'[tipo]), 1)
+				    ("RESP.", NAMEOF('fatAtendimentos'[responsavel]), 0),
+				    ("TAREFA", NAMEOF('fatAtendimentos'[tarefa]), 1),
+				    ("TIPO", NAMEOF('fatAtendimentos'[tipo]), 2)
 				}
 
 	annotation PBI_Id = 03062a60c90e4287a071865d73ee97f4

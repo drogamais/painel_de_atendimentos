@@ -10,7 +10,7 @@ annotation PBI_QueryOrder = ["fatTarefa","dimLoja","dimProjeto","fatAtendimentos
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.146.1254.0 (25.08)+791a7518fadc83da883d79322a2658aff57c8db3
+annotation PBIDesktopVersion = 2.146.1454.0 (25.08)+901d6c338d1dea81ac3e53073ffb10469f0f37b8
 
 annotation PBI_ProTooling = ["DevMode"]
 
