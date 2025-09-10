@@ -181,6 +181,14 @@ table fatAtendimentos
 
 		annotation SummarizationSetBy = Automatic
 
+	column adjunto
+		dataType: string
+		lineageTag: c6a5e278-c1cd-40d7-b85f-92df7bf1ecd8
+		summarizeBy: none
+		sourceColumn: adjunto
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fatAtendimentos = m
 		mode: import
 		source =
