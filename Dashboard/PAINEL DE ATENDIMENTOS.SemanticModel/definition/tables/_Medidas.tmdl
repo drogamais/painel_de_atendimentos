@@ -455,7 +455,7 @@ table _Medidas
 		displayFolder: Focal
 		lineageTag: 2032edb1-93f0-475b-a4e3-561f6e0ee326
 
-	measure 'Qtd dias' = COALESCE(CALCULATE(DISTINCTCOUNT('dimCalendario SULTS'[Date]), 'dimCalendario SULTS'[Dia da semana] <> "dom", 'dimCalendario SULTS'[Dia da semana] <> "sáb"),0)
+	measure 'Qtd dias SULTS' = COALESCE(CALCULATE(DISTINCTCOUNT('dimCalendario SULTS'[Date]), 'dimCalendario SULTS'[Dia da semana] <> "dom", 'dimCalendario SULTS'[Dia da semana] <> "sáb"),0)
 		formatString: 0
 		displayFolder: Focal
 		lineageTag: ffc7d8f5-1870-403e-b4e4-090e5b3904f6
@@ -478,7 +478,7 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Media de Atendimento por Dia e Resp.' = COALESCE(DIVIDE(DIVIDE([Qtd atendimentos], [Qtd atendimentos],0),[Qtd responsável],0),0)
+	measure 'Media de Atendimento por Dia e Resp.' = COALESCE(DIVIDE(DIVIDE([Qtd atendimentos], [Qtd dias],0),[Qtd responsável],0),0)
 		displayFolder: Focal
 		lineageTag: 7a684018-22a6-44fd-acb5-98a34cea3284
 
@@ -504,6 +504,11 @@ table _Medidas
 			```
 		displayFolder: Focal
 		lineageTag: 43a61275-c793-4e4c-9ba8-29241e6074a4
+
+	measure 'Qtd dias' = COALESCE(CALCULATE(DISTINCTCOUNT('dimCalendario'[Date]), 'dimCalendario'[Dia da semana] <> "dom", 'dimCalendario'[Dia da semana] <> "sáb"),0)
+		formatString: 0
+		displayFolder: Focal
+		lineageTag: c4a62767-3b2c-48b5-bdf5-594d6d465e3d
 
 	column Column
 		isHidden

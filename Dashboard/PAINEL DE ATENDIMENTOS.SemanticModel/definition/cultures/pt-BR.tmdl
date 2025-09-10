@@ -11716,7 +11716,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Qtd dias"
+			          "ConceptualProperty": "Qtd dias SULTS"
 			        }
 			      },
 			      "State": "Generated",
