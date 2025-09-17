@@ -1,0 +1,191 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Compra - Mês",
+  "name": "db24faeb3254038021a6",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "4179c1bfe13e38b092b2",
+      "28fa702dc0b0ceb51a88",
+      "9dac7f99b29f11ed3271",
+      "236b72f7d27ab2562f8c",
+      "07bae2aaa0868d6c671d",
+      "ce395d34c881c1c1d768",
+      "54461b7a0f9398356371",
+      "0ea58e95ec253ca1f06e",
+      "31193b6d1c7f3edfbd7d",
+      "cb3903582287806825bd",
+      "cada6f318f47bb5ea525",
+      "56ff653223e40e90b3df",
+      "918aa98c0dff7edb35fc",
+      "c8a35ccb932f003b6060",
+      "912f587743a967d1e3b6",
+      "c7b42d1f4acf6bf9efcc",
+      "0f64ac8f412fa3d503d5",
+      "6a58f43085a4cd6b7100",
+      "1ca2a6d3591313a13bbb",
+      "4c5f3454ed12685912c7",
+      "3580bd374bf3bd1e19a1",
+      "e22e1c7cfa0b91c78d3f",
+      "86e1be8c79962341c05f",
+      "3e8257ee49d1600f07aa",
+      "96c7776bd7af0eabaaf8",
+      "34dcd96607b6c41a5115",
+      "fb260ea9fe2ca2c0be63",
+      "2d96c7f8bcf674df28f3",
+      "fb019714422364f5f230",
+      "fac9d053cc3a37dd3029",
+      "3eca914a2a73315039e4",
+      "675acd719a1064dcde73",
+      "dd0f6a2efdd579b46963",
+      "973ea79cb0f2f50987e4",
+      "baab9b357240b6a85590",
+      "6974623f845ad228b0c3",
+      "319dff9b8b641fd8463e",
+      "42d63ac60a8459b33afd",
+      "d23ce2d5475a518ab9e0",
+      "381d8c3fd98e134afcf3",
+      "0ebef821c8b459860cca",
+      "662be35de5cc0c125af8",
+      "11b995ad344cfe1f55cd"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "c130330803eec350a792",
+    "sections": {
+      "c130330803eec350a792": {
+        "filters": {
+          "byName": {
+            "4a0deb4fc745a7203646": {
+              "name": "4a0deb4fc745a7203646",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "l",
+                    "Entity": "Lojas",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "l"
+                                }
+                              },
+                              "Property": "ATIVO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "true"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Lojas"
+                    }
+                  },
+                  "Property": "ATIVO"
+                }
+              },
+              "howCreated": 1
+            },
+            "a5dc759f1720391ec2cf": {
+              "name": "a5dc759f1720391ec2cf",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "l",
+                    "Entity": "Lojas",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "l"
+                                }
+                              },
+                              "Property": "INAUGURADA"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "true"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Lojas"
+                    }
+                  },
+                  "Property": "INAUGURADA"
+                }
+              },
+              "howCreated": 1
+            }
+          }
+        },
+        "visualContainers": {}
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "af1c921e37ab5b505fb6",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 1000,
+    "height": 76.8611599543848,
+    "width": 58.228059938329487
+  },
+  "visual": {
+    "visualType": "image",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "Novo_Projeto9800218998154566.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "84f0083bc1f9eb9ac5ac",
+  "howCreated": "InsertVisualButton"
+}

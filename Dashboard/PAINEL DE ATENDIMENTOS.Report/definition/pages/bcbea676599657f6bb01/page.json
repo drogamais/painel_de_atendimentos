@@ -1,0 +1,137 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "bcbea676599657f6bb01",
+  "displayName": "Convenio",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "add1d92d94d7253f6a99",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fatAtendimentos"
+              }
+            },
+            "Property": "responsavel"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "f",
+              "Entity": "fatAtendimentos",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f"
+                          }
+                        },
+                        "Property": "responsavel"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'VALÉRIA APARECIDA BONFIM SOARES'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'10026.jpg'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "100263935064166415069.jpg"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fill'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "2dcb60f5a318ea799556",
+      "target": "d4668e472d02ef45d2bd",
+      "type": "DataFilter"
+    },
+    {
+      "source": "2dcb60f5a318ea799556",
+      "target": "453860423d051d4ff3af",
+      "type": "DataFilter"
+    },
+    {
+      "source": "d4668e472d02ef45d2bd",
+      "target": "453860423d051d4ff3af",
+      "type": "DataFilter"
+    },
+    {
+      "source": "d4668e472d02ef45d2bd",
+      "target": "2dcb60f5a318ea799556",
+      "type": "DataFilter"
+    },
+    {
+      "source": "453860423d051d4ff3af",
+      "target": "d4668e472d02ef45d2bd",
+      "type": "DataFilter"
+    }
+  ]
+}

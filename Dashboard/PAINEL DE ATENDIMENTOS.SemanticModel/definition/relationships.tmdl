@@ -134,3 +134,48 @@ relationship cde8e960-bd52-7508-a225-ca6d3aa5f3da
 	fromColumn: fatAtendimentos.loja
 	toColumn: dimLoja.LOJA_NUMERO
 
+relationship 0e4bf517-8e92-4fee-956f-cf719ef14f88
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fatAtendimentosMassa.data_insercao
+	toColumn: LocalDateTable_fdb9afcf-86a6-4405-b642-6a99f8969e6d.Date
+
+relationship 58ec0183-d39f-499e-9412-c76017c24f0c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fatAtendimentosMassa.data_atualizacao
+	toColumn: LocalDateTable_3b3ef288-0af4-4fab-9d06-63ae7071f051.Date
+
+relationship 5fac5f47-d084-ec6d-f3b0-733c71c5e06f
+	fromColumn: fatAtendimentosMassa.data
+	toColumn: 'dimCalendario SULTS'.Date
+
+relationship 7d26cb57-2dbb-205c-3d3b-1361485647d3
+	crossFilteringBehavior: bothDirections
+	fromColumn: fatAtendimentosMassa.loja
+	toColumn: dimLoja.LOJA_NUMERO
+
+relationship 0fa1149f-4729-7a53-ad73-56cd7e357f0b
+	fromColumn: fatAtendimentosMassa.data
+	toColumn: dimCalendario.Date
+
+relationship 88df6460-ea77-e5ba-72cf-a86a2ab271c3
+	isActive: false
+	fromColumn: fatChamadoSults.responsavel_id
+	toColumn: dimPessoa.id_sults
+
+relationship 68a63e0c-184b-82c8-49b7-1e6938b7dec4
+	fromColumn: fatChamadoSults.resolvido
+	toColumn: dimCalendario.Date
+
+relationship de5cb333-8d8d-f677-68c4-69855930a80b
+	isActive: false
+	fromColumn: fatChamadoSults.solicitante_id
+	toColumn: dimPessoa.id_sults
+
+relationship c161cdbc-f348-9c18-8fed-85118bccbded
+	fromColumn: bridgeChamadoSultsApoio.id_pessoa_apoio
+	toColumn: dimPessoa.id_sults
+
+relationship 3f12af8d-22ad-0bed-1111-cb2dfa01d776
+	fromColumn: bridgeChamadoSultsApoio.id_chamado
+	toColumn: fatChamadoSults.id
+

@@ -1,0 +1,68 @@
+table dimPessoa
+	lineageTag: 2adfa28c-fcad-4c7e-bf75-4bf0b14f79ae
+
+	column id_pessoa
+		dataType: int64
+		formatString: 0
+		lineageTag: ae120069-96f2-477d-a878-0998e6959e87
+		summarizeBy: none
+		sourceColumn: id_pessoa
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_movidesk
+		dataType: string
+		lineageTag: af790748-75af-4573-8093-438656302d27
+		summarizeBy: none
+		sourceColumn: id_movidesk
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_funcao
+		dataType: string
+		lineageTag: 5f5fc4cb-2584-470b-9bc3-ddefde0e0e80
+		summarizeBy: none
+		sourceColumn: id_funcao
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_sults
+		dataType: int64
+		formatString: 0
+		lineageTag: 7095f719-efb8-48b1-b0f6-e00036d7455a
+		summarizeBy: none
+		sourceColumn: id_sults
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_oficial
+		dataType: string
+		lineageTag: d985e0a1-af3e-41ca-803c-38989e9ca111
+		summarizeBy: none
+		sourceColumn: nome_oficial
+
+		annotation SummarizationSetBy = Automatic
+
+	column cargo_oficial
+		dataType: string
+		lineageTag: 8d88a010-0d11-4787-a060-1e285e2bff3b
+		summarizeBy: none
+		sourceColumn: cargo_oficial
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimPessoa = m
+		mode: import
+		source =
+				let
+				    Fonte = Odbc.DataSource("dsn=dbSults", [HierarchicalNavigation=true]),
+				    dbSults_Database = Fonte{[Name="dbSults",Kind="Database"]}[Data],
+				    dim_responsaveis_Table = dbSults_Database{[Name="dim_responsaveis",Kind="Table"]}[Data],
+				    #"Colunas Renomeadas" = Table.RenameColumns(dim_responsaveis_Table,{{"nome_oficial", "nome_oficial"}})
+				in
+				    #"Colunas Renomeadas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

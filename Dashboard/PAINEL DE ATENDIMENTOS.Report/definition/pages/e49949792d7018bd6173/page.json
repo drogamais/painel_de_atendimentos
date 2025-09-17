@@ -1,0 +1,219 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "e49949792d7018bd6173",
+  "displayName": "Conven",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0d1772cb69c0758d1d02",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fatTarefa"
+              }
+            },
+            "Property": "fase_nome"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "t",
+              "Entity": "fatTarefa",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "t"
+                              }
+                            },
+                            "Property": "fase_nome"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'NOVO LAYOUT'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true,
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "27a68a107dec48287282",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimLoja"
+              }
+            },
+            "Property": "ATIVO"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'10026.jpg'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "100269087323734622986.jpg"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fill'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "d507185994783e8580eb",
+      "target": "5eae9023d81008e1ceda",
+      "type": "DataFilter"
+    },
+    {
+      "source": "ef0f12c0c880dd076d9b",
+      "target": "5eae9023d81008e1ceda",
+      "type": "DataFilter"
+    },
+    {
+      "source": "d507185994783e8580eb",
+      "target": "1a09f9402796781e9c3a",
+      "type": "DataFilter"
+    },
+    {
+      "source": "d507185994783e8580eb",
+      "target": "937da47d05ab53575e39",
+      "type": "DataFilter"
+    },
+    {
+      "source": "ef0f12c0c880dd076d9b",
+      "target": "1a09f9402796781e9c3a",
+      "type": "DataFilter"
+    },
+    {
+      "source": "ef0f12c0c880dd076d9b",
+      "target": "937da47d05ab53575e39",
+      "type": "DataFilter"
+    },
+    {
+      "source": "5eae9023d81008e1ceda",
+      "target": "1a09f9402796781e9c3a",
+      "type": "DataFilter"
+    },
+    {
+      "source": "5eae9023d81008e1ceda",
+      "target": "937da47d05ab53575e39",
+      "type": "DataFilter"
+    },
+    {
+      "source": "5eae9023d81008e1ceda",
+      "target": "ef0f12c0c880dd076d9b",
+      "type": "DataFilter"
+    },
+    {
+      "source": "5eae9023d81008e1ceda",
+      "target": "d507185994783e8580eb",
+      "type": "DataFilter"
+    },
+    {
+      "source": "937da47d05ab53575e39",
+      "target": "1a09f9402796781e9c3a",
+      "type": "DataFilter"
+    },
+    {
+      "source": "937da47d05ab53575e39",
+      "target": "5eae9023d81008e1ceda",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1a09f9402796781e9c3a",
+      "target": "937da47d05ab53575e39",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1a09f9402796781e9c3a",
+      "target": "5eae9023d81008e1ceda",
+      "type": "DataFilter"
+    }
+  ]
+}

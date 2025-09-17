@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "af39c9094c1a82cc2cb0",
+  "position": {
+    "x": 24.830493731629804,
+    "y": 63.752189109409052,
+    "z": 18000,
+    "height": 51.861439598463825,
+    "width": 41.2671998989406,
+    "tabOrder": 16000
+  },
+  "visual": {
+    "visualType": "image",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "homem-usuario6667088016160378.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "9aac0ae0b2111073037d",
+  "howCreated": "InsertVisualButton"
+}

@@ -1,0 +1,129 @@
+table fatAtendimentosMassa
+	lineageTag: f900b7c1-6ecd-46a5-ba01-a30cab14bc4b
+
+	column chave_id
+		dataType: string
+		lineageTag: a1f25162-b476-44da-9c30-62771360a304
+		summarizeBy: none
+		sourceColumn: chave_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_massa
+		dataType: string
+		lineageTag: 370130f1-33e3-482c-9f6f-bc3e9aa6380b
+		summarizeBy: none
+		sourceColumn: id_massa
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsavel
+		dataType: string
+		lineageTag: c7dbba2a-e235-4f2a-bfed-17a5ed87ed55
+		summarizeBy: none
+		sourceColumn: responsavel
+
+		annotation SummarizationSetBy = Automatic
+
+	column funcao
+		dataType: string
+		lineageTag: 51b9c5cf-5130-45f3-84d5-20cff82af7f6
+		summarizeBy: none
+		sourceColumn: funcao
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6118f345-ef7b-4cdd-bba1-77f523387898
+		summarizeBy: none
+		sourceColumn: data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column tarefa
+		dataType: string
+		lineageTag: eec3c355-f341-47f6-a253-d65bf7d90c3f
+		summarizeBy: none
+		sourceColumn: tarefa
+
+		annotation SummarizationSetBy = Automatic
+
+	column loja
+		dataType: int64
+		formatString: 0
+		lineageTag: df58959b-b3da-4b13-bef7-7c52e6611752
+		summarizeBy: none
+		sourceColumn: loja
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo
+		dataType: string
+		lineageTag: ee6e84c8-f3f6-4957-b2d6-a09f5ed2ec08
+		summarizeBy: none
+		sourceColumn: tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column acao
+		dataType: string
+		lineageTag: 6ab19682-b11d-47af-9502-7acd5034479b
+		summarizeBy: none
+		sourceColumn: acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column assunto
+		dataType: string
+		lineageTag: 200d6f40-757f-462b-9ed0-9ebda48eb7e6
+		summarizeBy: none
+		sourceColumn: assunto
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_insercao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c39c3e92-8538-4526-b672-2f0ea540060b
+		summarizeBy: none
+		sourceColumn: data_insercao
+
+		variation Variation
+			isDefault
+			relationship: 0e4bf517-8e92-4fee-956f-cf719ef14f88
+			defaultHierarchy: LocalDateTable_fdb9afcf-86a6-4405-b642-6a99f8969e6d.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_atualizacao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 16ed0ade-1eb1-44ef-90e5-7cf080b72982
+		summarizeBy: none
+		sourceColumn: data_atualizacao
+
+		variation Variation
+			isDefault
+			relationship: 58ec0183-d39f-499e-9412-c76017c24f0c
+			defaultHierarchy: LocalDateTable_3b3ef288-0af4-4fab-9d06-63ae7071f051.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fatAtendimentosMassa = m
+		mode: import
+		source =
+				let
+				    Fonte = Odbc.DataSource("dsn=dbSults", [HierarchicalNavigation=true]),
+				    dbSults_Database = Fonte{[Name="dbSults",Kind="Database"]}[Data],
+				    tb_atendimentos_massa_Table = dbSults_Database{[Name="tb_atendimentos_massa",Kind="Table"]}[Data]
+				in
+				    tb_atendimentos_massa_Table
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

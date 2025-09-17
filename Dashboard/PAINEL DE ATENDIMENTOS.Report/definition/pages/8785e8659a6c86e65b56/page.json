@@ -1,0 +1,317 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "8785e8659a6c86e65b56",
+  "displayName": "Marketing_old",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "27a68a107dec48287282",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimLoja"
+              }
+            },
+            "Property": "ATIVO"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true
+      },
+      {
+        "name": "0d1772cb69c0758d1d02",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fatTarefa"
+              }
+            },
+            "Property": "fase_nome"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "t",
+              "Entity": "fatTarefa",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "t"
+                              }
+                            },
+                            "Property": "fase_nome"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'SERVIÇOS GERAIS'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'NOVO LAYOUT'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'ATENDIMENTOS GERAIS'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true,
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "adf9e685001037e001d0",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fatTarefa"
+              }
+            },
+            "Property": "Função"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "t",
+              "Entity": "fatTarefa",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
+                          }
+                        },
+                        "Property": "Função"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Auditor'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'10026.jpg'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "100265473216125949265.jpg"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fill'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "adcd7febe8c0175e2118",
+      "target": "c57721cf62e228cc6401",
+      "type": "DataFilter"
+    },
+    {
+      "source": "4d80652025b1250b5ed4",
+      "target": "c57721cf62e228cc6401",
+      "type": "DataFilter"
+    },
+    {
+      "source": "adcd7febe8c0175e2118",
+      "target": "bd375247e184ec7da399",
+      "type": "DataFilter"
+    },
+    {
+      "source": "adcd7febe8c0175e2118",
+      "target": "99f8f2584930dc838100",
+      "type": "DataFilter"
+    },
+    {
+      "source": "4d80652025b1250b5ed4",
+      "target": "bd375247e184ec7da399",
+      "type": "DataFilter"
+    },
+    {
+      "source": "4d80652025b1250b5ed4",
+      "target": "99f8f2584930dc838100",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c57721cf62e228cc6401",
+      "target": "bd375247e184ec7da399",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c57721cf62e228cc6401",
+      "target": "99f8f2584930dc838100",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c57721cf62e228cc6401",
+      "target": "4d80652025b1250b5ed4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c57721cf62e228cc6401",
+      "target": "adcd7febe8c0175e2118",
+      "type": "DataFilter"
+    },
+    {
+      "source": "99f8f2584930dc838100",
+      "target": "bd375247e184ec7da399",
+      "type": "DataFilter"
+    },
+    {
+      "source": "99f8f2584930dc838100",
+      "target": "c57721cf62e228cc6401",
+      "type": "DataFilter"
+    },
+    {
+      "source": "bd375247e184ec7da399",
+      "target": "99f8f2584930dc838100",
+      "type": "DataFilter"
+    },
+    {
+      "source": "bd375247e184ec7da399",
+      "target": "c57721cf62e228cc6401",
+      "type": "DataFilter"
+    }
+  ]
+}
