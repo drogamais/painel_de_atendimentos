@@ -3,10 +3,11 @@
   "name": "a9d366a8cff8be908424",
   "position": {
     "x": 0,
-    "y": 51.949550670900884,
+    "y": 51.988012765626195,
     "z": 1000,
-    "height": 202.34493493361956,
-    "width": 622.93406269460149
+    "height": 202.49474585506346,
+    "width": 293.72335889568672,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "columnChart",
@@ -59,11 +60,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Qtd Chamados"
+                  "Property": "Qtd Total de Chamados"
                 }
               },
               "queryRef": "_Medidas.Qtd Chamados",
-              "nativeQueryRef": "Qtd Chamados"
+              "nativeQueryRef": "Qtd Total de Chamados"
             }
           ]
         }
@@ -272,23 +273,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "c56f7eda23d889a3226d",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "13e9e22733d9604e2b3c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Qtd Chamados"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "c56f7eda23d889a3226d"
 }

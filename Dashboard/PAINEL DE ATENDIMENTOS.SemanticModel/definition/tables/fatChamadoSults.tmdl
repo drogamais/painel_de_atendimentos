@@ -18,17 +18,6 @@ table fatChamadoSults
 
 		annotation SummarizationSetBy = Automatic
 
-	column resolvido
-		dataType: dateTime
-		formatString: Long Date
-		lineageTag: c4a58611-2b77-494c-bfb7-28275384ede1
-		summarizeBy: none
-		sourceColumn: resolvido
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
-
 	column solicitante_id
 		dataType: int64
 		formatString: 0
@@ -97,45 +86,57 @@ table fatChamadoSults
 
 		annotation SummarizationSetBy = Automatic
 
-	column NomeSolicitante =
+	column NomeSolicitante = ```
 			
-			IF(
-			    --58, 67 e 70 são os ids das pessoas do marketing da tabela dim_responsaveis no banco
-			    fatChamadoSults[solicitante_id] IN {58, 67, 70},
-			
-			    -- Se o ID ESTIVER na lista, executa a sua fórmula que já funciona
 			    LOOKUPVALUE(
 			        dimPessoa[nome_oficial],
 			        dimPessoa[id_sults],
 			        fatChamadoSults[solicitante_id]
-			    ),
-			
-			    -- Se o ID NÃO ESTIVER na lista, retorna "Outro"
-			    "Outro"
-			)
+			    )
+			```
 		lineageTag: 91cb2b81-70ff-4a92-a7bd-bbf818d2eb05
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 
-	column NomeResponsavel =
+	column NomeResponsavel = ```
 			
-			IF(
-			    --IDs sults dos reponsaveis marketing
-			    fatChamadoSults[responsavel_id] IN {58, 67, 70},
-			
-			    -- Se o ID está na lista, busca o nome ativando a relação INATIVA
 			    LOOKUPVALUE(
 			        dimPessoa[nome_oficial],
 			        dimPessoa[id_sults],
 			        fatChamadoSults[responsavel_id]
-			    ),
-			
-			    -- Caso contrário, retorna "Outro"
-			    "Outro"
-			)
+			    )
+			```
 		lineageTag: 797568c1-fa6d-480b-a0d1-0bef200a3ae2
 		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7fc30c27-799b-4407-a681-adfa347f5d6b
+		summarizeBy: none
+		sourceColumn: data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column departamento_solicitante_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 74291436-fad5-4010-b1ad-ebec06eb3d95
+		summarizeBy: sum
+		sourceColumn: departamento_solicitante_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento_solicitante_nome
+		dataType: string
+		lineageTag: 3dfaaa14-e5d3-4d1a-817f-7f591d720f73
+		summarizeBy: none
+		sourceColumn: departamento_solicitante_nome
 
 		annotation SummarizationSetBy = Automatic
 

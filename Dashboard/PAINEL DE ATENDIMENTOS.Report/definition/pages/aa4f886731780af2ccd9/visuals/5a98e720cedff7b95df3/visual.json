@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "5a98e720cedff7b95df3",
   "position": {
-    "x": 1.9095836023552692E-14,
-    "y": 74.88000000000001,
+    "x": 0,
+    "y": 71.625129849132946,
     "z": 1000,
-    "height": 79.2,
-    "width": 283.68,
-    "tabOrder": 3000
+    "height": 78.6841511072514,
+    "width": 284.01215805471128
   },
   "visual": {
     "visualType": "slicer",
@@ -42,14 +41,14 @@
             "startDate": {
               "expr": {
                 "Literal": {
-                  "Value": "datetime'2025-06-01T00:00:00'"
+                  "Value": "datetime'2025-04-02T00:00:00'"
                 }
               }
             },
             "endDate": {
               "expr": {
                 "Literal": {
-                  "Value": "datetime'2025-09-17T00:00:00'"
+                  "Value": "datetime'2025-09-18T00:00:00'"
                 }
               }
             },
@@ -231,7 +230,7 @@
                             },
                             "Right": {
                               "Literal": {
-                                "Value": "datetime'2025-06-01T00:00:00'"
+                                "Value": "datetime'2025-04-02T00:00:00'"
                               }
                             }
                           }
@@ -251,7 +250,7 @@
                             },
                             "Right": {
                               "Literal": {
-                                "Value": "datetime'2025-09-18T00:00:00'"
+                                "Value": "datetime'2025-09-19T00:00:00'"
                               }
                             }
                           }
@@ -316,5 +315,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "b319906149790ef02416"
+  "parentGroupName": "b319906149790ef02416",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "fc05c257ca25902c09aa",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimCalendario"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

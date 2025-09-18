@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "3f347171b7addc6bd5d0",
   "position": {
-    "x": 11.598077161685517,
-    "y": 96.4654674238927,
+    "x": 7.84917210449132,
+    "y": 68.887708036644213,
     "z": 1000,
-    "height": 205.48032297030957,
-    "width": 289.24184488478852
+    "height": 205.22796352583586,
+    "width": 288.87537993920972,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -276,21 +277,7 @@
         "isLockedInViewMode": true
       },
       {
-        "name": "ea720880e1de6353567e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fatChamadoSults"
-              }
-            },
-            "Property": "NomeResponsavel"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "2b75588ea58f35e93263",
+        "name": "af70b47c3daf9039b4a1",
         "field": {
           "Measure": {
             "Expression": {
@@ -301,7 +288,41 @@
             "Property": "Qtd Chamados como Responsável"
           }
         },
-        "type": "Advanced"
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "_"
+                        }
+                      },
+                      "Property": "Qtd Chamados como Responsável"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       }
     ]
   }

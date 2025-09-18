@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "6294edfb71f35241f13b",
   "position": {
-    "x": 9.488818181818182,
-    "y": 234.73956701980663,
+    "x": 10.711615600443068,
+    "y": 143.59153581888035,
     "z": 3000,
-    "height": 80.691726163058519,
-    "width": 241.28709090909092
+    "height": 80.203672492731158,
+    "width": 241.49824262817094,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -19,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "fatChamadoSults"
+                      "Entity": "dimPessoa"
                     }
                   },
-                  "Property": "NomeResponsavel"
+                  "Property": "nome_oficial"
                 }
               },
-              "queryRef": "fatChamadoSults.NomeResponsavel",
-              "nativeQueryRef": "NomeResponsavel",
-              "active": true
+              "queryRef": "dimPessoa.nome_oficial",
+              "nativeQueryRef": "PESSOA",
+              "active": true,
+              "displayName": "PESSOA"
             }
           ]
         }
@@ -223,18 +225,80 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "48151e2107743f50d6c2",
+        "name": "f1eee2860dd321d1ed05",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "fatChamadoSults"
+                "Entity": "dimPessoa"
               }
             },
-            "Property": "NomeResponsavel"
+            "Property": "nome_oficial"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "dimPessoa",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "d"
+                          }
+                        },
+                        "Property": "nome_oficial"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'CLÁUDIO ALVES DA SILVA'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'LETICIA GOMES ESPINDOLA'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'OUTRO'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'GIOVANNA MIKI HIRAI'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true
       }
     ]
   }

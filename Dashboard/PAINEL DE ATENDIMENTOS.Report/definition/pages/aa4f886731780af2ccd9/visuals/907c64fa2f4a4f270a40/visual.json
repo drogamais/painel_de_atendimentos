@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "907c64fa2f4a4f270a40",
   "position": {
-    "x": 11.218519391299768,
-    "y": 49.160340172044464,
+    "x": 11.471737659105258,
+    "y": 47.379720396771674,
     "z": 1000,
-    "height": 251.93203272498428,
-    "width": 280.44642857142856
+    "height": 252.81138790035587,
+    "width": 268.75444839857647,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -27,21 +28,6 @@
               },
               "queryRef": "fatChamadoSults.NomeSolicitante",
               "nativeQueryRef": "NomeSolicitante",
-              "active": false
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dimPessoa"
-                    }
-                  },
-                  "Property": "nome_oficial"
-                }
-              },
-              "queryRef": "dimPessoa.nome_oficial",
-              "nativeQueryRef": "nome_oficial",
               "active": true
             }
           ]
@@ -286,11 +272,12 @@
           }
         },
         "type": "Categorical",
+        "howCreated": "User",
         "isHiddenInViewMode": true,
         "isLockedInViewMode": true
       },
       {
-        "name": "a20d9c22c7a402a70969",
+        "name": "b6df362e6c1102f1039b",
         "field": {
           "Measure": {
             "Expression": {
@@ -301,10 +288,44 @@
             "Property": "Qtd Chamados como Solicitante"
           }
         },
-        "type": "Advanced"
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "_"
+                        }
+                      },
+                      "Property": "Qtd Chamados como Solicitante"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       },
       {
-        "name": "3aa136344e6e09514695",
+        "name": "6115b36d8da202029ee6",
         "field": {
           "Column": {
             "Expression": {

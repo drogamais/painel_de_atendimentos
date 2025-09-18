@@ -7,7 +7,7 @@
     "z": 11000,
     "height": 70.229032789586412,
     "width": 68.778666498234315,
-    "tabOrder": 12000
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "card",
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "_Medidas.Qtd Apoios Prestados",
-              "nativeQueryRef": "Qtd Apoios Prestados"
+              "nativeQueryRef": "Apoios",
+              "displayName": "Apoios"
             }
           ]
         }
@@ -185,7 +186,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "cf1a8a23a96c85b234e1",
+        "name": "ce54a0e9293ce030ace7",
         "field": {
           "Measure": {
             "Expression": {

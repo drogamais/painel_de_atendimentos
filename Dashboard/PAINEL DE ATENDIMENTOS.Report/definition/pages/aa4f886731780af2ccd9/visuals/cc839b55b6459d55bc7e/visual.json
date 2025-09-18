@@ -7,7 +7,7 @@
     "z": 19000,
     "height": 70.229032789586412,
     "width": 74.2809598180931,
-    "tabOrder": 9000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "card",
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "_Medidas.Qtd pessoa Mkt",
-              "nativeQueryRef": "Qtd pessoa Mkt"
+              "nativeQueryRef": "Pessoas",
+              "displayName": "Pessoas"
             }
           ]
         }
@@ -181,23 +182,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "4666b0138a3bf39822bc",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "b14ff5e84ef21b859fe9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Qtd pessoa Mkt"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "4666b0138a3bf39822bc"
 }

@@ -5,8 +5,8 @@
     "x": 0,
     "y": 0,
     "z": 0,
-    "height": 75.911867355211328,
-    "width": 278.282657322322
+    "height": 75.901156602139437,
+    "width": 287.6085810257137
   },
   "visual": {
     "visualType": "textbox",
@@ -18,7 +18,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "APOIO:",
+                    "value": "APOIOS:",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "Lucida Sans Unicode",

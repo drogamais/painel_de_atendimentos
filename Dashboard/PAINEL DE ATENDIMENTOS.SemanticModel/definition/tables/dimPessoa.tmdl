@@ -43,11 +43,29 @@ table dimPessoa
 
 		annotation SummarizationSetBy = Automatic
 
-	column cargo_oficial
+	column departamento_nome
 		dataType: string
-		lineageTag: 8d88a010-0d11-4787-a060-1e285e2bff3b
+		lineageTag: 6876b06e-7a97-4cf5-8daa-2cd2f6bf277e
 		summarizeBy: none
-		sourceColumn: cargo_oficial
+		sourceColumn: departamento_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 97226ebe-d287-419b-bcdd-9e2a0f6bcc22
+		summarizeBy: none
+		sourceColumn: departamento_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column ativo
+		dataType: int64
+		formatString: 0
+		lineageTag: c9859439-5646-4122-8980-7d3eecd446e0
+		summarizeBy: none
+		sourceColumn: ativo
 
 		annotation SummarizationSetBy = Automatic
 

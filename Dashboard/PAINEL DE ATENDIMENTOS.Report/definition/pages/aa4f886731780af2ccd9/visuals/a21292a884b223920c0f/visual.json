@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
-  "name": "236effb2657aeeb09c25",
+  "name": "a21292a884b223920c0f",
   "position": {
-    "x": 76.039114482778643,
-    "y": 262.54853796722313,
-    "z": 16000,
-    "height": 49.700546281861158,
-    "width": 201.75075506148738,
-    "tabOrder": 14000
+    "x": 34.581280788177338,
+    "y": 435.3694581280788,
+    "z": 2000,
+    "height": 93.103448275862064,
+    "width": 289.064039408867,
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,15 +19,16 @@
               {
                 "textRuns": [
                   {
-                    "value": "ATENDIMENTOS POR DIA E RESP.:",
+                    "value": "ASSUNTOS:",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "Lucida Sans Unicode",
-                      "fontSize": "8pt",
+                      "fontSize": "12pt",
                       "color": "#000000"
                     }
                   }
-                ]
+                ],
+                "horizontalTextAlignment": "center"
               }
             ]
           }
@@ -50,6 +51,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "parentGroupName": "4666b0138a3bf39822bc"
+  }
 }

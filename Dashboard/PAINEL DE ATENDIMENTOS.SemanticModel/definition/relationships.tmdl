@@ -116,20 +116,6 @@ relationship e5b17e2a-74fb-4be6-bfb7-a0c0eff9c6fe
 	fromColumn: 'dimCalendario SULTS'.'Início da semana'
 	toColumn: LocalDateTable_043ba5ef-d2bb-4574-9f7e-69dbdd82ebbb.Date
 
-relationship b9aa7687-e37c-4a15-9f1a-e597f783c213
-	joinOnDateBehavior: datePartOnly
-	fromColumn: dimCalendario.Date
-	toColumn: LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57.Date
-
-relationship 1701f16e-02d3-40ae-a774-303fc69ed1d7
-	joinOnDateBehavior: datePartOnly
-	fromColumn: dimCalendario.'Início da semana'
-	toColumn: LocalDateTable_24906c5d-25d4-4276-a871-5a9d6b763e66.Date
-
-relationship 0d4fc1ae-e95e-7153-af38-a51404790893
-	fromColumn: fatAtendimentos.data
-	toColumn: dimCalendario.Date
-
 relationship cde8e960-bd52-7508-a225-ca6d3aa5f3da
 	fromColumn: fatAtendimentos.loja
 	toColumn: dimLoja.LOJA_NUMERO
@@ -153,18 +139,10 @@ relationship 7d26cb57-2dbb-205c-3d3b-1361485647d3
 	fromColumn: fatAtendimentosMassa.loja
 	toColumn: dimLoja.LOJA_NUMERO
 
-relationship 0fa1149f-4729-7a53-ad73-56cd7e357f0b
-	fromColumn: fatAtendimentosMassa.data
-	toColumn: dimCalendario.Date
-
 relationship 88df6460-ea77-e5ba-72cf-a86a2ab271c3
 	isActive: false
 	fromColumn: fatChamadoSults.responsavel_id
 	toColumn: dimPessoa.id_sults
-
-relationship 68a63e0c-184b-82c8-49b7-1e6938b7dec4
-	fromColumn: fatChamadoSults.resolvido
-	toColumn: dimCalendario.Date
 
 relationship de5cb333-8d8d-f677-68c4-69855930a80b
 	isActive: false
@@ -176,6 +154,34 @@ relationship c161cdbc-f348-9c18-8fed-85118bccbded
 	toColumn: dimPessoa.id_sults
 
 relationship 3f12af8d-22ad-0bed-1111-cb2dfa01d776
+	crossFilteringBehavior: bothDirections
 	fromColumn: bridgeChamadoSultsApoio.id_chamado
 	toColumn: fatChamadoSults.id
+
+relationship f56f203c-eb02-4120-b52a-339530c90f75
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dimCalendario.Date
+	toColumn: LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57.Date
+
+relationship 0d4fc1ae-e95e-7153-af38-a51404790893
+	fromColumn: fatAtendimentos.data
+	toColumn: dimCalendario.Date
+
+relationship 0fa1149f-4729-7a53-ad73-56cd7e357f0b
+	fromColumn: fatAtendimentosMassa.data
+	toColumn: dimCalendario.Date
+
+relationship 6b7566b9-c328-2d92-56d4-445d3d858563
+	fromColumn: fatChamadoSults.data
+	toColumn: dimCalendario.Date
+
+relationship 73c5e0e9-70c9-4bf4-9f14-73f611c2e93b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dimCalendario.'Início da semana'
+	toColumn: LocalDateTable_24906c5d-25d4-4276-a871-5a9d6b763e66.Date
+
+relationship 777f7b4c-e95f-20c2-1081-697433f2f077
+	isActive: false
+	fromColumn: bridgeChamadoSultsApoio.data
+	toColumn: dimCalendario.Date
 

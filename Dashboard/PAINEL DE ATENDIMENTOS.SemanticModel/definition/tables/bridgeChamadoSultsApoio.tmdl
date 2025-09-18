@@ -35,22 +35,39 @@ table bridgeChamadoSultsApoio
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Nome Apoio' =
-			
-			IF(
-			    -- IDs sults do marketing
-			    bridgeChamadoSultsApoio[id_pessoa_apoio] IN {58, 67, 70},
-			
-			    -- Se o ID está na lista, busca o nome pela relação ATIVA
-			    RELATED(dimPessoa[nome_oficial]),
-			
-			    -- Caso contrário, retorna "Outro"
-			    "Outro"
-			)
+	column NomeApoio = RELATED(dimPessoa[nome_oficial])
 		lineageTag: 08f61875-d45e-416d-a8a0-dc9d3c1ffb01
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
+
+	column departamento_apoio_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 817b5c48-5022-4e01-b3f6-bc644c5f8a9c
+		summarizeBy: sum
+		sourceColumn: departamento_apoio_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento_apoio_nome
+		dataType: string
+		lineageTag: 4244c1ec-1eeb-4b8e-b729-42c0814d6712
+		summarizeBy: none
+		sourceColumn: departamento_apoio_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 846c3b3d-e0aa-4b6b-8aa0-a821256af498
+		summarizeBy: none
+		sourceColumn: data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	partition bridgeChamadoSultsApoio = m
 		mode: import

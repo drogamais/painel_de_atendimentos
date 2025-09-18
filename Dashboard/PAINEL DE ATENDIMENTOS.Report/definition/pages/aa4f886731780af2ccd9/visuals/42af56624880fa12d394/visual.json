@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "42af56624880fa12d394",
   "position": {
-    "x": 8.4210098424242474,
-    "y": 312.51970972423811,
+    "x": 9.73783236403915,
+    "y": 211.23318731877404,
     "z": 11000,
-    "height": 80.694339622641536,
-    "width": 240.90103156363645
+    "height": 80.203672492731158,
+    "width": 240.52445939176704
   },
   "visual": {
     "visualType": "slicer",
@@ -19,16 +19,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "fatAtendimentos"
+                      "Entity": "fatChamadoSults"
                     }
                   },
-                  "Property": "tarefa"
+                  "Property": "assunto_nome"
                 }
               },
-              "queryRef": "fatAtendimentos.tarefa",
-              "nativeQueryRef": "TAREFA",
+              "queryRef": "fatChamadoSults.assunto_nome",
+              "nativeQueryRef": "ASSUNTO",
               "active": true,
-              "displayName": "TAREFA"
+              "displayName": "ASSUNTO"
             }
           ]
         }
@@ -220,23 +220,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "b4358f43cf3627565979",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "b77a8561fd1a7e4e1e39",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fatAtendimentos"
-              }
-            },
-            "Property": "tarefa"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
+  "parentGroupName": "b4358f43cf3627565979"
 }

@@ -6,7 +6,7 @@ table LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57
 	column Date
 		dataType: dateTime
 		isHidden
-		lineageTag: 60f0f0cf-e726-4182-92a3-9cceda6fbd39
+		lineageTag: 50a86bb6-0a28-42b3-8c01-d099b95774e4
 		dataCategory: PaddedDateTableDates
 		summarizeBy: none
 		isNameInferred
@@ -17,7 +17,7 @@ table LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57
 	column Ano = YEAR([Date])
 		dataType: int64
 		isHidden
-		lineageTag: 4108208e-176f-44c2-aab8-9aa9262fec8d
+		lineageTag: 4ffed298-22a0-4502-bbea-311b940a967a
 		dataCategory: Years
 		summarizeBy: none
 
@@ -28,7 +28,7 @@ table LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57
 	column MonthNo = MONTH([Date])
 		dataType: int64
 		isHidden
-		lineageTag: 9f59754f-cc6b-4465-bdaf-facbea13ed16
+		lineageTag: 377352cf-f1bf-4d7b-b8c7-ad98a796836b
 		dataCategory: MonthOfYear
 		summarizeBy: none
 
@@ -39,7 +39,7 @@ table LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57
 	column Mês = FORMAT([Date], "MMMM")
 		dataType: string
 		isHidden
-		lineageTag: c437c2dd-b5d6-48a6-93b2-0f47b7df69b4
+		lineageTag: f79743e6-7034-450c-bc13-f7bae8f1d4c0
 		dataCategory: Months
 		summarizeBy: none
 		sortByColumn: MonthNo
@@ -51,7 +51,7 @@ table LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57
 	column QuarterNo = INT(([MonthNo] + 2) / 3)
 		dataType: int64
 		isHidden
-		lineageTag: 74b576ba-e79d-484f-b54c-37d2734d0b5e
+		lineageTag: bac15d04-d63b-41df-a640-53c4eba43474
 		dataCategory: QuarterOfYear
 		summarizeBy: none
 
@@ -62,7 +62,7 @@ table LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57
 	column Trimestre = "Qtr " & [QuarterNo]
 		dataType: string
 		isHidden
-		lineageTag: e7235758-cc90-4dcb-902e-9390c43e6bdf
+		lineageTag: fa244b3d-769c-43ca-a68f-b8e6fbec7d93
 		dataCategory: Quarters
 		summarizeBy: none
 		sortByColumn: QuarterNo
@@ -74,7 +74,7 @@ table LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57
 	column Dia = DAY([Date])
 		dataType: int64
 		isHidden
-		lineageTag: 2197548b-f051-4156-a2b7-27a46d689faf
+		lineageTag: 6b7dca88-2df7-41fe-93db-2136539c5888
 		dataCategory: DayOfMonth
 		summarizeBy: none
 
@@ -83,22 +83,22 @@ table LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57
 		annotation TemplateId = Day
 
 	hierarchy 'Hierarquia de datas'
-		lineageTag: f47ebcc4-b4b1-4c48-8855-1ac10a6d660e
+		lineageTag: 151ade10-5b1f-4523-9757-177062c95fc5
 
 		level Ano
-			lineageTag: 71005297-007f-4282-be33-10e46d91fc08
+			lineageTag: 90e16231-b075-4c1b-8480-b79cb3813a99
 			column: Ano
 
 		level Trimestre
-			lineageTag: c422b300-f49c-422b-b3a5-39a107f79f1a
+			lineageTag: 3d5ccf77-8eed-47d2-83c7-6661a0ebaa02
 			column: Trimestre
 
 		level Mês
-			lineageTag: 1dd321c1-c180-4d8e-ab72-1b3207d7a3de
+			lineageTag: 7b77aa93-375b-4163-b131-1ec2ec8da329
 			column: Mês
 
 		level Dia
-			lineageTag: cab21810-bc75-49a1-9490-2e8f178dd726
+			lineageTag: 03535f49-f0c9-473a-b4d9-32bc869df283
 			column: Dia
 
 		annotation TemplateId = DateHierarchy

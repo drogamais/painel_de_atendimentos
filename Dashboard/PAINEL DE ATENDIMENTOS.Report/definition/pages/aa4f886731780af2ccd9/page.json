@@ -5,9 +5,6 @@
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
-  "filterConfig": {
-    "filterSortOrder": "Custom"
-  },
   "pageBinding": {
     "name": "05393dfb9edc79bc00c5",
     "type": "Default",

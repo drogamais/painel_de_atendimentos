@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "2266656e70fb7bafce90",
   "position": {
-    "x": 11.114588334838622,
-    "y": 40.063360885179947,
+    "x": 11.487065023837804,
+    "y": 40.057708162086428,
     "z": 1000,
-    "height": 205.31273604444337,
-    "width": 277.84830554061318
+    "height": 205.28376753010033,
+    "width": 287.15967306714634
   },
   "visual": {
     "visualType": "barChart",
@@ -22,11 +22,11 @@
                       "Entity": "bridgeChamadoSultsApoio"
                     }
                   },
-                  "Property": "Nome Apoio"
+                  "Property": "NomeApoio"
                 }
               },
               "queryRef": "bridgeChamadoSultsApoio.NomeApoio",
-              "nativeQueryRef": "Nome Apoio",
+              "nativeQueryRef": "NomeApoio",
               "active": true
             }
           ]
@@ -276,7 +276,7 @@
         "isLockedInViewMode": true
       },
       {
-        "name": "37e37809dfa03177314a",
+        "name": "da40d7352894fd625192",
         "field": {
           "Measure": {
             "Expression": {
@@ -290,7 +290,7 @@
         "type": "Advanced"
       },
       {
-        "name": "7ade4f86ce7822ab313e",
+        "name": "6437061ee16bb9ae8b31",
         "field": {
           "Column": {
             "Expression": {
@@ -298,7 +298,7 @@
                 "Entity": "bridgeChamadoSultsApoio"
               }
             },
-            "Property": "Nome Apoio"
+            "Property": "NomeApoio"
           }
         },
         "type": "Categorical"

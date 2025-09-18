@@ -511,21 +511,21 @@ table _Medidas
 		lineageTag: c4a62767-3b2c-48b5-bdf5-594d6d465e3d
 
 	measure 'Qtd Chamados como Responsável' =
-			
+			COALESCE(
 			CALCULATE (
 			    COUNTROWS ( fatChamadoSults ),
 			    USERELATIONSHIP ( dimPessoa[id_sults], fatChamadoSults[responsavel_id] )
-			)
+			), 0)
 		formatString: 0
 		displayFolder: Marketing
 		lineageTag: 54176c4b-fe40-479a-a14b-3ac1954ebfec
 
 	measure 'Qtd Chamados como Solicitante' =
-			
+			COALESCE(
 			CALCULATE (
 			    COUNTROWS ( fatChamadoSults ),
 			    USERELATIONSHIP ( dimPessoa[id_sults], fatChamadoSults[solicitante_id] )
-			)
+			), 0)
 		formatString: 0
 		displayFolder: Marketing
 		lineageTag: bf9d59ef-0f27-4e14-b6bf-81d6dabe6c71
@@ -534,59 +534,55 @@ table _Medidas
 			
 			CALCULATE (
 			    COUNTROWS ( bridgeChamadoSultsApoio ),
-			    USERELATIONSHIP ( dimPessoa[id_sults], bridgeChamadoSultsApoio[id_pessoa_apoio] ))
+			    USERELATIONSHIP ( dimPessoa[id_sults], bridgeChamadoSultsApoio[id_pessoa_apoio] ),
+			    USERELATIONSHIP (bridgeChamadoSultsApoio[data], 'dimCalendario'[Date] ))
+		formatString: 0
 		displayFolder: Marketing
 		lineageTag: 26889ad8-b119-4f45-ba7e-3fe2e9821c03
 
-	measure 'Qtd Chamados' = DISTINCTCOUNT(fatChamadoSults[id])
+	measure 'Qtd Total de Chamados' =
+			
+			DISTINCTCOUNT(fatChamadoSults[id])
 		formatString: 0
 		displayFolder: Marketing
 		lineageTag: 582b9b10-7896-4638-b40c-ce00ad22f92b
-
-	measure 'Qtd por Solicitante (filtrado por Apoio)' =
-			
-			CALCULATE(
-			    COUNTROWS(fatChamadoSults),
-			    -- Ativa a relação para o eixo do gráfico (Pessoa -> Solicitante)
-			    USERELATIONSHIP(dimPessoa[id_sults], fatChamadoSults[solicitante_id]),
-			
-			    -- Força o filtro a vir da tabela de Apoio para a de Chamados
-			    CROSSFILTER(
-			        fatChamadoSultsApoio[id_chamado],
-			        fatChamadoSults[id],
-			        Both
-			    )
-			)
-		displayFolder: Marketing
-		lineageTag: ce42ffd0-0efb-4897-bd52-4afc06704cda
-
-	measure 'Qtd por Responsavel (filtrado por Apoio)' =
-			
-			CALCULATE(
-			    COUNTROWS(fatChamadoSults),
-			    -- Ativa a relação para o eixo do gráfico (Pessoa -> Responsável)
-			    USERELATIONSHIP(dimPessoa[id_sults], fatChamadoSults[responsavel_id]),
-			
-			    -- Força o filtro a vir da tabela de Apoio para a de Chamados
-			    CROSSFILTER(
-			        fatChamadoSultsApoio[id_chamado],
-			        fatChamadoSults[id],
-			        Both
-			    )
-			)
-		formatString: 0
-		displayFolder: Marketing
-		lineageTag: 89a06731-88f8-4912-8a8a-59f300308985
 
 	measure 'Qtd pessoa Mkt' =
 			
 			CALCULATE (
 			    DISTINCTCOUNT (fatChamadoSults[responsavel_id] ),
-			    fatChamadoSults[departamento_id] = 1
+			    fatChamadoSults[departamento_id] = 1,
+			    fatChamadoSults[responsavel_id] <> 0
 			)
 		formatString: 0
 		displayFolder: Marketing
 		lineageTag: d64abe6a-e82d-4920-ad81-62155da4bcf7
+
+	measure 'Qtd Chamados com Apoio' =
+			
+			DISTINCTCOUNT(bridgeChamadoSultsApoio[id_chamado])
+		formatString: 0
+		displayFolder: Marketing
+		lineageTag: ca7d6938-60a6-45e2-a1c5-ef1e29e75035
+
+	measure 'Qtd Chamados sem Apoio' =
+			
+			[Qtd Total de Chamados] - [Qtd Chamados com Apoio]
+		formatString: 0
+		displayFolder: Marketing
+		lineageTag: ebbaa06c-967a-4bd9-9929-a898cb67ed98
+
+	measure 'Qtd Chamados Envolvidos (Total)' =
+			
+			COUNTROWS (
+			    UNION (
+			        VALUES ( fatChamadoSults[id] ),
+			        VALUES ( bridgeChamadoSultsApoio[id_chamado] )
+			    )
+			)
+		formatString: 0
+		displayFolder: Marketing
+		lineageTag: 2f772e9a-b774-4821-a318-db5656d2a865
 
 	column Column
 		isHidden

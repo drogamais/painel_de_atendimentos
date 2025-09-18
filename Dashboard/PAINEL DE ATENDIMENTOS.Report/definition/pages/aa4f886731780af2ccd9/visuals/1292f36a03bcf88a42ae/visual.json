@@ -7,7 +7,7 @@
     "z": 7000,
     "height": 70.229032789586412,
     "width": 75.1980087047362,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,12 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Qtd Chamados"
+                  "Property": "Qtd Chamados como Responsável"
                 }
               },
-              "queryRef": "_Medidas.Qtd Chamados",
-              "nativeQueryRef": "Qtd Chamados"
+              "queryRef": "_Medidas.Qtd Chamados como Responsável",
+              "nativeQueryRef": "Responsável",
+              "displayName": "Responsável"
             }
           ]
         }
@@ -42,7 +43,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Qtd Chamados"
+                "Property": "Qtd Chamados como Responsável"
               }
             },
             "direction": "Descending"
@@ -185,7 +186,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "4016582e385767eb8ee1",
+        "name": "5c4a6a687090ce7ba9da",
         "field": {
           "Measure": {
             "Expression": {
@@ -193,7 +194,7 @@
                 "Entity": "_Medidas"
               }
             },
-            "Property": "Qtd Chamados"
+            "Property": "Qtd Chamados como Responsável"
           }
         },
         "type": "Advanced"

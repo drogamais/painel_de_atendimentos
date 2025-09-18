@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "346a61722678e60b201d",
   "position": {
-    "x": 312.44036582026104,
-    "y": 0,
+    "x": 178.22660098522167,
+    "y": 3.5467980295566504,
     "z": 11000,
-    "height": 47.357325197230111,
-    "width": 168.38686382213444
+    "height": 46.995073891625616,
+    "width": 126.79802955665025
   },
   "visual": {
     "visualType": "slicer",
@@ -232,23 +232,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "da893586828303637f0f",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "0fd6155b8fb740d5697e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "parDiaMesAno"
-              }
-            },
-            "Property": "Parâmetro"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
+  "parentGroupName": "da893586828303637f0f"
 }

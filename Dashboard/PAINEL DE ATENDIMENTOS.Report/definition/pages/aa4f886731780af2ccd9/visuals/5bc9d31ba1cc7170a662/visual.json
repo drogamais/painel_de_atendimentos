@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "5bc9d31ba1cc7170a662",
   "position": {
-    "x": 255.6288104099911,
-    "y": 175.03235864481542,
+    "x": 149.34375968858728,
+    "y": 205.87550380653829,
     "z": 8000,
-    "height": 41.056973015450524,
-    "width": 53.188835425301214,
-    "tabOrder": 11000
+    "height": 63.842364532019708,
+    "width": 69.162561576354676,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Media de Atendimentos por Loja"
+                  "Property": "Qtd Chamados Envolvidos (Total)"
                 }
               },
-              "queryRef": "Medidas.Media atendimentos por Loja",
-              "nativeQueryRef": "Media de Atendimentos por Loja"
+              "queryRef": "_Medidas.Qtd Chamados Envolvidos (Total)",
+              "nativeQueryRef": "Qtd Chamados Envolvidos (Total)"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Media de Atendimentos por Loja"
+                "Property": "Qtd Chamados Envolvidos (Total)"
               }
             },
             "direction": "Descending"
@@ -97,7 +97,33 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "italic": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -155,5 +181,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "4666b0138a3bf39822bc"
+  "parentGroupName": "4666b0138a3bf39822bc",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3389d67cc8956160faf8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Chamados Envolvidos (Total)"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }

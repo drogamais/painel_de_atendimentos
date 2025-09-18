@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
-  "name": "1370d1a85475ba48b314",
+  "name": "ce5bc061d71b5da45fae",
   "position": {
-    "x": 76.039114482778643,
-    "y": 176.11280530311674,
-    "z": 4000,
-    "height": 49.700546281861158,
-    "width": 201.75075506148738,
+    "x": 326.30541871921184,
+    "y": 434.48275862068965,
+    "z": 17000,
+    "height": 93.103448275862064,
+    "width": 289.064039408867,
     "tabOrder": 15000
   },
   "visual": {
@@ -19,15 +19,16 @@
               {
                 "textRuns": [
                   {
-                    "value": "ATENDIMENTOS POR LOJA:",
+                    "value": "DEPARTAMENTO SOLICITANTE:",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "Lucida Sans Unicode",
-                      "fontSize": "8pt",
+                      "fontSize": "12pt",
                       "color": "#000000"
                     }
                   }
-                ]
+                ],
+                "horizontalTextAlignment": "center"
               }
             ]
           }
@@ -50,6 +51,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "parentGroupName": "4666b0138a3bf39822bc"
+  }
 }
