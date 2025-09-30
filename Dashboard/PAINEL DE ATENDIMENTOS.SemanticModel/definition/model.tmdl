@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["fatTarefa","dimLoja","dimProjeto","fatAtendimentos","Atualizacao","dimCidades","Navegacao","fatAtendimentosMassa","dimPessoa","fatChamadoSults","bridgeChamadoSultsApoio","fatChamadoSultsSolicitante"]
+annotation PBI_QueryOrder = ["fatTarefa","dimLoja","dimProjeto","fatAtendimentos","Atualizacao","dimCidades","fatAtendimentosMassa","dimPessoa","fatChamadosSults","Navegacao"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -41,7 +41,6 @@ ref table dimCidades
 ref table parResTaf
 ref table parDiaMesAno
 ref table parLojaTarefa
-ref table Navegacao
 ref table LocalDateTable_206007f7-ae84-4577-a7ac-d66e9b9a7e28
 ref table LocalDateTable_043ba5ef-d2bb-4574-9f7e-69dbdd82ebbb
 ref table dimCalendario
@@ -49,14 +48,18 @@ ref table fatAtendimentosMassa
 ref table LocalDateTable_fdb9afcf-86a6-4405-b642-6a99f8969e6d
 ref table LocalDateTable_3b3ef288-0af4-4fab-9d06-63ae7071f051
 ref table dimPessoa
-ref table fatChamadoSults
-ref table bridgeChamadoSultsApoio
-ref table fatChamadoSultsSolicitante
+ref table parRespSolApo
+ref table parResTafTipMassa
+ref table parLojaTarefaMassa
+ref table parDepResSocApo
 ref table LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57
 ref table LocalDateTable_24906c5d-25d4-4276-a871-5a9d6b763e66
+ref table fatChamadosSults
+ref table Navegacao
 
 ref role ADMINISTRATIVO
 ref role MARKETING
+ref role DIRETORIA
 
 ref cultureInfo pt-BR
 

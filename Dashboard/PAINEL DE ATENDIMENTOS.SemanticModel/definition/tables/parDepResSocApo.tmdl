@@ -1,0 +1,49 @@
+table parDepResSocApo
+	lineageTag: ef04db0d-96f4-4763-a2c7-a5a68acaae2f
+
+	column parDepResSocApo
+		lineageTag: 90538aa3-11b4-45f0-ac56-94ec81f92f25
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parâmetro Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'Parâmetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Campos'
+		isHidden
+		lineageTag: 94c3738c-0ee2-415d-b822-659c34c93735
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parâmetro Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: 1b8583d3-f2f2-47a6-b043-61e720929269
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition parDepResSocApo = calculated
+		mode: import
+		source =
+				{
+				    ("RESP.", NAMEOF('fatChamadosSults'[departamento_responsavel_nome]), 0),
+				    ("SOLIC.", NAMEOF('fatChamadosSults'[departamento_solicitante_nome]), 1),
+				    ("APOIO", NAMEOF('fatChamadosSults'[departamento_apoio_nome]), 2)
+				}
+
+	annotation PBI_Id = debabe0fe73c45cbae1990dd0c3f5d08
+

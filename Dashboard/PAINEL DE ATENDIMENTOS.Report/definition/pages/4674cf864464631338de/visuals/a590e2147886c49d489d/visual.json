@@ -23,7 +23,7 @@
                       "Entity": "parResTaf"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parResTaf"
                 }
               },
               "queryRef": "Parâmetro 2.Parâmetro",
@@ -105,7 +105,7 @@
                                   "Entity": "parResTaf"
                                 }
                               },
-                              "Property": "Parâmetro"
+                              "Property": "parResTaf"
                             }
                           }
                         ],
@@ -179,6 +179,19 @@
               "expr": {
                 "Literal": {
                   "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

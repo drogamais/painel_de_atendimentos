@@ -5,15 +5,16 @@ table dimPessoa
 		dataType: int64
 		formatString: 0
 		lineageTag: ae120069-96f2-477d-a878-0998e6959e87
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: id_pessoa
 
 		annotation SummarizationSetBy = Automatic
 
 	column id_movidesk
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: af790748-75af-4573-8093-438656302d27
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: id_movidesk
 
 		annotation SummarizationSetBy = Automatic
@@ -30,7 +31,7 @@ table dimPessoa
 		dataType: int64
 		formatString: 0
 		lineageTag: 7095f719-efb8-48b1-b0f6-e00036d7455a
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: id_sults
 
 		annotation SummarizationSetBy = Automatic
@@ -55,7 +56,7 @@ table dimPessoa
 		dataType: int64
 		formatString: 0
 		lineageTag: 97226ebe-d287-419b-bcdd-9e2a0f6bcc22
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: departamento_id
 
 		annotation SummarizationSetBy = Automatic
@@ -64,7 +65,7 @@ table dimPessoa
 		dataType: int64
 		formatString: 0
 		lineageTag: c9859439-5646-4122-8980-7d3eecd446e0
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: ativo
 
 		annotation SummarizationSetBy = Automatic
@@ -75,7 +76,7 @@ table dimPessoa
 				let
 				    Fonte = Odbc.DataSource("dsn=dbSults", [HierarchicalNavigation=true]),
 				    dbSults_Database = Fonte{[Name="dbSults",Kind="Database"]}[Data],
-				    dim_responsaveis_Table = dbSults_Database{[Name="dim_responsaveis",Kind="Table"]}[Data],
+				    dim_responsaveis_Table = dbSults_Database{[Name="dim_pessoas",Kind="Table"]}[Data],
 				    #"Colunas Renomeadas" = Table.RenameColumns(dim_responsaveis_Table,{{"nome_oficial", "nome_oficial"}})
 				in
 				    #"Colunas Renomeadas"

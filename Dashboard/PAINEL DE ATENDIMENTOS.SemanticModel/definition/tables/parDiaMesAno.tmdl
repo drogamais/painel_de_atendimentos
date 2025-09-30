@@ -1,7 +1,7 @@
 table parDiaMesAno
 	lineageTag: 55dc3b5b-40a1-454b-8ebe-92fb0e3bf40b
 
-	column Parâmetro
+	column parDiaMesAno
 		lineageTag: 227a24e2-c130-49ad-9ef4-8b3fe89be979
 		summarizeBy: none
 		sourceColumn: [Value1]

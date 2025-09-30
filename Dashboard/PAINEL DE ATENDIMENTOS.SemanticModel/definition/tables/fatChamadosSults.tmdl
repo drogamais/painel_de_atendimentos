@@ -1,0 +1,170 @@
+table fatChamadosSults
+	lineageTag: cfcfbce4-86fa-428a-a422-436bddb23057
+
+	column id_fato_chamado
+		dataType: string
+		lineageTag: ca142d60-4f40-4d3d-b04f-2785e7b06d70
+		summarizeBy: none
+		sourceColumn: id_fato_chamado
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_chamado
+		dataType: double
+		formatString: 0
+		lineageTag: bca16a79-4d37-42bf-8c9d-7bdb57e88768
+		summarizeBy: sum
+		sourceColumn: id_chamado
+
+		annotation SummarizationSetBy = Automatic
+
+	column titulo
+		dataType: string
+		lineageTag: e4938df4-34a7-4c96-ab03-a4a900db54c1
+		summarizeBy: none
+		sourceColumn: titulo
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_referencia
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 39cc3dc1-c66f-4454-9df4-f7369734e0fb
+		summarizeBy: none
+		sourceColumn: data_referencia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column assunto_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f879a5a9-e003-4006-b9b8-a468b393a0a6
+		summarizeBy: sum
+		sourceColumn: assunto_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column assunto_nome
+		dataType: string
+		lineageTag: 4fd8b6ea-8b9c-4a08-ae24-fa7f3d143128
+		summarizeBy: none
+		sourceColumn: assunto_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column situacao
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b5d1551-0fa7-43e9-a534-ccd8494198f3
+		summarizeBy: sum
+		sourceColumn: situacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column situacao_nome
+		dataType: string
+		lineageTag: d2c58a36-8887-4534-80d0-75d0b437c885
+		summarizeBy: none
+		sourceColumn: situacao_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column solicitante_id
+		dataType: double
+		formatString: 0
+		lineageTag: 91012ed1-37e6-4dbd-b82a-895b7fd66c3a
+		summarizeBy: sum
+		sourceColumn: solicitante_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column solicitante_nome
+		dataType: string
+		lineageTag: 04985f36-faf7-4f9b-b496-7fd9d5b7759b
+		summarizeBy: none
+		sourceColumn: solicitante_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento_solicitante_nome
+		dataType: string
+		lineageTag: 0962b756-98ec-4276-817c-45d8eada89ec
+		summarizeBy: none
+		sourceColumn: departamento_solicitante_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsavel_id
+		dataType: double
+		formatString: 0
+		lineageTag: c8d02a47-c67d-4ce6-af04-765745692879
+		summarizeBy: sum
+		sourceColumn: responsavel_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsavel_nome
+		dataType: string
+		lineageTag: 76dc4606-260e-4727-904c-f6bbab630072
+		summarizeBy: none
+		sourceColumn: responsavel_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento_responsavel_nome
+		dataType: string
+		lineageTag: 7261b255-4f74-47ec-993e-b95b8a72cf77
+		summarizeBy: none
+		sourceColumn: departamento_responsavel_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_pessoa_apoio
+		dataType: double
+		formatString: 0
+		lineageTag: 195f9feb-11b8-46e8-906d-8f3c26f14e9b
+		summarizeBy: sum
+		sourceColumn: id_pessoa_apoio
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_apoio
+		dataType: string
+		lineageTag: f06749f6-f845-46ed-b072-d7410a787ee4
+		summarizeBy: none
+		sourceColumn: nome_apoio
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento_apoio_nome
+		dataType: string
+		lineageTag: dc4340c2-f4aa-422a-9826-8c986741831d
+		summarizeBy: none
+		sourceColumn: departamento_apoio_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_origem
+		dataType: string
+		lineageTag: e6255eca-0757-424d-a804-d88b7f92d6f5
+		summarizeBy: none
+		sourceColumn: tipo_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fatChamadosSults = m
+		mode: import
+		source =
+				let
+				    Fonte = Odbc.DataSource("dsn=dbSults", [HierarchicalNavigation=true]),
+				    dbSults_Database = Fonte{[Name="dbSults",Kind="Database"]}[Data],
+				    vw_chamados_marketing_View = dbSults_Database{[Name="view_sults_marketing",Kind="View"]}[Data]
+				in
+				    vw_chamados_marketing_View
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

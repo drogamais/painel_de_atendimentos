@@ -6,8 +6,7 @@
     "y": 74.88000000000001,
     "z": 1000,
     "height": 79.2,
-    "width": 283.68,
-    "tabOrder": 2000
+    "width": 283.68
   },
   "visual": {
     "visualType": "slicer",
@@ -42,14 +41,14 @@
             "startDate": {
               "expr": {
                 "Literal": {
-                  "Value": "datetime'2025-08-01T00:00:00'"
+                  "Value": "datetime'2025-09-01T00:00:00'"
                 }
               }
             },
             "endDate": {
               "expr": {
                 "Literal": {
-                  "Value": "datetime'2025-08-31T00:00:00'"
+                  "Value": "datetime'2025-09-29T00:00:00'"
                 }
               }
             },
@@ -231,7 +230,7 @@
                             },
                             "Right": {
                               "Literal": {
-                                "Value": "datetime'2025-08-01T00:00:00'"
+                                "Value": "datetime'2025-09-01T00:00:00'"
                               }
                             }
                           }
@@ -251,7 +250,7 @@
                             },
                             "Right": {
                               "Literal": {
-                                "Value": "datetime'2025-09-01T00:00:00'"
+                                "Value": "datetime'2025-09-30T00:00:00'"
                               }
                             }
                           }

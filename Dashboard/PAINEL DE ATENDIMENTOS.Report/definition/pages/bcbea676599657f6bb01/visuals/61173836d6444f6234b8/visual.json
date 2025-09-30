@@ -23,7 +23,7 @@
                       "Entity": "parResTaf"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parResTaf"
                 }
               },
               "queryRef": "Parâmetro 2.Parâmetro",
@@ -105,7 +105,7 @@
                                   "Entity": "parResTaf"
                                 }
                               },
-                              "Property": "Parâmetro"
+                              "Property": "parResTaf"
                             }
                           }
                         ],
@@ -235,7 +235,7 @@
                 "Entity": "parResTaf"
               }
             },
-            "Property": "Parâmetro"
+            "Property": "parResTaf"
           }
         },
         "type": "Categorical",
@@ -292,7 +292,7 @@
                             "Entity": "parResTaf"
                           }
                         },
-                        "Property": "Parâmetro"
+                        "Property": "parResTaf"
                       }
                     }
                   ],

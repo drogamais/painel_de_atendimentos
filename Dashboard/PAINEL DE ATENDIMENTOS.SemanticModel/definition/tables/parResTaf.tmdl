@@ -1,7 +1,7 @@
 table parResTaf
 	lineageTag: 56f77a28-5472-43e8-b049-af330d1bc42d
 
-	column Parâmetro
+	column parResTaf
 		lineageTag: 3e5ba8f0-0392-4d0e-b40c-f7dd0f06b563
 		summarizeBy: none
 		sourceColumn: [Value1]
@@ -40,7 +40,7 @@ table parResTaf
 		mode: import
 		source =
 				{
-				    ("RESP.", NAMEOF('fatAtendimentos'[responsavel]), 0),
+				    ("RESP.", NAMEOF(fatAtendimentos[responsavel]), 0),
 				    ("TAREFA", NAMEOF('fatAtendimentos'[tarefa]), 1),
 				    ("TIPO", NAMEOF('fatAtendimentos'[tipo]), 2)
 				}

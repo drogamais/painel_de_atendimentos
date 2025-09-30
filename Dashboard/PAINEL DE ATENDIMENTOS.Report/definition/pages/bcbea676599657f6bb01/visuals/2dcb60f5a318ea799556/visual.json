@@ -39,7 +39,7 @@
                       "Entity": "parLojaTarefa"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parLojaTarefa"
                 }
               },
               "index": 0,

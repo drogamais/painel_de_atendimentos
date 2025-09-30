@@ -1,0 +1,77 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "75e4a8270d3e605b9c85",
+  "displayName": "Atendimento Massa",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'10026.jpg'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "100263935064166415069.jpg"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fill'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "fb846f2cc21fe8d42ecc",
+      "target": "2bf6b4fde0c1d74d2089",
+      "type": "DataFilter"
+    },
+    {
+      "source": "fb846f2cc21fe8d42ecc",
+      "target": "b8d91fd1fd827406ec28",
+      "type": "DataFilter"
+    },
+    {
+      "source": "2bf6b4fde0c1d74d2089",
+      "target": "b8d91fd1fd827406ec28",
+      "type": "DataFilter"
+    },
+    {
+      "source": "2bf6b4fde0c1d74d2089",
+      "target": "fb846f2cc21fe8d42ecc",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b8d91fd1fd827406ec28",
+      "target": "2bf6b4fde0c1d74d2089",
+      "type": "DataFilter"
+    }
+  ]
+}

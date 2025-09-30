@@ -19,16 +19,9 @@
               {
                 "textRuns": [
                   {
-                    "value": "MÉDIAS E VALORES",
-                    "textStyle": {
-                      "fontWeight": "bold",
-                      "fontFamily": "Lucida Sans Unicode",
-                      "fontSize": "12pt",
-                      "color": "#1a1a1a"
-                    }
+                    "value": ""
                   }
-                ],
-                "horizontalTextAlignment": "center"
+                ]
               }
             ]
           }

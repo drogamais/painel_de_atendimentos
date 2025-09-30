@@ -23,7 +23,7 @@
                       "Entity": "parDiaMesAno"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parDiaMesAno"
                 }
               },
               "queryRef": "Parâmetro.Parâmetro",
@@ -43,7 +43,7 @@
                     "Entity": "parDiaMesAno"
                   }
                 },
-                "Property": "Parâmetro"
+                "Property": "parDiaMesAno"
               }
             },
             "direction": "Descending"
@@ -122,7 +122,7 @@
                                   "Entity": "parDiaMesAno"
                                 }
                               },
-                              "Property": "Parâmetro"
+                              "Property": "parDiaMesAno"
                             }
                           }
                         ],
@@ -193,6 +193,19 @@
               }
             },
             "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "strictSingleSelect": {
               "expr": {
                 "Literal": {
                   "Value": "true"

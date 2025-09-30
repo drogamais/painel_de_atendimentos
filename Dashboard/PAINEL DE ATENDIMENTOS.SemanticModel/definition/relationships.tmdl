@@ -130,35 +130,11 @@ relationship 58ec0183-d39f-499e-9412-c76017c24f0c
 	fromColumn: fatAtendimentosMassa.data_atualizacao
 	toColumn: LocalDateTable_3b3ef288-0af4-4fab-9d06-63ae7071f051.Date
 
-relationship 5fac5f47-d084-ec6d-f3b0-733c71c5e06f
-	fromColumn: fatAtendimentosMassa.data
-	toColumn: 'dimCalendario SULTS'.Date
-
 relationship 7d26cb57-2dbb-205c-3d3b-1361485647d3
-	crossFilteringBehavior: bothDirections
 	fromColumn: fatAtendimentosMassa.loja
 	toColumn: dimLoja.LOJA_NUMERO
 
-relationship 88df6460-ea77-e5ba-72cf-a86a2ab271c3
-	isActive: false
-	fromColumn: fatChamadoSults.responsavel_id
-	toColumn: dimPessoa.id_sults
-
-relationship de5cb333-8d8d-f677-68c4-69855930a80b
-	isActive: false
-	fromColumn: fatChamadoSults.solicitante_id
-	toColumn: dimPessoa.id_sults
-
-relationship c161cdbc-f348-9c18-8fed-85118bccbded
-	fromColumn: bridgeChamadoSultsApoio.id_pessoa_apoio
-	toColumn: dimPessoa.id_sults
-
-relationship 3f12af8d-22ad-0bed-1111-cb2dfa01d776
-	crossFilteringBehavior: bothDirections
-	fromColumn: bridgeChamadoSultsApoio.id_chamado
-	toColumn: fatChamadoSults.id
-
-relationship f56f203c-eb02-4120-b52a-339530c90f75
+relationship 5a06b2a1-805a-443b-b202-7bc488b9469f
 	joinOnDateBehavior: datePartOnly
 	fromColumn: dimCalendario.Date
 	toColumn: LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57.Date
@@ -171,17 +147,12 @@ relationship 0fa1149f-4729-7a53-ad73-56cd7e357f0b
 	fromColumn: fatAtendimentosMassa.data
 	toColumn: dimCalendario.Date
 
-relationship 6b7566b9-c328-2d92-56d4-445d3d858563
-	fromColumn: fatChamadoSults.data
-	toColumn: dimCalendario.Date
-
-relationship 73c5e0e9-70c9-4bf4-9f14-73f611c2e93b
+relationship 4c11a962-1871-4edb-8e2b-2d96a8f38538
 	joinOnDateBehavior: datePartOnly
 	fromColumn: dimCalendario.'Início da semana'
 	toColumn: LocalDateTable_24906c5d-25d4-4276-a871-5a9d6b763e66.Date
 
-relationship 777f7b4c-e95f-20c2-1081-697433f2f077
-	isActive: false
-	fromColumn: bridgeChamadoSultsApoio.data
+relationship b0bd20e1-6bdd-346f-20b3-fbee66ed1109
+	fromColumn: fatChamadosSults.data_referencia
 	toColumn: dimCalendario.Date
 

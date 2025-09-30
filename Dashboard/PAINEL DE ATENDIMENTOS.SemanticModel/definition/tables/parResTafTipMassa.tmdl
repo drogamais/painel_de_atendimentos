@@ -1,0 +1,49 @@
+table parResTafTipMassa
+	lineageTag: c0f62767-9b7d-42fc-b4a2-6fae9c225ce5
+
+	column parResTafTipMassa
+		lineageTag: b92e3575-e251-4617-b679-3feafc8680bc
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parâmetro Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'Parâmetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Campos'
+		isHidden
+		lineageTag: 62b5fc0d-6a70-438b-9d9a-fd2d96793438
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parâmetro Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: 6e347b33-6f9a-4806-a447-5b0772517e0d
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition parResTafTipMassa = calculated
+		mode: import
+		source =
+				{
+				    ("RESP.", NAMEOF('fatAtendimentosMassa'[responsavel]), 0),
+				    ("TAREFA", NAMEOF('fatAtendimentosMassa'[tarefa]), 1),
+				    ("TIPO", NAMEOF('fatAtendimentosMassa'[tipo]), 2)
+				}
+
+	annotation PBI_Id = 38ceff9ecc0848a1af2486403850e2f9
+

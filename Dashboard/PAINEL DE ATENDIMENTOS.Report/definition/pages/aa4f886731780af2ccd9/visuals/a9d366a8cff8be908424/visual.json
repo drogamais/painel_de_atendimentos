@@ -3,11 +3,11 @@
   "name": "a9d366a8cff8be908424",
   "position": {
     "x": 0,
-    "y": 51.988012765626195,
+    "y": 52.535866661418346,
     "z": 1000,
-    "height": 202.49474585506346,
-    "width": 293.72335889568672,
-    "tabOrder": 2000
+    "height": 204.62865191325943,
+    "width": 615.80927371337168,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "columnChart",
@@ -41,7 +41,7 @@
                       "Entity": "parDiaMesAno"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parDiaMesAno"
                 }
               },
               "index": 0,
@@ -63,7 +63,7 @@
                   "Property": "Qtd Total de Chamados"
                 }
               },
-              "queryRef": "_Medidas.Qtd Chamados",
+              "queryRef": "_Medidas.TabelaChamadosUnicos",
               "nativeQueryRef": "Qtd Total de Chamados"
             }
           ]
@@ -273,5 +273,58 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "c56f7eda23d889a3226d"
+  "parentGroupName": "c56f7eda23d889a3226d",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3285ac506bef8bc7a651",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd Total de Fatos"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "_"
+                        }
+                      },
+                      "Property": "Qtd Total de Fatos"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
+  }
 }

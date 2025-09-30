@@ -41,7 +41,7 @@
                       "Entity": "parDiaMesAno"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parDiaMesAno"
                 }
               },
               "index": 0,

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "346a61722678e60b201d",
   "position": {
-    "x": 178.22660098522167,
-    "y": 3.5467980295566504,
+    "x": 319.02762699014409,
+    "y": 2.8095951478392815,
     "z": 11000,
-    "height": 46.995073891625616,
-    "width": 126.79802955665025
+    "height": 41.984,
+    "width": 237.568
   },
   "visual": {
     "visualType": "slicer",
@@ -22,7 +22,7 @@
                       "Entity": "parDiaMesAno"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parDiaMesAno"
                 }
               },
               "queryRef": "Parâmetro.Parâmetro",
@@ -42,7 +42,7 @@
                     "Entity": "parDiaMesAno"
                   }
                 },
-                "Property": "Parâmetro"
+                "Property": "parDiaMesAno"
               }
             },
             "direction": "Descending"
@@ -121,7 +121,7 @@
                                   "Entity": "parDiaMesAno"
                                 }
                               },
-                              "Property": "Parâmetro"
+                              "Property": "parDiaMesAno"
                             }
                           }
                         ],

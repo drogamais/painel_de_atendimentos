@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "f2bf9fdd083bd4530519",
   "position": {
-    "x": 59.408866995073893,
-    "y": 465.51724137931035,
-    "z": 15000,
-    "height": 196.84729064039408,
-    "width": 230.54187192118226,
-    "tabOrder": 12000
+    "x": 0,
+    "y": 39.238521836506159,
+    "z": 13000,
+    "height": 253.54121802050136,
+    "width": 269.20615587612122,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "fatChamadoSults"
+                      "Entity": "fatChamadosSults"
                     }
                   },
                   "Property": "assunto_nome"
                 }
               },
-              "queryRef": "fatChamadoSults.assunto_nome",
-              "nativeQueryRef": "assunto_nome",
+              "queryRef": "prata_chamados_unificada.assunto_nome",
+              "nativeQueryRef": "assunto_nome1",
               "active": true
             }
           ]
@@ -45,7 +45,7 @@
                   "Property": "Qtd Total de Chamados"
                 }
               },
-              "queryRef": "_Medidas.Qtd Chamados",
+              "queryRef": "_Medidas.TabelaChamadosUnicos",
               "nativeQueryRef": "Qtd Total de Chamados"
             }
           ]
@@ -256,22 +256,9 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "parentGroupName": "77f95801355e6ec2fb3e",
   "filterConfig": {
     "filters": [
-      {
-        "name": "cccd4d8d26ee25d994ea",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fatChamadoSults"
-              }
-            },
-            "Property": "assunto_nome"
-          }
-        },
-        "type": "Categorical"
-      },
       {
         "name": "fa2ebb084dfdebe25453",
         "field": {
@@ -281,10 +268,75 @@
                 "Entity": "_Medidas"
               }
             },
-            "Property": "Qtd Total de Chamados"
+            "Property": "Qtd Total de Fatos"
           }
         },
-        "type": "Advanced"
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Medidas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "_"
+                        }
+                      },
+                      "Property": "Qtd Total de Fatos"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "a01c1be269d5bbf99134",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fatChamadosSults"
+              }
+            },
+            "Property": "assunto_nome"
+          }
+        },
+        "type": "Categorical",
+        "isHiddenInViewMode": true,
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       }
     ]
   }

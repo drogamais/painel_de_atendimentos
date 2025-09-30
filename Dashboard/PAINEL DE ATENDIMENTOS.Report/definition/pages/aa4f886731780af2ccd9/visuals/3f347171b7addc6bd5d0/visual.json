@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "3f347171b7addc6bd5d0",
   "position": {
-    "x": 7.84917210449132,
-    "y": 68.887708036644213,
+    "x": 8.1919162645162125,
+    "y": 68.042776864513073,
     "z": 1000,
-    "height": 205.22796352583586,
-    "width": 288.87537993920972,
-    "tabOrder": 1000
+    "height": 201.26377663482734,
+    "width": 305.65760470242469,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -20,15 +20,32 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "fatChamadoSults"
+                      "Entity": "fatChamadosSults"
                     }
                   },
-                  "Property": "NomeResponsavel"
+                  "Property": "responsavel_nome"
                 }
               },
-              "queryRef": "fatChamadoSults.NomeResponsavel",
-              "nativeQueryRef": "NomeResponsavel",
-              "active": true
+              "queryRef": "fatChamadosSults.responsavel_nome",
+              "nativeQueryRef": "RESP.",
+              "active": true,
+              "displayName": "RESP."
+            }
+          ],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "parRespSolApo"
+                    }
+                  },
+                  "Property": "parRespSolApo"
+                }
+              },
+              "index": 0,
+              "length": 1
             }
           ]
         },
@@ -42,11 +59,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Qtd Chamados como Responsável"
+                  "Property": "Medida Dinamica Pessoa"
                 }
               },
-              "queryRef": "_Medidas.Qtd Chamados como Responsável",
-              "nativeQueryRef": "Qtd Chamados como Responsável"
+              "queryRef": "_Medidas.Medida Eixo X Dinamica",
+              "nativeQueryRef": "Medida Dinamica Pessoa"
             }
           ]
         }
@@ -61,7 +78,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Qtd Chamados como Responsável"
+                "Property": "Medida Dinamica Pessoa"
               }
             },
             "direction": "Descending"
@@ -203,17 +220,17 @@
       "title": [
         {
           "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
             "titleWrap": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -252,78 +269,22 @@
             }
           }
         }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "625a27b2d8d4f00a069a",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e87cf23752f9d93966bb",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dimPessoa"
-              }
-            },
-            "Property": "nome_oficial"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User",
-        "isHiddenInViewMode": true,
-        "isLockedInViewMode": true
-      },
-      {
-        "name": "af70b47c3daf9039b4a1",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Qtd Chamados como Responsável"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "_",
-              "Entity": "_Medidas",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 1,
-                  "Left": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "_"
-                        }
-                      },
-                      "Property": "Qtd Chamados como Responsável"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "0L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      }
-    ]
-  }
+  "parentGroupName": "625a27b2d8d4f00a069a"
 }

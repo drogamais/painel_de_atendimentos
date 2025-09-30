@@ -23,7 +23,7 @@
                       "Entity": "parLojaTarefa"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parLojaTarefa"
                 }
               },
               "queryRef": "Parâmetro 2.Parâmetro",
@@ -92,7 +92,7 @@
                                   "Entity": "parLojaTarefa"
                                 }
                               },
-                              "Property": "Parâmetro"
+                              "Property": "parLojaTarefa"
                             }
                           }
                         ],

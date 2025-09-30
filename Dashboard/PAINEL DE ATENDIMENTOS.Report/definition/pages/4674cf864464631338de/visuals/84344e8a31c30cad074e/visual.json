@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "84344e8a31c30cad074e",
   "position": {
-    "x": 15.210742047498252,
-    "y": 58.696773986084104,
+    "x": 16.097214525752079,
+    "y": 58.6800755461821,
     "z": 1000,
-    "height": 243.9388450734659,
-    "width": 261.944247828527
+    "height": 243.86944776476221,
+    "width": 277.2101938166835
   },
   "visual": {
     "visualType": "tableEx",
@@ -22,12 +22,12 @@
                       "Entity": "fatAtendimentos"
                     }
                   },
-                  "Property": "Fantasia"
+                  "Property": "Tarefa e Data"
                 }
               },
-              "queryRef": "fatAtendimentos.Fantasia",
-              "nativeQueryRef": "LOJAS",
-              "displayName": "LOJAS"
+              "queryRef": "fatAtendimentos.Tarefa e Data",
+              "nativeQueryRef": "TAREFAS",
+              "displayName": "TAREFAS"
             }
           ],
           "fieldParameters": [
@@ -39,7 +39,7 @@
                       "Entity": "parLojaTarefa"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parLojaTarefa"
                 }
               },
               "index": 0,
@@ -59,7 +59,7 @@
                     "Entity": "fatAtendimentos"
                   }
                 },
-                "Property": "Fantasia"
+                "Property": "Tarefa e Data"
               }
             },
             "direction": "Descending"
@@ -294,7 +294,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "245.260150322843D"
+                  "Value": "256.9199856195749D"
                 }
               }
             }
@@ -408,6 +408,26 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'5b8660d0d40b2c549c1a'"
                 }
               }
             }

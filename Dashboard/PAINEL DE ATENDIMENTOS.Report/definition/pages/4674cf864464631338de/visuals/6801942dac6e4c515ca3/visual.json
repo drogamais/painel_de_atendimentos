@@ -3,11 +3,10 @@
   "name": "6801942dac6e4c515ca3",
   "position": {
     "x": 0,
-    "y": 12.307692307692307,
+    "y": 12.304190935361673,
     "z": 18003,
-    "height": 50.769230769230766,
-    "width": 260,
-    "tabOrder": 2000
+    "height": 50.754787608366904,
+    "width": 275.15263644773353
   },
   "visual": {
     "visualType": "slicer",
@@ -23,7 +22,7 @@
                       "Entity": "parLojaTarefa"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parLojaTarefa"
                 }
               },
               "queryRef": "Parâmetro 2.Parâmetro",
@@ -75,7 +74,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''fatAtendimentos''[Fantasia]'"
+                                "Value": "'''fatAtendimentos''[Tarefa e Data]'"
                               }
                             }
                           ]
@@ -92,7 +91,7 @@
                                   "Entity": "parLojaTarefa"
                                 }
                               },
-                              "Property": "Parâmetro"
+                              "Property": "parLojaTarefa"
                             }
                           }
                         ],
@@ -103,7 +102,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''fatAtendimentos''[Fantasia]'"
+                                      "Value": "'''fatAtendimentos''[Tarefa e Data]'"
                                     }
                                   }
                                 ]
@@ -127,7 +126,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "LOJAS"
+                            "0": "TAREFAS"
                           }
                         ]
                       }
@@ -177,6 +176,19 @@
             }
           }
         }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -196,5 +208,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "66c513e01411ca9a0389"
+  "parentGroupName": "66c513e01411ca9a0389",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0f2701502200ad1006ae",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "parLojaTarefa"
+              }
+            },
+            "Property": "parLojaTarefa"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

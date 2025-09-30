@@ -113,6 +113,65 @@ table fatAtendimentosMassa
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Fantasia Massa' =
+			
+			VAR LojaNumero = fatAtendimentosMassa[loja]
+			VAR NomeFantasiaRelacionado = RELATED ( dimLoja[FANTASIA] )
+			VAR NomeFinal =
+			    SWITCH (
+			        TRUE (),
+			        LojaNumero = 0, "Outro",
+			        ISBLANK ( NomeFantasiaRelacionado ), "Loja Inativa",
+			        NomeFantasiaRelacionado
+			    )
+			RETURN
+			    LojaNumero & " - " & NomeFinal
+		lineageTag: 1f2afa57-0c6b-4897-ac34-98332bf16001
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tarefa_Detalhada Massa' = ```
+			
+			VAR TarefaAtual = fatAtendimentosMassa[tarefa]
+			VAR ResponsavelAtual = fatAtendimentosMassa[responsavel]
+			VAR IndiceUnico = 
+			    RANKX(
+			        FILTER(
+			            fatAtendimentosMassa,
+			            fatAtendimentosMassa[tarefa] = TarefaAtual &&
+			            fatAtendimentosMassa[responsavel] = ResponsavelAtual
+			        ),
+			        fatAtendimentosMassa[chave_id],, ASC
+			    )
+			
+			RETURN
+			-- Adiciona um ou mais caracteres invisíveis ao final da tarefa
+			-- A primeira tarefa repetida terá um, a segunda terá dois, e assim por diante.
+			TarefaAtual & REPT(UNICHAR(8203), IndiceUnico)
+			```
+		lineageTag: f27280b1-0bea-49b2-a44b-3d71cc7e64e7
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tarefa e Data Massa' = ```
+			
+			FORMAT('fatAtendimentosMassa'[data], "dd/mm") & " - " & fatAtendimentosMassa[loja] & " - " & 'fatAtendimentosMassa'[Tarefa_Detalhada Massa] 
+			```
+		lineageTag: 5479bf57-aae1-474c-b903-6a31fab50577
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: cfc9af99-31b6-4a51-a989-c4bb55921234
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fatAtendimentosMassa = m
 		mode: import
 		source =

@@ -1,0 +1,48 @@
+table parLojaTarefaMassa
+	lineageTag: 80ce9eff-e284-4e30-9a04-31987eed6632
+
+	column parLojaTarefaMassa
+		lineageTag: 9e418192-5ee1-4798-b965-94003a0fb68a
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parâmetro Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'Parâmetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Campos'
+		isHidden
+		lineageTag: 3c3865c9-7ce4-4351-a6fd-5b7328428f4f
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parâmetro Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: aec40038-cdf7-460f-bfca-c64cd1265321
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition parLojaTarefaMassa = calculated
+		mode: import
+		source =
+				{
+				    ("LOJAS", NAMEOF('fatAtendimentosMassa'[Fantasia Massa]), 0),
+				    ("TAREFAS", NAMEOF('fatAtendimentosMassa'[Tarefa e Data Massa]), 1)
+				}
+
+	annotation PBI_Id = 0f04baaaeaf340ce86b958cfed65ba6d
+

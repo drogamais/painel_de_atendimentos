@@ -4,10 +4,10 @@
   "position": {
     "x": 647.11638250556007,
     "y": 25.618977020014825,
-    "z": 5000,
+    "z": 4000,
     "height": 67.368421052631575,
     "width": 270.42253521126759,
-    "tabOrder": 4000
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "slicer",
@@ -93,7 +93,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Atendimento'"
+                                "Value": "'Inicio'"
                               }
                             }
                           ]
@@ -390,7 +390,35 @@
                     [
                       {
                         "Literal": {
+                          "Value": "'Atendimento Auditoria'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Atendimento Massa'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
                           "Value": "'Auditores'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Convenio'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Marketing'"
                         }
                       }
                     ],
@@ -404,7 +432,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Convenio'"
+                          "Value": "'Inicio'"
                         }
                       }
                     ]

@@ -3,7 +3,7 @@
   "name": "c1ea957a830922600b09",
   "position": {
     "x": 17.509312994371733,
-    "y": 95.174450748260654,
+    "y": 97.269377098506141,
     "z": 1000,
     "height": 205.48032297030957,
     "width": 320.43471908647336
@@ -40,7 +40,7 @@
                       "Entity": "parResTaf"
                     }
                   },
-                  "Property": "Parâmetro"
+                  "Property": "parResTaf"
                 }
               },
               "index": 0,
@@ -453,6 +453,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "065c3cb5ba662143482c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Qtd atendimentos"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

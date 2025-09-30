@@ -4,10 +4,10 @@
   "position": {
     "x": 59.251870324189525,
     "y": 123.89027431421447,
-    "z": 19000,
+    "z": 18000,
     "height": 184.03990024937656,
     "width": 271.12219451371573,
-    "tabOrder": 19000
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "slicer",
@@ -45,14 +45,14 @@
             "startDate": {
               "expr": {
                 "Literal": {
-                  "Value": "datetime'2025-06-01T00:00:00'"
+                  "Value": "datetime'2025-07-01T00:00:00'"
                 }
               }
             },
             "endDate": {
               "expr": {
                 "Literal": {
-                  "Value": "datetime'2025-08-31T00:00:00'"
+                  "Value": "datetime'2025-09-26T00:00:00'"
                 }
               }
             },
@@ -234,7 +234,7 @@
                             },
                             "Right": {
                               "Literal": {
-                                "Value": "datetime'2025-06-01T00:00:00'"
+                                "Value": "datetime'2025-07-01T00:00:00'"
                               }
                             }
                           }
@@ -254,7 +254,7 @@
                             },
                             "Right": {
                               "Literal": {
-                                "Value": "datetime'2025-09-01T00:00:00'"
+                                "Value": "datetime'2025-09-27T00:00:00'"
                               }
                             }
                           }

@@ -492,9 +492,9 @@ table _Medidas
 			RETURN IF(NLojas>1, "-", IF(ISBLANK(Responsavel), "Não Encontrado", Responsavel))
 		lineageTag: b9fab78d-daed-45bf-a2c6-fe0d18ea11e7
 
-	measure 'Assunto Cartão' = ```
+	measure 'Assunto Cartão Massa' = ```
 			
-			VAR AssuntoSelecionado = SELECTEDVALUE(fatAtendimentos[assunto])
+			VAR AssuntoSelecionado = SELECTEDVALUE(fatAtendimentosMassa[assunto])
 			RETURN
 			IF(
 			    ISBLANK(AssuntoSelecionado), 
@@ -510,79 +510,219 @@ table _Medidas
 		displayFolder: Focal
 		lineageTag: c4a62767-3b2c-48b5-bdf5-594d6d465e3d
 
-	measure 'Qtd Chamados como Responsável' =
-			COALESCE(
-			CALCULATE (
-			    COUNTROWS ( fatChamadoSults ),
-			    USERELATIONSHIP ( dimPessoa[id_sults], fatChamadoSults[responsavel_id] )
-			), 0)
-		formatString: 0
-		displayFolder: Marketing
-		lineageTag: 54176c4b-fe40-479a-a14b-3ac1954ebfec
-
-	measure 'Qtd Chamados como Solicitante' =
-			COALESCE(
-			CALCULATE (
-			    COUNTROWS ( fatChamadoSults ),
-			    USERELATIONSHIP ( dimPessoa[id_sults], fatChamadoSults[solicitante_id] )
-			), 0)
-		formatString: 0
-		displayFolder: Marketing
-		lineageTag: bf9d59ef-0f27-4e14-b6bf-81d6dabe6c71
-
-	measure 'Qtd Apoios Prestados' =
-			
-			CALCULATE (
-			    COUNTROWS ( bridgeChamadoSultsApoio ),
-			    USERELATIONSHIP ( dimPessoa[id_sults], bridgeChamadoSultsApoio[id_pessoa_apoio] ),
-			    USERELATIONSHIP (bridgeChamadoSultsApoio[data], 'dimCalendario'[Date] ))
-		formatString: 0
-		displayFolder: Marketing
-		lineageTag: 26889ad8-b119-4f45-ba7e-3fe2e9821c03
-
-	measure 'Qtd Total de Chamados' =
-			
-			DISTINCTCOUNT(fatChamadoSults[id])
-		formatString: 0
-		displayFolder: Marketing
-		lineageTag: 582b9b10-7896-4638-b40c-ce00ad22f92b
-
 	measure 'Qtd pessoa Mkt' =
-			
+			COALESCE(
 			CALCULATE (
-			    DISTINCTCOUNT (fatChamadoSults[responsavel_id] ),
-			    fatChamadoSults[departamento_id] = 1,
-			    fatChamadoSults[responsavel_id] <> 0
-			)
+			    DISTINCTCOUNT (dimPessoa[id_sults]),
+			    dimPessoa[departamento_id] = 7
+			), 0)
 		formatString: 0
 		displayFolder: Marketing
 		lineageTag: d64abe6a-e82d-4920-ad81-62155da4bcf7
 
 	measure 'Qtd Chamados com Apoio' =
-			
-			DISTINCTCOUNT(bridgeChamadoSultsApoio[id_chamado])
+			COALESCE(
+			COUNT( fatChamadosSults[id_pessoa_apoio] ),0)
 		formatString: 0
 		displayFolder: Marketing
 		lineageTag: ca7d6938-60a6-45e2-a1c5-ef1e29e75035
 
-	measure 'Qtd Chamados sem Apoio' =
-			
-			[Qtd Total de Chamados] - [Qtd Chamados com Apoio]
+	measure 'Qtd Total de Chamados' = COALESCE(DISTINCTCOUNT(fatChamadosSults[id_chamado]),0)
 		formatString: 0
 		displayFolder: Marketing
-		lineageTag: ebbaa06c-967a-4bd9-9929-a898cb67ed98
+		lineageTag: 67664cf6-6ee1-410a-9fca-c8483422a00b
 
-	measure 'Qtd Chamados Envolvidos (Total)' =
+	measure 'Qtd Atendimentos Massa' = DISTINCTCOUNT(fatAtendimentosMassa[chave_id])
+		formatString: 0
+		displayFolder: Focal
+		lineageTag: bfa1a2b2-c5ae-473a-a697-3fa6380cf886
+
+	measure 'Qtd lojas Massa' = DISTINCTCOUNT(fatAtendimentosMassa[loja])
+		formatString: 0
+		displayFolder: Focal
+		lineageTag: b14c2a2b-f34a-41d9-9bf2-45c153831158
+
+	measure 'Qtd tarefas Massa' = DISTINCTCOUNT(fatAtendimentosMassa[tarefa])
+		formatString: 0
+		displayFolder: Focal
+		lineageTag: a83ff2fc-353d-43e4-9a6b-b11c505cebfb
+
+	measure 'Qtd responsável Massa' = DISTINCTCOUNT(fatAtendimentosMassa[responsavel])
+		formatString: 0
+		displayFolder: Focal
+		lineageTag: 5cb40a7c-5604-4cc7-a533-a72365c21942
+
+	measure 'Massa Media de Atendimentos por Loja' = DIVIDE([Qtd atendimentos Massa], [Qtd lojas Massa],0)
+		displayFolder: Focal
+		lineageTag: 7d0bae4e-8f63-49c5-83d2-e5fa41003207
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Massa Media de Atendimentos por dia' = COALESCE(DIVIDE([Qtd atendimentos Massa],[Qtd dias],0),0)
+		displayFolder: Focal
+		lineageTag: 5268f70f-3099-496e-9940-cebe2c7980f9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Massa Media de Atendimentos por Responsável' = COALESCE(DIVIDE([Qtd atendimentos Massa],[Qtd responsável Massa], 0),0)
+		displayFolder: Focal
+		lineageTag: 0882b8a4-bae3-4d82-906c-bb8a334a1c2a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Massa Media de Atendimento por Dia e Resp.' = COALESCE(DIVIDE(DIVIDE([Qtd Atendimentos Massa], [Qtd dias],0),[Qtd responsável Massa],0),0)
+		displayFolder: Focal
+		lineageTag: 0c92f1ac-7ff5-4781-945b-5461e24c3ec2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Medida Dinamica Pessoa' =
 			
-			COUNTROWS (
-			    UNION (
-			        VALUES ( fatChamadoSults[id] ),
-			        VALUES ( bridgeChamadoSultsApoio[id_chamado] )
+			VAR SelecaoAtual =
+			    SELECTEDVALUE ( parRespSolApo[Parâmetro Pedido] ) -- Importante: Verifique se o nome da coluna dentro do seu parâmetro é este.
+			RETURN
+			    SWITCH (
+			        SelecaoAtual, 2, COUNT( fatChamadosSults[id_pessoa_apoio] ),
+			        -- Se a seleção não for "Apoio", este será o resultado padrão
+			        DISTINCTCOUNT(fatChamadosSults[id_chamado])
 			    )
-			)
 		formatString: 0
 		displayFolder: Marketing
-		lineageTag: 2f772e9a-b774-4821-a318-db5656d2a865
+		lineageTag: e5d54187-cd83-4278-936e-4c2b6cf85f3b
+
+	measure 'Medida Dinamica Departamento' =
+			
+			VAR SelecaoAtual =
+			    SELECTEDVALUE ( parDepResSocApo[Parâmetro Pedido] ) -- Importante: Verifique se o nome da coluna dentro do seu parâmetro é este.
+			RETURN
+			    SWITCH (
+			        SelecaoAtual, 2, COUNT( fatChamadosSults[id_pessoa_apoio] ),
+			        -- Se a seleção não for "Apoio", este será o resultado padrão
+			        DISTINCTCOUNT(fatChamadosSults[id_chamado])
+			    )
+		formatString: 0
+		displayFolder: Marketing
+		lineageTag: 9a24c574-6ace-4940-ae5a-e88d9ced6469
+
+	measure 'Qtd de dias' = COALESCE(CALCULATE(DISTINCTCOUNT('dimCalendario'[Date]), 'dimCalendario'[Dia da semana] <> "dom", 'dimCalendario'[Dia da semana] <> "sáb"),0)
+		formatString: 0
+		displayFolder: Marketing
+		lineageTag: 5c19e62a-d338-4c0d-b3bd-37f8cf4d6315
+
+	measure 'Qtd Total de Fatos' = COALESCE( DISTINCTCOUNT(fatChamadosSults[id_fato_chamado]),0)
+		formatString: 0
+		displayFolder: Marketing
+		lineageTag: 81b56e41-e360-46d5-aa6d-0c09321ec7d9
+
+	measure 'Qtd PAI' =
+			COALESCE(
+			CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[fase_nome] = "PAI"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: 0a40da80-bbb1-42c3-95b2-1508b47f48a7
+
+	measure 'Qtd RAIO-X' =
+			COALESCE(
+			CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[fase_nome] = "RAIO-X"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: cd7b4c84-20e0-4ba4-982e-139cd0dda00f
+
+	measure 'Qtd BÚSSOLA' =
+			COALESCE(
+			CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[fase_nome] = "BÚSSOLA"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: 478b6572-3720-4753-97b1-22df02ffb1db
+
+	measure 'Qtd PEC' =
+			COALESCE(
+			CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[fase_nome] = "PEC"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: ab174246-3edf-4b3f-bb8b-d205cfde9fe8
+
+	measure 'Qtd CESTAO' =
+			COALESCE(
+			CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[fase_nome] = "CESTÃO"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: 2a7660fd-e8cd-4b78-b0f0-b264d4528216
+
+	measure 'Qtd TRADE' =
+			
+			COALESCE(CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[fase_nome] = "TRADE"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: 018d0e63-7181-4e5f-9bb3-ea832c31c5de
+
+	measure 'Qtd COMP PRECOS' =
+			COALESCE(
+			CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[nome] = "COMPARADOR DE PREÇOS"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: a5faac72-3be5-4d5d-8f4a-f5db9976d72f
+
+	measure 'Qtd BALCONISTA' =
+			COALESCE(
+			CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[fase_nome] = "BALCONISTA"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: ac36388d-d6d8-4fc8-927f-1f408fe14add
+
+	measure 'Qtd GEOFUSION' =
+			COALESCE(
+			CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[nome] = "GEOFUSION"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: edb5d866-9118-440c-8085-8cbf9cdab6af
+
+	measure 'Qtd MIX' =
+			COALESCE(
+			CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[nome] = "ANALISE DE MIX"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: 207b53c2-1f3c-4666-87dd-c9fdcff78e7b
+
+	measure 'Qtd ORION' =
+			COALESCE(
+			CALCULATE(
+			    COUNTROWS(fatTarefa),
+			    fatTarefa[nome] = "ORION"
+			),0)
+		formatString: 0
+		displayFolder: V_Auditores
+		lineageTag: c9f4ded4-2b28-4d95-9719-d6229b9d5faf
 
 	column Column
 		isHidden

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "28eacacf87dbc1d680b3",
   "position": {
-    "x": 198.99380514141538,
-    "y": 100.56417078463544,
+    "x": 167.88089984436581,
+    "y": 82.471170329329567,
     "z": 11000,
-    "height": 70.229032789586412,
-    "width": 68.778666498234315,
-    "tabOrder": 11000
+    "height": 69.267139479905424,
+    "width": 69.5730705489738,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "card",
@@ -23,12 +23,12 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Qtd Apoios Prestados"
+                  "Property": "Qtd Chamados com Apoio"
                 }
               },
-              "queryRef": "_Medidas.Qtd Apoios Prestados",
-              "nativeQueryRef": "Apoios",
-              "displayName": "Apoios"
+              "queryRef": "_Medidas.Qtd Chamados com Apoio",
+              "nativeQueryRef": "Apoio",
+              "displayName": "Apoio"
             }
           ]
         }
@@ -43,7 +43,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Qtd Apoios Prestados"
+                "Property": "Qtd Chamados com Apoio"
               }
             },
             "direction": "Descending"
@@ -182,23 +182,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "4666b0138a3bf39822bc",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ce54a0e9293ce030ace7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Qtd Apoios Prestados"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "4666b0138a3bf39822bc"
 }

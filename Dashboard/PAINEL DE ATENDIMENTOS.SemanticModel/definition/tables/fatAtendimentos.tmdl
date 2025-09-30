@@ -123,6 +123,7 @@ table fatAtendimentos
 			VAR NomeFinal =
 			    SWITCH (
 			        TRUE (),
+			        LojaNumero = -1, "Atendimento em Massa",
 			        LojaNumero = 0, "Outro",
 			        ISBLANK ( NomeFantasiaRelacionado ), "Loja Inativa",
 			        NomeFantasiaRelacionado
@@ -186,6 +187,14 @@ table fatAtendimentos
 		lineageTag: c6a5e278-c1cd-40d7-b85f-92df7bf1ecd8
 		summarizeBy: none
 		sourceColumn: adjunto
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: d8664475-296a-47b4-a062-c917f4abe572
+		summarizeBy: none
+		sourceColumn: status
 
 		annotation SummarizationSetBy = Automatic
 

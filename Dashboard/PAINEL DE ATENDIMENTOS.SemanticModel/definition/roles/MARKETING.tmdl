@@ -1,5 +1,7 @@
 role MARKETING
 	modelPermission: read
 
+	tablePermission Navegacao = [Setor] == "Marketing" || [Setor] == "Todos"
+
 	annotation PBI_Id = 8f394d5f20c74192bb15ec1a970bc695
 

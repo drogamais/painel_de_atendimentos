@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "6294edfb71f35241f13b",
   "position": {
-    "x": 10.711615600443068,
-    "y": 143.59153581888035,
+    "x": 7.8769230769230774,
+    "y": 463.425641025641,
     "z": 3000,
-    "height": 80.203672492731158,
-    "width": 241.49824262817094,
-    "tabOrder": 1000
+    "height": 77.456410256410251,
+    "width": 238.93333333333334,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dimPessoa"
+                      "Entity": "fatChamadosSults"
                     }
                   },
-                  "Property": "nome_oficial"
+                  "Property": "nome_apoio"
                 }
               },
-              "queryRef": "dimPessoa.nome_oficial",
-              "nativeQueryRef": "PESSOA",
+              "queryRef": "fatChamadosSults.nome_apoio",
+              "nativeQueryRef": "APOIO",
               "active": true,
-              "displayName": "PESSOA"
+              "displayName": "APOIO"
             }
           ]
         }
@@ -266,7 +266,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'CLÁUDIO ALVES DA SILVA'"
+                          "Value": "'GIOVANNA MIKI HIRAI'"
                         }
                       }
                     ],
@@ -283,13 +283,6 @@
                           "Value": "'OUTRO'"
                         }
                       }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'GIOVANNA MIKI HIRAI'"
-                        }
-                      }
                     ]
                   ]
                 }
@@ -297,6 +290,7 @@
             }
           ]
         },
+        "howCreated": "User",
         "isHiddenInViewMode": true,
         "isLockedInViewMode": true
       }

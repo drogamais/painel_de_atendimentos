@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "42af56624880fa12d394",
   "position": {
-    "x": 9.73783236403915,
-    "y": 211.23318731877404,
+    "x": 7.1228928336620667,
+    "y": 143.88512820512821,
     "z": 11000,
-    "height": 80.203672492731158,
-    "width": 240.52445939176704
+    "height": 81.39487179487179,
+    "width": 240.24615384615385,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -19,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "fatChamadoSults"
+                      "Entity": "fatChamadosSults"
                     }
                   },
                   "Property": "assunto_nome"
                 }
               },
-              "queryRef": "fatChamadoSults.assunto_nome",
+              "queryRef": "prata_chamados_unificada.assunto_nome",
               "nativeQueryRef": "ASSUNTO",
               "active": true,
               "displayName": "ASSUNTO"

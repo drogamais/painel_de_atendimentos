@@ -5,13 +5,13 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 39062.323616458059
+        "y": 74093.500922529827
       },
       "nodes": [
         {
           "location": {
             "x": 1055.9791430493362,
-            "y": 99575.018754587756
+            "y": 145028.90437148124
           },
           "nodeIndex": "parResTaf",
           "nodeLineageTag": "56f77a28-5472-43e8-b049-af330d1bc42d",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 588.012432428624,
-            "y": 99526.024067878781
+            "y": 144979.90968477228
           },
           "nodeIndex": "parDiaMesAno",
           "nodeLineageTag": "55dc3b5b-40a1-454b-8ebe-92fb0e3bf40b",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 2295.5801913564969,
-            "y": 100284.19198497492
+            "y": 145738.07760186843
           },
           "nodeIndex": "parLojaTarefa",
           "nodeLineageTag": "7fc35993-7df8-42b7-ab28-3dca306d6c30",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 1466.552185916958,
-            "y": 99615.516133138211
+            "y": 145069.40175003171
           },
           "nodeIndex": "fatAtendimentos",
           "nodeLineageTag": "fb695763-28d5-4dd2-9e3c-529bc0a4eaa4",
@@ -63,7 +63,7 @@
         {
           "location": {
             "x": 1473.4654317073869,
-            "y": 100411.42189383472
+            "y": 145865.30751072822
           },
           "nodeIndex": "fatTarefa",
           "size": {
@@ -75,7 +75,7 @@
         {
           "location": {
             "x": 338.74508299838192,
-            "y": 100300.41849363153
+            "y": 145754.30411052503
           },
           "nodeIndex": "dimCidades",
           "size": {
@@ -87,7 +87,7 @@
         {
           "location": {
             "x": 1662.8632083189702,
-            "y": 100094.6116761239
+            "y": 145548.4972930174
           },
           "nodeIndex": "dimCalendario SULTS",
           "size": {
@@ -99,7 +99,7 @@
         {
           "location": {
             "x": 852.58805015416021,
-            "y": 100010.21560698391
+            "y": 145464.1012238774
           },
           "nodeIndex": "dimLoja",
           "nodeLineageTag": "fc902e95-c0e7-4661-ba0a-5408db02c89b",
@@ -112,7 +112,7 @@
         {
           "location": {
             "x": 1314.8809818065454,
-            "y": 100083.7421455228
+            "y": 145537.62776241629
           },
           "nodeIndex": "dimProjeto",
           "nodeLineageTag": "097203db-32f9-489c-be7c-decdeaf71a3b",
@@ -125,7 +125,7 @@
         {
           "location": {
             "x": 1980.3316568074683,
-            "y": 100243.6136835824
+            "y": 145697.4993004759
           },
           "nodeIndex": "_Medidas",
           "size": {
@@ -137,7 +137,7 @@
         {
           "location": {
             "x": 795.99944856199647,
-            "y": 99790.110924264533
+            "y": 145243.99654115803
           },
           "nodeIndex": "Atualizacao",
           "nodeLineageTag": "f4484955-0c68-40a5-82c2-82dfe7e4b596",
@@ -149,20 +149,8 @@
         },
         {
           "location": {
-            "x": 423.49495972496743,
-            "y": 99827.906168744725
-          },
-          "nodeIndex": "Navegacao",
-          "size": {
-            "height": 128,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 1794.6615774374075,
-            "y": 99478.223236514546
+            "y": 144932.10885340805
           },
           "nodeIndex": "dimCalendario",
           "nodeLineageTag": "0faf2285-4065-49ae-99c1-639c8c9c9e3e",
@@ -174,21 +162,8 @@
         },
         {
           "location": {
-            "x": 2079.9856568125751,
-            "y": 99839.769545486473
-          },
-          "nodeIndex": "fatChamadoSults",
-          "nodeLineageTag": "a0f9fa33-cee7-48af-9bcf-3f28ce44c716",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 2653.8560747521933,
-            "y": 77069.59244129523
+            "y": 122523.47805818872
           },
           "nodeIndex": "fatAtendimentosMassa",
           "size": {
@@ -200,7 +175,7 @@
         {
           "location": {
             "x": 2392.4722802792489,
-            "y": 99896.264589701663
+            "y": 145350.15020659516
           },
           "nodeIndex": "dimPessoa",
           "size": {
@@ -211,26 +186,69 @@
         },
         {
           "location": {
-            "x": 2995.7522049865056,
-            "y": 40702.06028686963
+            "x": 3346.3326193761422,
+            "y": 75382.566420376039
           },
-          "nodeIndex": "bridgeChamadoSultsApoio",
-          "nodeLineageTag": "f94c5c60-c0ee-4386-83ca-911099cf29e0",
+          "nodeIndex": "parResTafTipMassa",
           "size": {
-            "height": 176,
+            "height": 152,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 3117.0777023745241,
-            "y": 46465.997572530512
+            "x": 3630.3326193761422,
+            "y": 75382.566420376039
           },
-          "nodeIndex": "fatChamadoSultsSolicitante",
-          "nodeLineageTag": "00dc1d88-539d-427e-ae69-845cd2c53cb6",
+          "nodeIndex": "parLojaTarefaMassa",
           "size": {
             "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3914.3326193761422,
+            "y": 75382.566420376039
+          },
+          "nodeIndex": "parRespSolApo",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4143.58753637776,
+            "y": 60455.22601863477
+          },
+          "nodeIndex": "parDepResSocApo",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4198.3326193761422,
+            "y": 75308.566420376039
+          },
+          "nodeIndex": "fatChamadosSults",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Navegacao",
+          "size": {
+            "height": 128,
             "width": 234
           },
           "zIndex": 0
@@ -246,8 +264,8 @@
     {
       "ordinal": 1,
       "scrollPosition": {
-        "x": 914.26829788181112,
-        "y": 0
+        "x": 802.10898996322464,
+        "y": 339.87669066238334
       },
       "nodes": [
         {
@@ -369,19 +387,6 @@
         },
         {
           "location": {
-            "x": 2024.6993859897827,
-            "y": 497.17317270065047
-          },
-          "nodeIndex": "fatChamadoSults",
-          "nodeLineageTag": "542a2cab-b612-4b4e-baf4-954eeb3ed16f",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 10
-        },
-        {
-          "location": {
             "x": 1558.2693941919429,
             "y": 75.185536899440933
           },
@@ -392,19 +397,6 @@
             "width": 234
           },
           "zIndex": 12
-        },
-        {
-          "location": {
-            "x": 2591.0000025364707,
-            "y": 137.9347079329284
-          },
-          "nodeIndex": "Navegacao",
-          "nodeLineageTag": "f0f6284a-7578-4786-b27b-e31c3e7d6962",
-          "size": {
-            "height": 128,
-            "width": 234
-          },
-          "zIndex": 13
         },
         {
           "location": {
@@ -457,6 +449,18 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1475.0951676989903,
+            "y": 994.30479357293848
+          },
+          "nodeIndex": "fatChamadosSults",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Layout 2",
@@ -469,8 +473,8 @@
     {
       "ordinal": 2,
       "scrollPosition": {
-        "x": 651.37517747479728,
-        "y": 147.50872853128817
+        "x": 1045.7054418653697,
+        "y": 584.19298428232946
       },
       "nodes": [
         {
@@ -501,21 +505,8 @@
         },
         {
           "location": {
-            "x": 1591.2099068822358,
-            "y": 213.91681464546809
-          },
-          "nodeIndex": "bridgeChamadoSultsApoio",
-          "nodeLineageTag": "f94c5c60-c0ee-4386-83ca-911099cf29e0",
-          "size": {
-            "height": 176,
-            "width": 234
-          },
-          "zIndex": 4
-        },
-        {
-          "location": {
-            "x": 1190.6368018112482,
-            "y": 886.512853648435
+            "x": 1057.7328978870182,
+            "y": 911.341055480434
           },
           "nodeIndex": "dimCalendario",
           "nodeLineageTag": "0faf2285-4065-49ae-99c1-639c8c9c9e3e",
@@ -566,13 +557,13 @@
         },
         {
           "location": {
-            "x": 2001.8006074130749,
-            "y": 369.89975364828661
+            "x": 1855.7523613424923,
+            "y": 958.47418531273343
           },
           "nodeIndex": "dimPessoa",
           "nodeLineageTag": "2adfa28c-fcad-4c7e-bf75-4bf0b14f79ae",
           "size": {
-            "height": 224,
+            "height": 302.86605287811449,
             "width": 234
           },
           "zIndex": 8
@@ -592,8 +583,8 @@
         },
         {
           "location": {
-            "x": 72.727374169336429,
-            "y": 654.65277800154047
+            "x": 0,
+            "y": 615.21975156248322
           },
           "nodeIndex": "fatAtendimentos",
           "nodeLineageTag": "fb695763-28d5-4dd2-9e3c-529bc0a4eaa4",
@@ -605,8 +596,8 @@
         },
         {
           "location": {
-            "x": 50.699211046603182,
-            "y": 301.04262994970588
+            "x": 0,
+            "y": 268.91201581417778
           },
           "nodeIndex": "fatAtendimentosMassa",
           "nodeLineageTag": "f900b7c1-6ecd-46a5-ba01-a30cab14bc4b",
@@ -615,19 +606,6 @@
             "width": 234
           },
           "zIndex": 11
-        },
-        {
-          "location": {
-            "x": 1970.3363959006172,
-            "y": 751.05821987085778
-          },
-          "nodeIndex": "fatChamadoSults",
-          "nodeLineageTag": "542a2cab-b612-4b4e-baf4-954eeb3ed16f",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 12
         },
         {
           "location": {
@@ -641,19 +619,6 @@
             "width": 234
           },
           "zIndex": 13
-        },
-        {
-          "location": {
-            "x": 2584.405432020133,
-            "y": 581.47378924733869
-          },
-          "nodeIndex": "Navegacao",
-          "nodeLineageTag": "f0f6284a-7578-4786-b27b-e31c3e7d6962",
-          "size": {
-            "height": 128,
-            "width": 234
-          },
-          "zIndex": 14
         },
         {
           "location": {
@@ -696,16 +661,15 @@
         },
         {
           "location": {
-            "x": 2444.1708415740118,
-            "y": 145.97960601646093
+            "x": 1513.8435141044019,
+            "y": 1125.9633371500686
           },
-          "nodeIndex": "fatChamadoSultsSolicitante",
-          "nodeLineageTag": "00dc1d88-539d-427e-ae69-845cd2c53cb6",
+          "nodeIndex": "fatChamadosSults",
           "size": {
-            "height": 152,
+            "height": 549.74250078069576,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 0
         }
       ],
       "name": "Layout 1",
@@ -716,6 +680,6 @@
       "tablesLocked": false
     }
   ],
-  "selectedDiagram": "Layout 1",
+  "selectedDiagram": "Layout 2",
   "defaultDiagram": "Todas as tabelas"
 }

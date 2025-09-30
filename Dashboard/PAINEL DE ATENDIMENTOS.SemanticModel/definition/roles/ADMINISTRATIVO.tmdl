@@ -1,5 +1,7 @@
 role ADMINISTRATIVO
 	modelPermission: read
 
+	tablePermission Navegacao = [Setor] == "Administrativo" || [Páginas] == "Inicio"
+
 	annotation PBI_Id = 10c4b2a22ea3418d820a1990348dd6c9
 

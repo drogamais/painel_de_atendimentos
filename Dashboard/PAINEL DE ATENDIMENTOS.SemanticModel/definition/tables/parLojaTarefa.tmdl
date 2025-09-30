@@ -1,7 +1,7 @@
 table parLojaTarefa
 	lineageTag: 7fc35993-7df8-42b7-ab28-3dca306d6c30
 
-	column Parâmetro
+	column parLojaTarefa
 		lineageTag: a1fb5bed-ce30-4021-b639-e2869b2ae4b5
 		summarizeBy: none
 		sourceColumn: [Value1]

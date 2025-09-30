@@ -1,0 +1,49 @@
+table parRespSolApo
+	lineageTag: 8f5ecc41-5795-4a3e-abbe-77de79683144
+
+	column parRespSolApo
+		lineageTag: 52e0a5f9-0e76-42f6-9a9b-f7cd35833dda
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parâmetro Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'Parâmetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Campos'
+		isHidden
+		lineageTag: e0b2a9c3-0855-4e0b-aa47-517278374713
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parâmetro Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: 0396074f-287b-4c60-b089-68c47f80d620
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition parRespSolApo = calculated
+		mode: import
+		source =
+				{
+				    ("RESP.", NAMEOF('fatChamadosSults'[responsavel_nome]), 0),
+				    ("SOLICITANTE", NAMEOF('fatChamadosSults'[solicitante_nome]), 1),
+				    ("APOIO", NAMEOF('fatChamadosSults'[nome_apoio]), 2)
+				}
+
+	annotation PBI_Id = e69c43f8ca38427aa0001752c57fba65
+

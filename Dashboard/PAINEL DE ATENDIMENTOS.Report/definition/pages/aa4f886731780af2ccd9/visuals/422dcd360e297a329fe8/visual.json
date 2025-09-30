@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "422dcd360e297a329fe8",
   "position": {
-    "x": 1.8340977732862527,
-    "y": 15.126253216218611,
+    "x": 10.26857342169518,
+    "y": 12.119282492494909,
     "z": 1000,
-    "height": 51.861439598463825,
-    "width": 318.21596366516428,
-    "tabOrder": 19000
+    "height": 51.293260473588347,
+    "width": 321.74863387978144,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "MÉDIAS E VALORES",
+                    "value": "VALORES:",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "Lucida Sans Unicode",

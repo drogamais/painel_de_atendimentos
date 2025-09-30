@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "71704f1a88012a6c3dd3",
   "position": {
-    "x": 322.75862068965517,
-    "y": 465.51724137931035,
-    "z": 18000,
-    "height": 196.84729064039408,
-    "width": 292.61083743842363,
-    "tabOrder": 14000
+    "x": 7.8769230769230774,
+    "y": 64.328205128205127,
+    "z": 3000,
+    "height": 186.42051282051281,
+    "width": 300.63589743589745,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -20,30 +20,32 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "fatChamadoSults"
+                      "Entity": "fatChamadosSults"
                     }
                   },
-                  "Property": "departamento_solicitante_nome"
+                  "Property": "departamento_responsavel_nome"
                 }
               },
-              "queryRef": "fatChamadoSults.departamento_solicitante_nome",
-              "nativeQueryRef": "departamento_solicitante_nome",
-              "active": true
-            },
+              "queryRef": "fatChamadosSults.departamento_responsavel_nome",
+              "nativeQueryRef": "RESP.",
+              "active": true,
+              "displayName": "RESP."
+            }
+          ],
+          "fieldParameters": [
             {
-              "field": {
+              "parameterExpr": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "bridgeChamadoSultsApoio"
+                      "Entity": "parDepResSocApo"
                     }
                   },
-                  "Property": "departamento_apoio_nome"
+                  "Property": "parDepResSocApo"
                 }
               },
-              "queryRef": "bridgeChamadoSultsApoio.departamento_apoio_nome",
-              "nativeQueryRef": "departamento_apoio_nome",
-              "active": false
+              "index": 0,
+              "length": 1
             }
           ]
         },
@@ -57,11 +59,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Qtd Total de Chamados"
+                  "Property": "Medida Dinamica Departamento"
                 }
               },
-              "queryRef": "_Medidas.Qtd Chamados",
-              "nativeQueryRef": "Qtd Total de Chamados"
+              "queryRef": "_Medidas.Medida Eixo X Dinamica Departamento",
+              "nativeQueryRef": "Medida Dinamica Departamento"
             }
           ]
         }
@@ -76,7 +78,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Qtd Total de Chamados"
+                "Property": "Medida Dinamica Departamento"
               }
             },
             "direction": "Descending"
@@ -271,50 +273,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e499f98f757677dbc7e8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Qtd Total de Chamados"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "95a60f0be041a0526e8c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fatChamadoSults"
-              }
-            },
-            "Property": "departamento_solicitante_nome"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "1e5835fe5b24bf9d3061",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "bridgeChamadoSultsApoio"
-              }
-            },
-            "Property": "departamento_apoio_nome"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
+  "parentGroupName": "1bcf6be73cdc58085ee9"
 }

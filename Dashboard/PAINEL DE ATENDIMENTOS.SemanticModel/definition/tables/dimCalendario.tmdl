@@ -11,7 +11,7 @@ table dimCalendario
 
 		variation Variation
 			isDefault
-			relationship: f56f203c-eb02-4120-b52a-339530c90f75
+			relationship: 5a06b2a1-805a-443b-b202-7bc488b9469f
 			defaultHierarchy: LocalDateTable_beec55fc-15af-4dce-8254-6f69af71be57.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
@@ -76,7 +76,7 @@ table dimCalendario
 
 		variation Variation
 			isDefault
-			relationship: 73c5e0e9-70c9-4bf4-9f14-73f611c2e93b
+			relationship: 4c11a962-1871-4edb-8e2b-2d96a8f38538
 			defaultHierarchy: LocalDateTable_24906c5d-25d4-4276-a871-5a9d6b763e66.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
@@ -178,7 +178,7 @@ table dimCalendario
 		mode: import
 		source = ```
 				
-				VAR datamin = MIN(fatChamadoSults[data])
+				VAR datamin = MIN(fatChamadosSults[data_referencia])
 				VAR datamax = TODAY()
 				
 				RETURN 

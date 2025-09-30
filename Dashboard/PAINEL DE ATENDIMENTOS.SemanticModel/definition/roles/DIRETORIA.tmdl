@@ -1,0 +1,7 @@
+role DIRETORIA
+	modelPermission: read
+
+	tablePermission Navegacao = [Setor] == "Diretoria" || [Páginas] == "Servicos" || [Setor] == "Todos"
+
+	annotation PBI_Id = 56beb4ac033a45dfac949c33753a1e03
+

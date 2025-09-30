@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "ce5bc061d71b5da45fae",
   "position": {
-    "x": 326.30541871921184,
-    "y": 434.48275862068965,
-    "z": 17000,
-    "height": 93.103448275862064,
-    "width": 289.064039408867,
-    "tabOrder": 15000
+    "x": 8.2589623736079414,
+    "y": 9.0763579612405731,
+    "z": 1000,
+    "height": 91.951964960103737,
+    "width": 305.40992593456576,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "DEPARTAMENTO SOLICITANTE:",
+                    "value": "DEPARTAMENTO:",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "Lucida Sans Unicode",
@@ -51,5 +51,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "1bcf6be73cdc58085ee9"
 }
